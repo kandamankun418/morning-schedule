@@ -1,12 +1,12 @@
 {
   "date": "2026-08-20",
   "date_label": "2026年8月20日（木）",
-  "leave_time": "05:59",
+  "leave_time": "06:04",
   "target_leave": "06:30",
   "latest_leave": "06:35",
-  "slack_minutes": 30.5,
-  "makespan_minutes": 59.5,
-  "bento_minutes": 20.0,
+  "slack_minutes": 25.5,
+  "makespan_minutes": 64.5,
+  "bento_minutes": 30.0,
   "timeline": [
     {
       "type": "task",
@@ -55,10 +55,10 @@
     {
       "type": "task",
       "id": "bento_1",
-      "name": "冷凍からあげを加熱する",
+      "name": "卵を割ってめんつゆを混ぜ、フライパンを温める",
       "start": "05:07",
-      "end": "05:13",
-      "seconds": 360,
+      "end": "05:09",
+      "seconds": 120,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -77,10 +77,10 @@
     {
       "type": "task",
       "id": "bento_2",
-      "name": "ひじきの煮物を詰める",
-      "start": "05:13",
+      "name": "卵焼きを焼く",
+      "start": "05:09",
       "end": "05:15",
-      "seconds": 120,
+      "seconds": 360,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -88,46 +88,72 @@
     {
       "type": "task",
       "id": "bento_3",
-      "name": "卵焼きを焼く",
+      "name": "卵焼きを取り出して粗熱を取る",
       "start": "05:15",
-      "end": "05:22",
-      "seconds": 420,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_4",
-      "name": "おかずの粗熱を取る",
-      "start": "05:22",
-      "end": "05:27",
+      "end": "05:20",
       "seconds": 300,
       "attended": false,
       "background": false,
       "kind": "bento"
     },
     {
+      "type": "task",
+      "id": "bento_4",
+      "name": "冷凍からあげをレンジで加熱",
+      "start": "05:20",
+      "end": "05:23",
+      "seconds": 180,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
       "type": "gap",
-      "seconds": 900
+      "seconds": 480
     },
     {
       "type": "task",
-      "id": "bento_pack",
-      "name": "お弁当に詰める",
-      "start": "05:37",
-      "end": "05:41",
+      "id": "bento_5",
+      "name": "からあげをフライパンで焼き付ける",
+      "start": "05:23",
+      "end": "05:27",
       "seconds": 240,
       "attended": true,
       "background": false,
-      "kind": "fixed"
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_6",
+      "name": "冷凍ブロッコリーをレンジ加熱し、水気を拭く",
+      "start": "05:27",
+      "end": "05:30",
+      "seconds": 180,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_7",
+      "name": "ひじきの煮物をレンジで温め、汁気をきる",
+      "start": "05:30",
+      "end": "05:32",
+      "seconds": 120,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "gap",
+      "seconds": 600
     },
     {
       "type": "task",
       "id": "breakfast",
       "name": "朝ごはんを食べる",
-      "start": "05:41",
-      "end": "05:51",
+      "start": "05:37",
+      "end": "05:47",
       "seconds": 600,
       "attended": true,
       "background": false,
@@ -137,8 +163,8 @@
       "type": "task",
       "id": "brush_teeth",
       "name": "歯を磨く",
-      "start": "05:51",
-      "end": "05:56",
+      "start": "05:47",
+      "end": "05:52",
       "seconds": 300,
       "attended": true,
       "background": false,
@@ -148,80 +174,140 @@
       "type": "task",
       "id": "change_clothes",
       "name": "着替える",
-      "start": "05:56",
-      "end": "05:59",
+      "start": "05:52",
+      "end": "05:55",
       "seconds": 180,
+      "attended": true,
+      "background": false,
+      "kind": "fixed"
+    },
+    {
+      "type": "task",
+      "id": "bento_8",
+      "name": "卵焼きを切り分け、おかずを詰める",
+      "start": "05:55",
+      "end": "06:00",
+      "seconds": 300,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_pack",
+      "name": "お弁当に詰める",
+      "start": "06:00",
+      "end": "06:04",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "fixed"
     }
   ],
   "menu": {
-    "menu_name": "在庫活用のお弁当",
+    "menu_name": "からあげ弁当（ひじき煮添え）",
     "items": [
       {
-        "name": "ご飯",
-        "note": "炊きたてを詰める。",
+        "name": "ごはん",
+        "note": "炊きたてを詰めて粗熱を取る。お好みで白ごまをふる。",
         "uses_stock": []
       },
       {
         "name": "冷凍からあげ",
-        "note": "袋の表示どおりに加熱する。",
+        "note": "レンジで加熱後、トースターまたはフライパンで軽く焼き付けて衣をカリッとさせる。",
         "uses_stock": [
           "karaage"
         ]
       },
       {
+        "name": "だし巻き風卵焼き",
+        "note": "卵2個にめんつゆ小さじ1を混ぜ、フライパンで巻き焼きにする。",
+        "uses_stock": []
+      },
+      {
         "name": "ひじきの煮物",
-        "note": "カップに取り分ける。",
+        "note": "作り置きをレンジで温め、汁気をきってカップに入れる。",
         "uses_stock": [
           "hijiki"
         ]
       },
       {
-        "name": "卵焼き",
-        "note": "卵2個に少量の砂糖と塩で焼く。",
-        "uses_stock": []
+        "name": "ブロッコリーのマヨ添え",
+        "note": "冷凍ブロッコリーをレンジ加熱し、水気を拭いて塩少々とマヨネーズを添える。",
+        "uses_stock": [
+          "broccoli"
+        ]
       }
     ],
     "steps": [
       {
-        "name": "冷凍からあげを加熱する",
-        "minutes": 6,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "ひじきの煮物を詰める",
+        "name": "卵を割ってめんつゆを混ぜ、フライパンを温める",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
         "name": "卵焼きを焼く",
-        "minutes": 7,
+        "minutes": 6,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "おかずの粗熱を取る",
+        "name": "卵焼きを取り出して粗熱を取る",
         "minutes": 5,
         "attended": false,
         "needs_rice": false
+      },
+      {
+        "name": "冷凍からあげをレンジで加熱",
+        "minutes": 3,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "からあげをフライパンで焼き付ける",
+        "minutes": 4,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "冷凍ブロッコリーをレンジ加熱し、水気を拭く",
+        "minutes": 3,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "ひじきの煮物をレンジで温め、汁気をきる",
+        "minutes": 2,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "卵焼きを切り分け、おかずを詰める",
+        "minutes": 5,
+        "attended": true,
+        "needs_rice": true
       }
     ],
     "stock_consumed": [
       {
-        "id": "karaage",
-        "quantity": 3
-      },
-      {
         "id": "hijiki",
         "quantity": 1
+      },
+      {
+        "id": "karaage",
+        "quantity": 4
+      },
+      {
+        "id": "broccoli",
+        "quantity": 0.3
       }
     ],
-    "comment": "APIを使わずに生成した予備の献立です。",
-    "_fallback": true
+    "comment": "期限が2日のひじきの煮物を優先して消費します。残り2食分は明日以降にも回せるので、今日は1食分だけ使う想定です。",
+    "_usage": {
+      "input_tokens": 2624,
+      "output_tokens": 850
+    }
   },
   "stock": [
     {
@@ -239,7 +325,7 @@
       "id": "karaage",
       "name": "冷凍からあげ",
       "kind": "frozen",
-      "quantity": 9.0,
+      "quantity": 8.0,
       "unit": "個",
       "added": "2026-08-10",
       "best_before": "",
@@ -250,7 +336,7 @@
       "id": "broccoli",
       "name": "冷凍ブロッコリー",
       "kind": "frozen",
-      "quantity": 1,
+      "quantity": 0.7,
       "unit": "袋",
       "added": "2026-08-10",
       "best_before": "",
@@ -260,5 +346,5 @@
   ],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-08-19 22:08 JST"
+  "generated_at": "2026-08-19 22:38 JST"
 }
