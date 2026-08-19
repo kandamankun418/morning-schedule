@@ -1,0 +1,78 @@
+{
+  "_comment": "朝の固定タスク。minutes=所要時間(分, 小数可) / attended=本人が張り付く必要があるか / after=先に終わっている必要があるタスクのid / priority=大きいほど先に回す / background=バックグラウンド進行(出発時刻の判定に含めない)",
+  "tasks": [
+    {
+      "id": "wash_face",
+      "name": "顔を洗う",
+      "minutes": 2,
+      "attended": true,
+      "after": [],
+      "priority": 100
+    },
+    {
+      "id": "laundry_start",
+      "name": "洗濯機を回す（ボタンを押すだけ）",
+      "minutes": 0.5,
+      "attended": true,
+      "after": [],
+      "priority": 95
+    },
+    {
+      "id": "laundry_run",
+      "name": "洗濯機 運転中",
+      "minutes": 45,
+      "attended": false,
+      "after": ["laundry_start"],
+      "background": true,
+      "priority": 0
+    },
+    {
+      "id": "rice_prep",
+      "name": "ご飯を炊く準備（米を研ぐ・スイッチON）",
+      "minutes": 5,
+      "attended": true,
+      "after": [],
+      "priority": 90
+    },
+    {
+      "id": "rice_cook",
+      "name": "炊飯中（この間に他の作業を進める）",
+      "minutes": 30,
+      "attended": false,
+      "after": ["rice_prep"],
+      "priority": 0
+    },
+    {
+      "id": "bento_pack",
+      "name": "お弁当に詰める",
+      "minutes": 4,
+      "attended": true,
+      "after": ["rice_cook", "bento_done"],
+      "priority": 50
+    },
+    {
+      "id": "breakfast",
+      "name": "朝ごはんを食べる",
+      "minutes": 10,
+      "attended": true,
+      "after": ["rice_cook"],
+      "priority": 40
+    },
+    {
+      "id": "brush_teeth",
+      "name": "歯を磨く",
+      "minutes": 5,
+      "attended": true,
+      "after": ["breakfast"],
+      "priority": 30
+    },
+    {
+      "id": "change_clothes",
+      "name": "着替える",
+      "minutes": 3,
+      "attended": true,
+      "after": ["brush_teeth"],
+      "priority": 10
+    }
+  ]
+}

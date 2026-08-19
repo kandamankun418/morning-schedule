@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1f6feb">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./icon.png">
+<title>2026-08-20 の朝</title>
+<style>
+:root {
+  --bg: #f6f7f9;
+  --card: #ffffff;
+  --text: #16181d;
+  --muted: #6b7280;
+  --line: #e3e6ea;
+  --accent: #1f6feb;
+  --warn-bg: #fff4e5;
+  --warn-line: #f0a02a;
+  --warn-text: #7a4a00;
+  --done: #9aa2ad;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1216;
+    --card: #171b21;
+    --text: #e8eaed;
+    --muted: #9aa2ad;
+    --line: #2a303a;
+    --accent: #549bff;
+    --warn-bg: #3a2a10;
+    --warn-line: #b5801f;
+    --warn-text: #ffd591;
+    --done: #656d78;
+  }
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body {
+  margin: 0;
+  padding: 0 0 3rem;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+header {
+  background: var(--accent);
+  color: #fff;
+  padding: 1.1rem 1rem 1.2rem;
+  padding-top: calc(1.1rem + env(safe-area-inset-top));
+}
+header .date { font-size: 1rem; opacity: .9; }
+header .leave { font-size: 2.3rem; font-weight: 700; letter-spacing: .02em; margin: .15rem 0 0; }
+header .leave small { font-size: 1rem; font-weight: 400; opacity: .9; margin-left: .4rem; }
+header .slack { font-size: .95rem; opacity: .92; margin-top: .2rem; }
+main { padding: 0 .8rem; max-width: 640px; margin: 0 auto; }
+section {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  margin-top: .9rem;
+  overflow: hidden;
+}
+h2 {
+  font-size: 1.05rem;
+  margin: 0;
+  padding: .8rem 1rem;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: .5rem;
+}
+h2 span { font-size: .82rem; font-weight: 400; color: var(--muted); }
+.warn {
+  background: var(--warn-bg);
+  border: 1px solid var(--warn-line);
+  color: var(--warn-text);
+  border-radius: 14px;
+  padding: .8rem 1rem;
+  margin-top: .9rem;
+  font-size: .95rem;
+}
+.warn p { margin: .25rem 0; }
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: .7rem;
+  padding: .75rem 1rem;
+  border-bottom: 1px solid var(--line);
+}
+.row:last-child { border-bottom: 0; }
+.time {
+  flex: 0 0 4.6rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  font-size: 1.12rem;
+  padding-top: .1rem;
+}
+.body { flex: 1 1 auto; min-width: 0; }
+.name { font-size: 1.06rem; }
+.meta { font-size: .8rem; color: var(--muted); margin-top: .1rem; }
+.tag {
+  display: inline-block;
+  font-size: .7rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0 .45rem;
+  color: var(--muted);
+  margin-left: .35rem;
+  vertical-align: .1em;
+}
+label.row { cursor: pointer; }
+input[type=checkbox] {
+  flex: 0 0 auto;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin: .15rem 0 0;
+  accent-color: var(--accent);
+}
+.row.auto { background: linear-gradient(90deg, transparent, transparent); opacity: .95; }
+.row.auto .time, .row.auto .name { color: var(--muted); font-weight: 500; }
+.row.gap { padding: .4rem 1rem .4rem 5.9rem; color: var(--muted); font-size: .82rem; }
+.done .name { text-decoration: line-through; color: var(--done); }
+.done .time { color: var(--done); }
+.item { padding: .75rem 1rem; border-bottom: 1px solid var(--line); }
+.item:last-child { border-bottom: 0; }
+.item .n { font-weight: 600; }
+.item .note { font-size: .9rem; color: var(--muted); margin-top: .15rem; }
+.stock { padding: .6rem 1rem; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; gap: .6rem; }
+.stock:last-of-type { border-bottom: 0; }
+.stock .q { color: var(--muted); font-size: .9rem; white-space: nowrap; }
+.stock.soon .d { color: #d9480f; font-weight: 600; }
+@media (prefers-color-scheme: dark) { .stock.soon .d { color: #ff9b6b; } }
+.actions { padding: .85rem 1rem; }
+.actions a {
+  display: block;
+  text-align: center;
+  padding: .7rem;
+  border-radius: 10px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+  font-size: .95rem;
+}
+footer { color: var(--muted); font-size: .78rem; text-align: center; padding: 1.2rem .8rem; }
+button.reset {
+  background: none; border: 1px solid var(--line); color: var(--muted);
+  border-radius: 8px; padding: .35rem .7rem; font-size: .8rem; cursor: pointer;
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="date">2026年8月20日（木）</div>
+  <p class="leave">05:59 <small>に出発できます</small></p>
+  <div class="slack">目標 06:30 までに 30 分の余裕</div>
+</header>
+<main>
+
+  <section>
+    <h2>タイムライン <span>合計 60 分</span></h2>
+    <label class="row"><input type="checkbox"><div class="time">05:00</div><div class="body"><div class="name">顔を洗う</div><div class="meta">05:00〜05:02 ／ 2分</div></div></label>
+    <label class="row"><input type="checkbox"><div class="time">05:02</div><div class="body"><div class="name">洗濯機を回す（ボタンを押すだけ）</div><div class="meta">05:02 ／ 30秒</div></div></label>
+    <label class="row"><input type="checkbox"><div class="time">05:02</div><div class="body"><div class="name">ご飯を炊く準備（米を研ぐ・スイッチON）</div><div class="meta">05:02〜05:07 ／ 5分</div></div></label>
+    <div class="row auto"><div class="time">05:02</div><div class="body"><div class="name">洗濯機 運転中<span class="tag">バックグラウンド</span></div><div class="meta">05:02〜05:47 ／ 45分</div></div></div>
+    <label class="row"><input type="checkbox"><div class="time">05:07</div><div class="body"><div class="name">冷凍からあげを加熱する</div><div class="meta">05:07〜05:13 ／ 6分</div></div></label>
+    <div class="row auto"><div class="time">05:07</div><div class="body"><div class="name">炊飯中（この間に他の作業を進める）<span class="tag">放置OK</span></div><div class="meta">05:07〜05:37 ／ 30分</div></div></div>
+    <label class="row"><input type="checkbox"><div class="time">05:13</div><div class="body"><div class="name">ひじきの煮物を詰める</div><div class="meta">05:13〜05:15 ／ 2分</div></div></label>
+    <label class="row"><input type="checkbox"><div class="time">05:15</div><div class="body"><div class="name">卵焼きを焼く</div><div class="meta">05:15〜05:22 ／ 7分</div></div></label>
+    <div class="row auto"><div class="time">05:22</div><div class="body"><div class="name">おかずの粗熱を取る<span class="tag">放置OK</span></div><div class="meta">05:22〜05:27 ／ 5分</div></div></div>
+    <div class="row gap">ゆとり 15分</div>
+    <label class="row"><input type="checkbox"><div class="time">05:37</div><div class="body"><div class="name">お弁当に詰める</div><div class="meta">05:37〜05:41 ／ 4分</div></div></label>
+    <label class="row"><input type="checkbox"><div class="time">05:41</div><div class="body"><div class="name">朝ごはんを食べる</div><div class="meta">05:41〜05:51 ／ 10分</div></div></label>
+    <label class="row"><input type="checkbox"><div class="time">05:51</div><div class="body"><div class="name">歯を磨く</div><div class="meta">05:51〜05:56 ／ 5分</div></div></label>
+    <label class="row"><input type="checkbox"><div class="time">05:56</div><div class="body"><div class="name">着替える</div><div class="meta">05:56〜05:59 ／ 3分</div></div></label>
+  </section>
+
+  <section>
+    <h2>在庫活用のお弁当 <span>調理 約20分</span></h2>
+    <div class="item"><div class="n">ご飯</div><div class="note">炊きたてを詰める。</div></div>
+    <div class="item"><div class="n">冷凍からあげ</div><div class="note">袋の表示どおりに加熱する。</div></div>
+    <div class="item"><div class="n">ひじきの煮物</div><div class="note">カップに取り分ける。</div></div>
+    <div class="item"><div class="n">卵焼き</div><div class="note">卵2個に少量の砂糖と塩で焼く。</div></div>
+    <div class="item"><div class="note">APIを使わずに生成した予備の献立です。</div></div>
+  </section>
+
+  <section>
+    <h2>在庫 <span>期限が近い順</span></h2>
+    <div class="stock soon"><div>ひじきの煮物<span class="tag">作り置き</span></div><div class="q">2.0食分・<span class="d">あと2日</span></div></div>
+    <div class="stock"><div>冷凍からあげ<span class="tag">冷凍</span></div><div class="q">9.0個・<span class="d">あと20日</span></div></div>
+    <div class="stock"><div>冷凍ブロッコリー<span class="tag">冷凍</span></div><div class="q">1袋・<span class="d">あと20日</span></div></div>
+    <div class="actions"><a href="#">在庫を編集する（GitHub）</a></div>
+  </section>
+
+  <footer>
+    生成: 2026-08-19 22:03 JST<br>
+    <button class="reset" id="reset">チェックをリセット</button>
+  </footer>
+</main>
+<script>
+(function () {
+  var DAY = '2026-08-20';
+  var boxes = document.querySelectorAll('input[type=checkbox]');
+  function keyFor(i) { return 'ms:' + DAY + ':' + i; }
+  boxes.forEach(function (box, i) {
+    var saved = localStorage.getItem(keyFor(i));
+    box.checked = saved === '1';
+    box.closest('.row').classList.toggle('done', box.checked);
+    box.addEventListener('change', function () {
+      localStorage.setItem(keyFor(i), box.checked ? '1' : '0');
+      box.closest('.row').classList.toggle('done', box.checked);
+    });
+  });
+  document.getElementById('reset').addEventListener('click', function () {
+    boxes.forEach(function (box, i) {
+      box.checked = false;
+      localStorage.removeItem(keyFor(i));
+      box.closest('.row').classList.remove('done');
+    });
+  });
+  // 別の日のチェック状態は消しておく
+  Object.keys(localStorage).forEach(function (k) {
+    if (k.indexOf('ms:') === 0 && k.indexOf('ms:' + DAY + ':') !== 0) localStorage.removeItem(k);
+  });
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js').catch(function () {});
+  }
+})();
+</script>
+</body>
+</html>

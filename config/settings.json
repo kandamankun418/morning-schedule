@@ -1,0 +1,17 @@
+{
+  "wake_time": "05:00",
+  "target_leave": "06:30",
+  "latest_leave": "06:35",
+  "timezone": "Asia/Tokyo",
+
+  "model": "claude-opus-5",
+  "effort": "medium",
+
+  "bento": {
+    "target_minutes": 25,
+    "max_minutes": 40
+  },
+
+  "history_keep_days": 14,
+  "github_repo": "kandamankun418/morning-schedule"
+}
