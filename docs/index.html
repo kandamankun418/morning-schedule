@@ -17,6 +17,7 @@
   --muted: #6b7280;
   --line: #e3e6ea;
   --accent: #1f6feb;
+  --header-bg: #1f6feb;
   --warn-bg: #fff4e5;
   --warn-line: #f0a02a;
   --warn-text: #7a4a00;
@@ -30,6 +31,7 @@
     --muted: #9aa2ad;
     --line: #2a303a;
     --accent: #549bff;
+    --header-bg: #123a72;
     --warn-bg: #3a2a10;
     --warn-line: #b5801f;
     --warn-text: #ffd591;
@@ -47,7 +49,7 @@ body {
   line-height: 1.6;
 }
 header {
-  background: var(--accent);
+  background: var(--header-bg);
   color: #fff;
   padding: 1.1rem 1rem 1.2rem;
   padding-top: calc(1.1rem + env(safe-area-inset-top));
@@ -193,11 +195,11 @@ button.reset {
     <div class="stock soon"><div>ひじきの煮物<span class="tag">作り置き</span></div><div class="q">2.0食分・<span class="d">あと2日</span></div></div>
     <div class="stock"><div>冷凍からあげ<span class="tag">冷凍</span></div><div class="q">9.0個・<span class="d">あと20日</span></div></div>
     <div class="stock"><div>冷凍ブロッコリー<span class="tag">冷凍</span></div><div class="q">1袋・<span class="d">あと20日</span></div></div>
-    <div class="actions"><a href="#">在庫を編集する（GitHub）</a></div>
+    <div class="actions"><a href="https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json">在庫を編集する（GitHub）</a></div>
   </section>
 
   <footer>
-    生成: 2026-08-19 22:03 JST<br>
+    生成: 2026-08-19 22:08 JST<br>
     <button class="reset" id="reset">チェックをリセット</button>
   </footer>
 </main>

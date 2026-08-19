@@ -24,6 +24,7 @@ PAGE_TEMPLATE = """<!doctype html>
   --muted: #6b7280;
   --line: #e3e6ea;
   --accent: #1f6feb;
+  --header-bg: #1f6feb;
   --warn-bg: #fff4e5;
   --warn-line: #f0a02a;
   --warn-text: #7a4a00;
@@ -37,6 +38,7 @@ PAGE_TEMPLATE = """<!doctype html>
     --muted: #9aa2ad;
     --line: #2a303a;
     --accent: #549bff;
+    --header-bg: #123a72;
     --warn-bg: #3a2a10;
     --warn-line: #b5801f;
     --warn-text: #ffd591;
@@ -54,7 +56,7 @@ body {{
   line-height: 1.6;
 }}
 header {{
-  background: var(--accent);
+  background: var(--header-bg);
   color: #fff;
   padding: 1.1rem 1rem 1.2rem;
   padding-top: calc(1.1rem + env(safe-area-inset-top));
