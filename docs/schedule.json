@@ -1,12 +1,12 @@
 {
-  "date": "2026-08-21",
-  "date_label": "2026年8月21日（金）",
+  "date": "2026-08-22",
+  "date_label": "2026年8月22日（土）",
   "leave_time": "06:03",
   "target_leave": "06:30",
   "latest_leave": "06:35",
   "slack_minutes": 26.5,
   "makespan_minutes": 63.5,
-  "bento_minutes": 24.0,
+  "bento_minutes": 26.0,
   "timeline": [
     {
       "type": "task",
@@ -22,7 +22,7 @@
     {
       "type": "task",
       "id": "bento_1",
-      "name": "冷凍ブロッコリーをレンジ加熱",
+      "name": "冷凍ブロッコリーといんげんを耐熱容器に入れレンジ加熱",
       "start": "05:00",
       "end": "05:03",
       "seconds": 180,
@@ -66,10 +66,10 @@
     {
       "type": "task",
       "id": "bento_2",
-      "name": "卵3個を割り、ひじき煮1食分と調味料を混ぜる",
+      "name": "甘酢あんの調味料（醤油・酢・砂糖・ケチャップ・水）を混ぜておく",
       "start": "05:07",
-      "end": "05:10",
-      "seconds": 180,
+      "end": "05:09",
+      "seconds": 120,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -88,20 +88,9 @@
     {
       "type": "task",
       "id": "bento_3",
-      "name": "卵液を巻きながら厚焼き卵を焼く",
-      "start": "05:10",
-      "end": "05:17",
-      "seconds": 420,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_4",
-      "name": "卵焼きを取り出して粗熱を取る",
-      "start": "05:17",
-      "end": "05:21",
+      "name": "冷凍からあげをレンジで加熱",
+      "start": "05:09",
+      "end": "05:13",
       "seconds": 240,
       "attended": false,
       "background": false,
@@ -113,11 +102,22 @@
     },
     {
       "type": "task",
+      "id": "bento_4",
+      "name": "野菜の水気をきり、ブロッコリーはおかか醤油、いんげんはめんつゆごまで和える",
+      "start": "05:13",
+      "end": "05:17",
+      "seconds": 240,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
       "id": "bento_5",
-      "name": "ブロッコリーの水気を切ってめんつゆ・マヨで和える",
-      "start": "05:21",
-      "end": "05:23",
-      "seconds": 120,
+      "name": "フライパンで甘酢だれを煮立て、からあげを絡める",
+      "start": "05:17",
+      "end": "05:21",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -125,17 +125,17 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "残りのひじき煮をカップに詰める",
-      "start": "05:23",
-      "end": "05:24",
-      "seconds": 60,
-      "attended": true,
+      "name": "おかずを бatに広げて粗熱を取る",
+      "start": "05:21",
+      "end": "05:26",
+      "seconds": 300,
+      "attended": false,
       "background": false,
       "kind": "bento"
     },
     {
       "type": "gap",
-      "seconds": 780
+      "seconds": 960
     },
     {
       "type": "task",
@@ -173,7 +173,7 @@
     {
       "type": "task",
       "id": "bento_7",
-      "name": "卵焼きを切り、おかずを詰める",
+      "name": "おかずを弁当箱に詰める",
       "start": "05:55",
       "end": "05:59",
       "seconds": 240,
@@ -194,74 +194,72 @@
     }
   ],
   "menu": {
-    "menu_name": "ひじき入り卵焼き弁当",
+    "menu_name": "からあげの甘酢あん弁当",
     "items": [
       {
         "name": "ごはん",
-        "note": "炊きたてを詰めて粗熱を取る。",
+        "note": "炊きたてを弁当箱に詰め、粗熱を取る。",
         "uses_stock": []
       },
       {
-        "name": "ひじき入り厚焼き卵",
-        "note": "卵3個に作り置きのひじき煮1食分を混ぜて厚めに焼く。",
+        "name": "からあげの甘酢あん",
+        "note": "冷凍からあげをレンジ加熱し、醤油・酢・砂糖・ケチャップのたれをフライパンで煮立てて絡める。",
         "uses_stock": [
-          "hijiki"
+          "karaage"
         ]
       },
       {
-        "name": "ひじきの煮物",
-        "note": "残り1食分をそのままカップに詰めて使い切り。",
-        "uses_stock": [
-          "hijiki"
-        ]
-      },
-      {
-        "name": "ブロッコリーのめんつゆ和え",
-        "note": "レンジ加熱後、めんつゆ少々とマヨで和える。",
+        "name": "ブロッコリーのおかか醤油和え",
+        "note": "冷凍ブロッコリーをレンジ加熱し、醤油少々とかつお節（なければめんつゆ）で和える。",
         "uses_stock": [
           "broccoli"
         ]
+      },
+      {
+        "name": "いんげんのごま和え",
+        "note": "冷凍いんげんをレンジ加熱して食べやすく切り、めんつゆ＋すりごまで和える。",
+        "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍ブロッコリーをレンジ加熱",
+        "name": "冷凍ブロッコリーといんげんを耐熱容器に入れレンジ加熱",
         "minutes": 3,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "卵3個を割り、ひじき煮1食分と調味料を混ぜる",
-        "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "卵液を巻きながら厚焼き卵を焼く",
-        "minutes": 7,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "卵焼きを取り出して粗熱を取る",
-        "minutes": 4,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "ブロッコリーの水気を切ってめんつゆ・マヨで和える",
+        "name": "甘酢あんの調味料（醤油・酢・砂糖・ケチャップ・水）を混ぜておく",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "残りのひじき煮をカップに詰める",
-        "minutes": 1,
+        "name": "冷凍からあげをレンジで加熱",
+        "minutes": 4,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "野菜の水気をきり、ブロッコリーはおかか醤油、いんげんはめんつゆごまで和える",
+        "minutes": 4,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "卵焼きを切り、おかずを詰める",
+        "name": "フライパンで甘酢だれを煮立て、からあげを絡める",
+        "minutes": 4,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "おかずを бatに広げて粗熱を取る",
+        "minutes": 5,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "おかずを弁当箱に詰める",
         "minutes": 4,
         "attended": true,
         "needs_rice": true
@@ -269,18 +267,18 @@
     ],
     "stock_consumed": [
       {
-        "id": "hijiki",
-        "quantity": 2
+        "id": "karaage",
+        "quantity": 4
       },
       {
         "id": "broccoli",
-        "quantity": 0.3
+        "quantity": 0.4
       }
     ],
-    "comment": "期限が明日までのひじき煮を、卵焼きの具と副菜に分けて使い切りました。昨日のからあげと主菜がかぶらないよう卵メインにしています。",
+    "comment": "期限が同じ在庫のうちブロッコリーは0.4袋を今日で使い切り、からあげは甘酢あんにして一昨日の塩味とは別物に仕上げました。甘酢だれは前夜に混ぜておくと朝は絡めるだけです。",
     "_usage": {
-      "input_tokens": 2699,
-      "output_tokens": 1085
+      "input_tokens": 2726,
+      "output_tokens": 1564
     }
   },
   "stock": [
@@ -288,28 +286,15 @@
       "id": "karaage",
       "name": "冷凍からあげ",
       "kind": "frozen",
-      "quantity": 8.0,
+      "quantity": 4.0,
       "unit": "個",
       "added": "2026-08-10",
       "best_before": "",
       "expiry": "2026-09-09",
-      "days_left": 19
-    },
-    {
-      "id": "broccoli",
-      "name": "冷凍ブロッコリー",
-      "kind": "frozen",
-      "quantity": 0.4,
-      "unit": "袋",
-      "added": "2026-08-10",
-      "best_before": "",
-      "expiry": "2026-09-09",
-      "days_left": 19
+      "days_left": 18
     }
   ],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
-  "warnings": [
-    "ひじきの煮物 の期限が近づいています（あと1日）"
-  ],
-  "generated_at": "2026-08-20 22:00 JST"
+  "warnings": [],
+  "generated_at": "2026-08-21 21:58 JST"
 }
