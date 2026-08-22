@@ -1,6 +1,6 @@
 {
-  "date": "2026-08-22",
-  "date_label": "2026年8月22日（土）",
+  "date": "2026-08-23",
+  "date_label": "2026年8月23日（日）",
   "leave_time": "06:03",
   "target_leave": "06:30",
   "latest_leave": "06:35",
@@ -22,7 +22,7 @@
     {
       "type": "task",
       "id": "bento_1",
-      "name": "冷凍ブロッコリーといんげんを耐熱容器に入れレンジ加熱",
+      "name": "冷凍ブロッコリーといんげんをレンジ解凍する",
       "start": "05:00",
       "end": "05:03",
       "seconds": 180,
@@ -66,7 +66,7 @@
     {
       "type": "task",
       "id": "bento_2",
-      "name": "甘酢あんの調味料（醤油・酢・砂糖・ケチャップ・水）を混ぜておく",
+      "name": "卵2個を溶いて塩こしょう・マヨネーズ少量を混ぜる",
       "start": "05:07",
       "end": "05:09",
       "seconds": 120,
@@ -88,25 +88,21 @@
     {
       "type": "task",
       "id": "bento_3",
-      "name": "冷凍からあげをレンジで加熱",
+      "name": "解凍した野菜の水気をしっかり切る",
       "start": "05:09",
-      "end": "05:13",
-      "seconds": 240,
-      "attended": false,
+      "end": "05:11",
+      "seconds": 120,
+      "attended": true,
       "background": false,
       "kind": "bento"
     },
     {
-      "type": "gap",
-      "seconds": 240
-    },
-    {
       "type": "task",
       "id": "bento_4",
-      "name": "野菜の水気をきり、ブロッコリーはおかか醤油、いんげんはめんつゆごまで和える",
-      "start": "05:13",
-      "end": "05:17",
-      "seconds": 240,
+      "name": "フライパンで卵を半熟に炒めて取り出す",
+      "start": "05:11",
+      "end": "05:14",
+      "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -114,9 +110,9 @@
     {
       "type": "task",
       "id": "bento_5",
-      "name": "フライパンで甘酢だれを煮立て、からあげを絡める",
-      "start": "05:17",
-      "end": "05:21",
+      "name": "ブロッコリーを炒めてケチャップと醤油で味付けし、卵を戻す",
+      "start": "05:14",
+      "end": "05:18",
       "seconds": 240,
       "attended": true,
       "background": false,
@@ -125,9 +121,9 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "おかずを бatに広げて粗熱を取る",
-      "start": "05:21",
-      "end": "05:26",
+      "name": "炒め物をバットに広げて粗熱を取る",
+      "start": "05:18",
+      "end": "05:23",
       "seconds": 300,
       "attended": false,
       "background": false,
@@ -135,7 +131,22 @@
     },
     {
       "type": "gap",
-      "seconds": 960
+      "seconds": 300
+    },
+    {
+      "type": "task",
+      "id": "bento_7",
+      "name": "いんげんをめんつゆと鰹節で和える",
+      "start": "05:23",
+      "end": "05:26",
+      "seconds": 180,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "gap",
+      "seconds": 660
     },
     {
       "type": "task",
@@ -172,8 +183,8 @@
     },
     {
       "type": "task",
-      "id": "bento_7",
-      "name": "おかずを弁当箱に詰める",
+      "id": "bento_8",
+      "name": "おかずを弁当箱に詰めて仕上げる",
       "start": "05:55",
       "end": "05:59",
       "seconds": 240,
@@ -194,91 +205,84 @@
     }
   ],
   "menu": {
-    "menu_name": "からあげの甘酢あん弁当",
+    "menu_name": "卵とブロッコリーのケチャップ炒め弁当",
     "items": [
       {
         "name": "ごはん",
-        "note": "炊きたてを弁当箱に詰め、粗熱を取る。",
+        "note": "炊きあがりを弁当箱に詰め、粗熱を取る。",
         "uses_stock": []
       },
       {
-        "name": "からあげの甘酢あん",
-        "note": "冷凍からあげをレンジ加熱し、醤油・酢・砂糖・ケチャップのたれをフライパンで煮立てて絡める。",
-        "uses_stock": [
-          "karaage"
-        ]
+        "name": "卵とブロッコリーのケチャップ炒め",
+        "note": "溶き卵を半熟に炒めて一度取り出し、解凍したブロッコリーをケチャップ・少量の醤油で炒めて卵を戻す。",
+        "uses_stock": []
       },
       {
-        "name": "ブロッコリーのおかか醤油和え",
-        "note": "冷凍ブロッコリーをレンジ加熱し、醤油少々とかつお節（なければめんつゆ）で和える。",
-        "uses_stock": [
-          "broccoli"
-        ]
+        "name": "いんげんのめんつゆおかか和え",
+        "note": "冷凍いんげんをレンジ加熱し、めんつゆと鰹節で和える。",
+        "uses_stock": []
       },
       {
-        "name": "いんげんのごま和え",
-        "note": "冷凍いんげんをレンジ加熱して食べやすく切り、めんつゆ＋すりごまで和える。",
+        "name": "塩こしょうの卵そぼろ添え",
+        "note": "炒め残しの卵を細かくほぐし、塩こしょうで味を締めてごはんの上に散らす。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍ブロッコリーといんげんを耐熱容器に入れレンジ加熱",
+        "name": "冷凍ブロッコリーといんげんをレンジ解凍する",
         "minutes": 3,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "甘酢あんの調味料（醤油・酢・砂糖・ケチャップ・水）を混ぜておく",
+        "name": "卵2個を溶いて塩こしょう・マヨネーズ少量を混ぜる",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "冷凍からあげをレンジで加熱",
-        "minutes": 4,
-        "attended": false,
+        "name": "解凍した野菜の水気をしっかり切る",
+        "minutes": 2,
+        "attended": true,
         "needs_rice": false
       },
       {
-        "name": "野菜の水気をきり、ブロッコリーはおかか醤油、いんげんはめんつゆごまで和える",
+        "name": "フライパンで卵を半熟に炒めて取り出す",
+        "minutes": 3,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "ブロッコリーを炒めてケチャップと醤油で味付けし、卵を戻す",
         "minutes": 4,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "フライパンで甘酢だれを煮立て、からあげを絡める",
-        "minutes": 4,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "おかずを бatに広げて粗熱を取る",
+        "name": "炒め物をバットに広げて粗熱を取る",
         "minutes": 5,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "おかずを弁当箱に詰める",
+        "name": "いんげんをめんつゆと鰹節で和える",
+        "minutes": 3,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "おかずを弁当箱に詰めて仕上げる",
         "minutes": 4,
         "attended": true,
         "needs_rice": true
       }
     ],
-    "stock_consumed": [
-      {
-        "id": "karaage",
-        "quantity": 4
-      },
-      {
-        "id": "broccoli",
-        "quantity": 0.4
-      }
-    ],
-    "comment": "期限が同じ在庫のうちブロッコリーは0.4袋を今日で使い切り、からあげは甘酢あんにして一昨日の塩味とは別物に仕上げました。甘酢だれは前夜に混ぜておくと朝は絡めるだけです。",
+    "stock_consumed": [],
+    "comment": "3日以内にからあげが2回出ているので今日は卵メインにしました（からあげは期限まで17日あるので明後日以降に回してOK）。前夜に卵を溶いて冷蔵しておくと朝が2分短縮できます。",
     "_usage": {
-      "input_tokens": 2726,
-      "output_tokens": 1564
+      "input_tokens": 2747,
+      "output_tokens": 1220
     }
   },
   "stock": [
@@ -291,10 +295,10 @@
       "added": "2026-08-10",
       "best_before": "",
       "expiry": "2026-09-09",
-      "days_left": 18
+      "days_left": 17
     }
   ],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-08-21 21:58 JST"
+  "generated_at": "2026-08-22 21:50 JST"
 }

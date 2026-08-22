@@ -1,6 +1,6 @@
 {
   "_comment": "冷凍庫・作り置きの在庫。スマホからGitHubのWeb画面で直接編集できます。kind は frozen(冷凍) / prepared(作り置き) / pantry(常温ストック)。best_before を空にすると kind ごとの既定日数（frozen=30日, prepared=4日, pantry=180日）で自動判定します。",
-  "updated": "2026-08-22",
+  "updated": "2026-08-23",
   "items": [
     {
       "id": "karaage",
