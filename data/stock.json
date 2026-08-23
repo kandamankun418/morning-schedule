@@ -1,12 +1,12 @@
 {
   "_comment": "冷凍庫・作り置きの在庫。スマホからGitHubのWeb画面で直接編集できます。kind は frozen(冷凍) / prepared(作り置き) / pantry(常温ストック)。best_before を空にすると kind ごとの既定日数（frozen=30日, prepared=4日, pantry=180日）で自動判定します。",
-  "updated": "2026-08-23",
+  "updated": "2026-08-24",
   "items": [
     {
       "id": "karaage",
       "name": "冷凍からあげ",
       "kind": "frozen",
-      "quantity": 4.0,
+      "quantity": 1.0,
       "unit": "個",
       "added": "2026-08-10",
       "best_before": ""

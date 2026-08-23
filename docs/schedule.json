@@ -1,12 +1,12 @@
 {
-  "date": "2026-08-23",
-  "date_label": "2026年8月23日（日）",
-  "leave_time": "06:03",
+  "date": "2026-08-24",
+  "date_label": "2026年8月24日（月）",
+  "leave_time": "06:02",
   "target_leave": "06:30",
   "latest_leave": "06:35",
-  "slack_minutes": 26.5,
-  "makespan_minutes": 63.5,
-  "bento_minutes": 26.0,
+  "slack_minutes": 27.5,
+  "makespan_minutes": 62.5,
+  "bento_minutes": 22.0,
   "timeline": [
     {
       "type": "task",
@@ -22,10 +22,10 @@
     {
       "type": "task",
       "id": "bento_1",
-      "name": "冷凍ブロッコリーといんげんをレンジ解凍する",
+      "name": "冷凍からあげ3個を耐熱皿に並べレンジ加熱（600W約2分）",
       "start": "05:00",
-      "end": "05:03",
-      "seconds": 180,
+      "end": "05:02",
+      "seconds": 120,
       "attended": false,
       "background": false,
       "kind": "bento"
@@ -40,6 +40,17 @@
       "attended": true,
       "background": false,
       "kind": "fixed"
+    },
+    {
+      "type": "task",
+      "id": "bento_2",
+      "name": "冷凍いんげんとブロッコリーを耐熱容器に入れレンジ加熱（600W約2分）",
+      "start": "05:02",
+      "end": "05:04",
+      "seconds": 120,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
     },
     {
       "type": "task",
@@ -65,8 +76,8 @@
     },
     {
       "type": "task",
-      "id": "bento_2",
-      "name": "卵2個を溶いて塩こしょう・マヨネーズ少量を混ぜる",
+      "id": "bento_3",
+      "name": "照り焼きダレを作る（醤油・みりん・砂糖 各大さじ1/2〜1を混ぜる）",
       "start": "05:07",
       "end": "05:09",
       "seconds": 120,
@@ -87,21 +98,10 @@
     },
     {
       "type": "task",
-      "id": "bento_3",
-      "name": "解凍した野菜の水気をしっかり切る",
-      "start": "05:09",
-      "end": "05:11",
-      "seconds": 120,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
       "id": "bento_4",
-      "name": "フライパンで卵を半熟に炒めて取り出す",
-      "start": "05:11",
-      "end": "05:14",
+      "name": "フライパンを熱し、ブロッコリーを油少々でさっと炒めて塩こしょう、取り出す",
+      "start": "05:09",
+      "end": "05:12",
       "seconds": 180,
       "attended": true,
       "background": false,
@@ -110,9 +110,9 @@
     {
       "type": "task",
       "id": "bento_5",
-      "name": "ブロッコリーを炒めてケチャップと醤油で味付けし、卵を戻す",
-      "start": "05:14",
-      "end": "05:18",
+      "name": "同じフライパンでからあげを軽く焼き、タレを絡めて照りを出す",
+      "start": "05:12",
+      "end": "05:16",
       "seconds": 240,
       "attended": true,
       "background": false,
@@ -121,32 +121,28 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "炒め物をバットに広げて粗熱を取る",
+      "name": "いんげんの水気を切り、めんつゆとマヨネーズで和える",
+      "start": "05:16",
+      "end": "05:18",
+      "seconds": 120,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_7",
+      "name": "おかずをバットに広げて粗熱を取る",
       "start": "05:18",
-      "end": "05:23",
-      "seconds": 300,
+      "end": "05:22",
+      "seconds": 240,
       "attended": false,
       "background": false,
       "kind": "bento"
     },
     {
       "type": "gap",
-      "seconds": 300
-    },
-    {
-      "type": "task",
-      "id": "bento_7",
-      "name": "いんげんをめんつゆと鰹節で和える",
-      "start": "05:23",
-      "end": "05:26",
-      "seconds": 180,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "gap",
-      "seconds": 660
+      "seconds": 1140
     },
     {
       "type": "task",
@@ -184,10 +180,10 @@
     {
       "type": "task",
       "id": "bento_8",
-      "name": "おかずを弁当箱に詰めて仕上げる",
+      "name": "冷めたおかずをお弁当箱に詰める",
       "start": "05:55",
-      "end": "05:59",
-      "seconds": 240,
+      "end": "05:58",
+      "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -196,8 +192,8 @@
       "type": "task",
       "id": "bento_pack",
       "name": "お弁当に詰める",
-      "start": "05:59",
-      "end": "06:03",
+      "start": "05:58",
+      "end": "06:02",
       "seconds": 240,
       "attended": true,
       "background": false,
@@ -205,84 +201,91 @@
     }
   ],
   "menu": {
-    "menu_name": "卵とブロッコリーのケチャップ炒め弁当",
+    "menu_name": "からあげの甘辛照り焼き弁当",
     "items": [
       {
         "name": "ごはん",
-        "note": "炊きあがりを弁当箱に詰め、粗熱を取る。",
+        "note": "炊きたてをお弁当箱に広げて粗熱を取る。",
         "uses_stock": []
       },
       {
-        "name": "卵とブロッコリーのケチャップ炒め",
-        "note": "溶き卵を半熟に炒めて一度取り出し、解凍したブロッコリーをケチャップ・少量の醤油で炒めて卵を戻す。",
+        "name": "からあげの甘辛照り焼き",
+        "note": "冷凍からあげをレンジで解凍加熱し、フライパンで醤油・みりん・砂糖のタレを絡める。",
+        "uses_stock": [
+          "karaage"
+        ]
+      },
+      {
+        "name": "いんげんのめんつゆマヨ和え",
+        "note": "冷凍いんげんをレンジ加熱し、めんつゆ少々とマヨネーズで和える。",
         "uses_stock": []
       },
       {
-        "name": "いんげんのめんつゆおかか和え",
-        "note": "冷凍いんげんをレンジ加熱し、めんつゆと鰹節で和える。",
-        "uses_stock": []
-      },
-      {
-        "name": "塩こしょうの卵そぼろ添え",
-        "note": "炒め残しの卵を細かくほぐし、塩こしょうで味を締めてごはんの上に散らす。",
+        "name": "ブロッコリーの塩こしょうソテー",
+        "note": "冷凍ブロッコリーを解凍し、フライパンの端で軽く炒めて塩こしょう。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍ブロッコリーといんげんをレンジ解凍する",
-        "minutes": 3,
+        "name": "冷凍からあげ3個を耐熱皿に並べレンジ加熱（600W約2分）",
+        "minutes": 2,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "卵2個を溶いて塩こしょう・マヨネーズ少量を混ぜる",
+        "name": "冷凍いんげんとブロッコリーを耐熱容器に入れレンジ加熱（600W約2分）",
+        "minutes": 2,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "照り焼きダレを作る（醤油・みりん・砂糖 各大さじ1/2〜1を混ぜる）",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "解凍した野菜の水気をしっかり切る",
+        "name": "フライパンを熱し、ブロッコリーを油少々でさっと炒めて塩こしょう、取り出す",
+        "minutes": 3,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "同じフライパンでからあげを軽く焼き、タレを絡めて照りを出す",
+        "minutes": 4,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "いんげんの水気を切り、めんつゆとマヨネーズで和える",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "フライパンで卵を半熟に炒めて取り出す",
-        "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "ブロッコリーを炒めてケチャップと醤油で味付けし、卵を戻す",
+        "name": "おかずをバットに広げて粗熱を取る",
         "minutes": 4,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "炒め物をバットに広げて粗熱を取る",
-        "minutes": 5,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "いんげんをめんつゆと鰹節で和える",
+        "name": "冷めたおかずをお弁当箱に詰める",
         "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "おかずを弁当箱に詰めて仕上げる",
-        "minutes": 4,
         "attended": true,
         "needs_rice": true
       }
     ],
-    "stock_consumed": [],
-    "comment": "3日以内にからあげが2回出ているので今日は卵メインにしました（からあげは期限まで17日あるので明後日以降に回してOK）。前夜に卵を溶いて冷蔵しておくと朝が2分短縮できます。",
+    "stock_consumed": [
+      {
+        "id": "karaage",
+        "quantity": 3
+      }
+    ],
+    "comment": "昨日が卵メインだったので今日は卵を外し、からあげも前回と味付けを変えて甘辛照り焼きにしました。残り1個のからあげは近いうちに使い切ると在庫がすっきりします。",
     "_usage": {
-      "input_tokens": 2747,
-      "output_tokens": 1220
+      "input_tokens": 2837,
+      "output_tokens": 1407
     }
   },
   "stock": [
@@ -290,15 +293,15 @@
       "id": "karaage",
       "name": "冷凍からあげ",
       "kind": "frozen",
-      "quantity": 4.0,
+      "quantity": 1.0,
       "unit": "個",
       "added": "2026-08-10",
       "best_before": "",
       "expiry": "2026-09-09",
-      "days_left": 17
+      "days_left": 16
     }
   ],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-08-22 21:50 JST"
+  "generated_at": "2026-08-23 21:51 JST"
 }
