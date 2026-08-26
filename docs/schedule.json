@@ -1,12 +1,12 @@
 {
-  "date": "2026-08-26",
-  "date_label": "2026年8月26日（水）",
-  "leave_time": "05:59",
+  "date": "2026-08-27",
+  "date_label": "2026年8月27日（木）",
+  "leave_time": "06:03",
   "target_leave": "06:30",
   "latest_leave": "06:35",
-  "slack_minutes": 30.5,
-  "makespan_minutes": 59.5,
-  "bento_minutes": 34.0,
+  "slack_minutes": 26.5,
+  "makespan_minutes": 63.5,
+  "bento_minutes": 29.0,
   "timeline": [
     {
       "type": "task",
@@ -55,10 +55,10 @@
     {
       "type": "task",
       "id": "bento_1",
-      "name": "小鍋に湯を沸かす",
+      "name": "米を研いで炊飯スタート",
       "start": "05:07",
-      "end": "05:10",
-      "seconds": 180,
+      "end": "05:11",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -77,46 +77,46 @@
     {
       "type": "task",
       "id": "bento_2",
-      "name": "卵を入れて固ゆでにする(9分)",
-      "start": "05:10",
-      "end": "05:19",
-      "seconds": 540,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_3",
-      "name": "冷凍ブロッコリー・いんげんをレンジにセットして加熱",
-      "start": "05:19",
-      "end": "05:21",
-      "seconds": 120,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_4",
-      "name": "ゆで卵を冷水にとって冷やす",
-      "start": "05:21",
-      "end": "05:23",
-      "seconds": 120,
+      "name": "冷凍ブロッコリーを耐熱容器に入れてレンジ加熱",
+      "start": "05:11",
+      "end": "05:14",
+      "seconds": 180,
       "attended": false,
       "background": false,
       "kind": "bento"
     },
     {
       "type": "gap",
-      "seconds": 780
+      "seconds": 180
+    },
+    {
+      "type": "task",
+      "id": "bento_3",
+      "name": "卵3個を割って酒・塩こしょうで溶く／いんげんを冷凍庫から出す",
+      "start": "05:14",
+      "end": "05:17",
+      "seconds": 180,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_4",
+      "name": "ブロッコリーの水気を切ってめんつゆ・ごまで和える",
+      "start": "05:17",
+      "end": "05:20",
+      "seconds": 180,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
     },
     {
       "type": "task",
       "id": "bento_5",
-      "name": "いんげんをマヨ・醤油・ごまで和える",
-      "start": "05:23",
-      "end": "05:26",
+      "name": "フライパンでいんげんを油炒め（1〜2分）",
+      "start": "05:20",
+      "end": "05:23",
       "seconds": 180,
       "attended": true,
       "background": false,
@@ -125,20 +125,9 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "卵の殻をむいて半分に切る",
-      "start": "05:26",
-      "end": "05:29",
-      "seconds": 180,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_7",
-      "name": "フライパンで甘辛タレを作り卵を煮からめる",
-      "start": "05:29",
-      "end": "05:33",
+      "name": "卵液を流し入れて大きく混ぜ、半熟手前で火を止める",
+      "start": "05:23",
+      "end": "05:27",
       "seconds": 240,
       "attended": true,
       "background": false,
@@ -146,21 +135,10 @@
     },
     {
       "type": "task",
-      "id": "bento_8",
-      "name": "同じフライパンでブロッコリーをケチャップソテー",
-      "start": "05:33",
-      "end": "05:36",
-      "seconds": 180,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_9",
-      "name": "おかずの粗熱を取る",
-      "start": "05:36",
-      "end": "05:41",
+      "id": "bento_7",
+      "name": "おかずをバットに広げて粗熱を取る",
+      "start": "05:27",
+      "end": "05:32",
       "seconds": 300,
       "attended": false,
       "background": false,
@@ -168,7 +146,7 @@
     },
     {
       "type": "gap",
-      "seconds": 60
+      "seconds": 600
     },
     {
       "type": "task",
@@ -183,21 +161,10 @@
     },
     {
       "type": "task",
-      "id": "bento_pack",
-      "name": "お弁当に詰める",
-      "start": "05:47",
-      "end": "05:51",
-      "seconds": 240,
-      "attended": true,
-      "background": false,
-      "kind": "fixed"
-    },
-    {
-      "type": "task",
       "id": "brush_teeth",
       "name": "歯を磨く",
-      "start": "05:51",
-      "end": "05:56",
+      "start": "05:47",
+      "end": "05:52",
       "seconds": 300,
       "attended": true,
       "background": false,
@@ -207,103 +174,119 @@
       "type": "task",
       "id": "change_clothes",
       "name": "着替える",
-      "start": "05:56",
-      "end": "05:59",
+      "start": "05:52",
+      "end": "05:55",
       "seconds": 180,
+      "attended": true,
+      "background": false,
+      "kind": "fixed"
+    },
+    {
+      "type": "task",
+      "id": "bento_8",
+      "name": "おかずを詰めて、のり・ごまをふる",
+      "start": "05:55",
+      "end": "05:59",
+      "seconds": 240,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_pack",
+      "name": "お弁当に詰める",
+      "start": "05:59",
+      "end": "06:03",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "fixed"
     }
   ],
   "menu": {
-    "menu_name": "ゆで卵の甘辛照り焼き弁当",
+    "menu_name": "ふわとろ卵といんげんの塩炒め弁当",
     "items": [
       {
         "name": "ごはん",
-        "note": "炊きたてを詰めて粗熱を取る。",
+        "note": "炊飯器で炊いて、お弁当箱に詰めて粗熱を取る。",
         "uses_stock": []
       },
       {
-        "name": "ゆで卵の甘辛照り焼き",
-        "note": "固ゆで卵を半分に切り、醤油・みりん・砂糖・酒のタレをフライパンで煮からめる。",
+        "name": "ふわとろ卵といんげんの塩炒め",
+        "note": "卵3個を酒少々・塩こしょうで溶き、油をひいたフライパンで冷凍いんげんと一緒に大きく混ぜて半熟手前で火を止める。",
         "uses_stock": []
       },
       {
-        "name": "いんげんのごまマヨ和え",
-        "note": "冷凍いんげんをレンジ加熱し、マヨネーズと醤油少々で和える。",
+        "name": "ブロッコリーのめんつゆごま和え",
+        "note": "冷凍ブロッコリーをレンジ加熱し、水気を切ってめんつゆと白ごま（または擦りごま）で和える。",
         "uses_stock": []
       },
       {
-        "name": "ブロッコリーのケチャップソテー",
-        "note": "レンジ解凍した冷凍ブロッコリーをケチャップと塩こしょうで軽く炒める(タレの後のフライパンでOK)。",
+        "name": "焼きのり・ごま少々（ごはんの上）",
+        "note": "詰めたごはんが少し冷めたら、のりとごまをふる。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "小鍋に湯を沸かす",
-        "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "卵を入れて固ゆでにする(9分)",
-        "minutes": 9,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "冷凍ブロッコリー・いんげんをレンジにセットして加熱",
-        "minutes": 2,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "ゆで卵を冷水にとって冷やす",
-        "minutes": 2,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "いんげんをマヨ・醤油・ごまで和える",
-        "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "卵の殻をむいて半分に切る",
-        "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "フライパンで甘辛タレを作り卵を煮からめる",
+        "name": "米を研いで炊飯スタート",
         "minutes": 4,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "同じフライパンでブロッコリーをケチャップソテー",
+        "name": "冷凍ブロッコリーを耐熱容器に入れてレンジ加熱",
+        "minutes": 3,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "卵3個を割って酒・塩こしょうで溶く／いんげんを冷凍庫から出す",
         "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "おかずの粗熱を取る",
+        "name": "ブロッコリーの水気を切ってめんつゆ・ごまで和える",
+        "minutes": 3,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "フライパンでいんげんを油炒め（1〜2分）",
+        "minutes": 3,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "卵液を流し入れて大きく混ぜ、半熟手前で火を止める",
+        "minutes": 4,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "おかずをバットに広げて粗熱を取る",
         "minutes": 5,
         "attended": false,
         "needs_rice": false
+      },
+      {
+        "name": "おかずを詰めて、のり・ごまをふる",
+        "minutes": 4,
+        "attended": true,
+        "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "卵焼き・からあげが続いていたので、同じ卵でも食感の違う「ゆで卵の甘辛照り焼き」にしました。前日夜に卵をゆでてタレに漬けておけば、朝は詰めるだけで10分短縮できます。",
+    "comment": "3日連続で卵の照り焼き・厚焼き系が続いたので、今日は塩味のふわとろ炒めで味の方向を変えました。在庫が空なので、帰りに鶏肉や冷凍ハンバーグなど主菜になるものを買い足すと明日以降ラクになります。",
     "_usage": {
-      "input_tokens": 2993,
-      "output_tokens": 2308
+      "input_tokens": 3075,
+      "output_tokens": 1606
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-08-25 21:57 JST"
+  "generated_at": "2026-08-26 22:03 JST"
 }
