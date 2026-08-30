@@ -1,12 +1,12 @@
 {
-  "date": "2026-08-31",
-  "date_label": "2026年8月31日（月）",
-  "leave_time": "06:00",
+  "date": "2026-09-01",
+  "date_label": "2026年9月1日（火）",
+  "leave_time": "06:02",
   "target_leave": "06:30",
   "latest_leave": "06:35",
-  "slack_minutes": 29.5,
-  "makespan_minutes": 60.5,
-  "bento_minutes": 27.0,
+  "slack_minutes": 27.5,
+  "makespan_minutes": 62.5,
+  "bento_minutes": 28.0,
   "timeline": [
     {
       "type": "task",
@@ -22,10 +22,10 @@
     {
       "type": "task",
       "id": "bento_1",
-      "name": "冷凍からあげをレンジで加熱",
+      "name": "湯を沸かす",
       "start": "05:00",
-      "end": "05:04",
-      "seconds": 240,
+      "end": "05:03",
+      "seconds": 180,
       "attended": false,
       "background": false,
       "kind": "bento"
@@ -66,10 +66,10 @@
     {
       "type": "task",
       "id": "bento_2",
-      "name": "冷凍ブロッコリーといんげんをレンジで加熱",
-      "start": "05:04",
-      "end": "05:08",
-      "seconds": 240,
+      "name": "卵をそっと入れて9分ゆでる（タイマー）",
+      "start": "05:03",
+      "end": "05:12",
+      "seconds": 540,
       "attended": false,
       "background": false,
       "kind": "bento"
@@ -88,21 +88,25 @@
     {
       "type": "task",
       "id": "bento_3",
-      "name": "マヨ醤油だれを小皿で合わせる（マヨ・醤油・みりん）",
-      "start": "05:08",
-      "end": "05:10",
-      "seconds": 120,
-      "attended": true,
+      "name": "冷凍ブロッコリーといんげんをレンジ加熱",
+      "start": "05:12",
+      "end": "05:15",
+      "seconds": 180,
+      "attended": false,
       "background": false,
       "kind": "bento"
     },
     {
+      "type": "gap",
+      "seconds": 450
+    },
+    {
       "type": "task",
       "id": "bento_4",
-      "name": "からあげをフライパンで表面カリッと焼く",
-      "start": "05:10",
-      "end": "05:13",
-      "seconds": 180,
+      "name": "野菜の水気をきって副菜2品を味付けする",
+      "start": "05:15",
+      "end": "05:19",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -110,10 +114,10 @@
     {
       "type": "task",
       "id": "bento_5",
-      "name": "火を止めてたれをからめる",
-      "start": "05:13",
-      "end": "05:15",
-      "seconds": 120,
+      "name": "卵を冷水に取って殻をむく",
+      "start": "05:19",
+      "end": "05:22",
+      "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -121,39 +125,17 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "いんげんを切って醤油・かつお節で和える",
-      "start": "05:15",
-      "end": "05:18",
+      "name": "卵を半分に切り、めんつゆだれをからめる",
+      "start": "05:22",
+      "end": "05:25",
       "seconds": 180,
       "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_7",
-      "name": "ブロッコリーの水気をきり塩ごまで和える",
-      "start": "05:18",
-      "end": "05:21",
-      "seconds": 180,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_8",
-      "name": "おかずの粗熱を取る",
-      "start": "05:21",
-      "end": "05:26",
-      "seconds": 300,
-      "attended": false,
       "background": false,
       "kind": "bento"
     },
     {
       "type": "gap",
-      "seconds": 990
+      "seconds": 750
     },
     {
       "type": "task",
@@ -190,11 +172,11 @@
     },
     {
       "type": "task",
-      "id": "bento_9",
-      "name": "ごはんに白ごまをふる",
+      "id": "bento_7",
+      "name": "ごはんにごまをふり、おかずを詰める",
       "start": "05:55",
-      "end": "05:56",
-      "seconds": 60,
+      "end": "05:58",
+      "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -203,8 +185,8 @@
       "type": "task",
       "id": "bento_pack",
       "name": "お弁当に詰める",
-      "start": "05:56",
-      "end": "06:00",
+      "start": "05:58",
+      "end": "06:02",
       "seconds": 240,
       "attended": true,
       "background": false,
@@ -212,94 +194,82 @@
     }
   ],
   "menu": {
-    "menu_name": "からあげのマヨ醤油和え弁当",
+    "menu_name": "めんつゆ味玉弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
-        "note": "炊きあがったごはんを詰め、白ごまをふる。",
+        "note": "炊きあがったごはんを詰めて、白ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍からあげのマヨ醤油和え",
-        "note": "レンジ加熱後にフライパンで表面を焼き、マヨネーズ＋醤油＋みりん少々のたれをからめる。",
+        "name": "めんつゆ味玉（半分切り）",
+        "note": "卵を9分ゆでて殻をむき、半分に切ってめんつゆ＋みりん少々のたれをからめる。",
         "uses_stock": []
       },
       {
-        "name": "いんげんのおかか醤油和え",
-        "note": "レンジ加熱した冷凍いんげんを食べやすく切り、醤油少々とかつお節で和える。",
+        "name": "ブロッコリーのマヨおかか和え",
+        "note": "冷凍ブロッコリーをレンジ加熱し、水気をきってマヨネーズと削り節（なければ醤油少々）で和える。",
         "uses_stock": []
       },
       {
-        "name": "ブロッコリーの塩ごま和え",
-        "note": "レンジ加熱した冷凍ブロッコリーの水気をきり、塩とごま油・白ごまで和える。",
+        "name": "いんげんの甘辛ごま和え",
+        "note": "冷凍いんげんをレンジ加熱し、醤油・砂糖各少々とごまで和える。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍からあげをレンジで加熱",
+        "name": "湯を沸かす",
+        "minutes": 3,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "卵をそっと入れて9分ゆでる（タイマー）",
+        "minutes": 9,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "冷凍ブロッコリーといんげんをレンジ加熱",
+        "minutes": 3,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "野菜の水気をきって副菜2品を味付けする",
         "minutes": 4,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "冷凍ブロッコリーといんげんをレンジで加熱",
-        "minutes": 4,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "マヨ醤油だれを小皿で合わせる（マヨ・醤油・みりん）",
-        "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "からあげをフライパンで表面カリッと焼く",
+        "name": "卵を冷水に取って殻をむく",
         "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "火を止めてたれをからめる",
-        "minutes": 2,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "いんげんを切って醤油・かつお節で和える",
+        "name": "卵を半分に切り、めんつゆだれをからめる",
         "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "ブロッコリーの水気をきり塩ごまで和える",
+        "name": "ごはんにごまをふり、おかずを詰める",
         "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "おかずの粗熱を取る",
-        "minutes": 5,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "ごはんに白ごまをふる",
-        "minutes": 1,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "在庫の登録がないため常備品だけで組みました。卵料理が3日連続だったので今日は卵を休ませ、冷凍からあげをマヨ醤油という新しい味付けにしています。手を動かす時間は約19分で炊飯待ちに収まります。",
+    "comment": "直近3日がからあげ・卵炒め系だったので、卵でも調理法を変えた味玉メインにしました。前夜に卵をゆでてめんつゆに漬けておけば、朝は切って詰めるだけで10分ほど短縮できます。",
     "_usage": {
-      "input_tokens": 3335,
-      "output_tokens": 1968
+      "input_tokens": 3344,
+      "output_tokens": 2179
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-08-30 01:33 JST"
+  "generated_at": "2026-08-31 01:28 JST"
 }
