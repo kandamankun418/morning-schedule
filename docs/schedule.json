@@ -1,12 +1,12 @@
 {
-  "date": "2026-09-01",
-  "date_label": "2026年9月1日（火）",
+  "date": "2026-09-02",
+  "date_label": "2026年9月2日（水）",
   "leave_time": "06:02",
   "target_leave": "06:30",
   "latest_leave": "06:35",
   "slack_minutes": 27.5,
   "makespan_minutes": 62.5,
-  "bento_minutes": 28.0,
+  "bento_minutes": 27.0,
   "timeline": [
     {
       "type": "task",
@@ -22,7 +22,7 @@
     {
       "type": "task",
       "id": "bento_1",
-      "name": "湯を沸かす",
+      "name": "冷凍ブロッコリー・いんげんを耐熱皿に出してレンジ加熱",
       "start": "05:00",
       "end": "05:03",
       "seconds": 180,
@@ -66,11 +66,11 @@
     {
       "type": "task",
       "id": "bento_2",
-      "name": "卵をそっと入れて9分ゆでる（タイマー）",
-      "start": "05:03",
-      "end": "05:12",
-      "seconds": 540,
-      "attended": false,
+      "name": "卵2個を溶き、砂糖・醤油・みりんを混ぜておく",
+      "start": "05:07",
+      "end": "05:10",
+      "seconds": 180,
+      "attended": true,
       "background": false,
       "kind": "bento"
     },
@@ -88,24 +88,20 @@
     {
       "type": "task",
       "id": "bento_3",
-      "name": "冷凍ブロッコリーといんげんをレンジ加熱",
-      "start": "05:12",
-      "end": "05:15",
-      "seconds": 180,
-      "attended": false,
+      "name": "レンチンした野菜の水気をしっかり切る",
+      "start": "05:10",
+      "end": "05:12",
+      "seconds": 120,
+      "attended": true,
       "background": false,
       "kind": "bento"
     },
     {
-      "type": "gap",
-      "seconds": 450
-    },
-    {
       "type": "task",
       "id": "bento_4",
-      "name": "野菜の水気をきって副菜2品を味付けする",
-      "start": "05:15",
-      "end": "05:19",
+      "name": "フライパンでいんげんを炒め、めんつゆをからめる",
+      "start": "05:12",
+      "end": "05:16",
       "seconds": 240,
       "attended": true,
       "background": false,
@@ -114,10 +110,10 @@
     {
       "type": "task",
       "id": "bento_5",
-      "name": "卵を冷水に取って殻をむく",
-      "start": "05:19",
-      "end": "05:22",
-      "seconds": 180,
+      "name": "同じフライパンで卵液を炒りつけ、甘辛そぼろにする",
+      "start": "05:16",
+      "end": "05:21",
+      "seconds": 300,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -125,17 +121,28 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "卵を半分に切り、めんつゆだれをからめる",
-      "start": "05:22",
-      "end": "05:25",
-      "seconds": 180,
+      "name": "ブロッコリーをマヨ・かつお節・醤油少々で和える",
+      "start": "05:21",
+      "end": "05:23",
+      "seconds": 120,
       "attended": true,
       "background": false,
       "kind": "bento"
     },
     {
+      "type": "task",
+      "id": "bento_7",
+      "name": "おかずの粗熱を取る",
+      "start": "05:23",
+      "end": "05:28",
+      "seconds": 300,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
       "type": "gap",
-      "seconds": 750
+      "seconds": 840
     },
     {
       "type": "task",
@@ -172,8 +179,8 @@
     },
     {
       "type": "task",
-      "id": "bento_7",
-      "name": "ごはんにごまをふり、おかずを詰める",
+      "id": "bento_8",
+      "name": "おかずを弁当箱に詰め、ごはんにごまをふる",
       "start": "05:55",
       "end": "05:58",
       "seconds": 180,
@@ -194,82 +201,88 @@
     }
   ],
   "menu": {
-    "menu_name": "めんつゆ味玉弁当",
+    "menu_name": "甘辛卵そぼろ弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
-        "note": "炊きあがったごはんを詰めて、白ごまをふる。",
+        "note": "炊きあがったごはんを弁当箱に詰め、ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "めんつゆ味玉（半分切り）",
-        "note": "卵を9分ゆでて殻をむき、半分に切ってめんつゆ＋みりん少々のたれをからめる。",
+        "name": "甘辛卵そぼろ",
+        "note": "溶き卵に砂糖・醤油・みりんを混ぜ、フライパンで箸4本を使って手早く炒りつける。",
+        "uses_stock": []
+      },
+      {
+        "name": "いんげんのめんつゆ炒め",
+        "note": "冷凍いんげんをレンジ解凍し、油で炒めてめんつゆをからめる。",
         "uses_stock": []
       },
       {
         "name": "ブロッコリーのマヨおかか和え",
-        "note": "冷凍ブロッコリーをレンジ加熱し、水気をきってマヨネーズと削り節（なければ醤油少々）で和える。",
-        "uses_stock": []
-      },
-      {
-        "name": "いんげんの甘辛ごま和え",
-        "note": "冷凍いんげんをレンジ加熱し、醤油・砂糖各少々とごまで和える。",
+        "note": "冷凍ブロッコリーをレンジ加熱し、水気を切ってマヨとかつお節で和える。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "湯を沸かす",
+        "name": "冷凍ブロッコリー・いんげんを耐熱皿に出してレンジ加熱",
         "minutes": 3,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "卵をそっと入れて9分ゆでる（タイマー）",
-        "minutes": 9,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "冷凍ブロッコリーといんげんをレンジ加熱",
+        "name": "卵2個を溶き、砂糖・醤油・みりんを混ぜておく",
         "minutes": 3,
-        "attended": false,
+        "attended": true,
         "needs_rice": false
       },
       {
-        "name": "野菜の水気をきって副菜2品を味付けする",
+        "name": "レンチンした野菜の水気をしっかり切る",
+        "minutes": 2,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "フライパンでいんげんを炒め、めんつゆをからめる",
         "minutes": 4,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "卵を冷水に取って殻をむく",
-        "minutes": 3,
+        "name": "同じフライパンで卵液を炒りつけ、甘辛そぼろにする",
+        "minutes": 5,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "卵を半分に切り、めんつゆだれをからめる",
-        "minutes": 3,
+        "name": "ブロッコリーをマヨ・かつお節・醤油少々で和える",
+        "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "ごはんにごまをふり、おかずを詰める",
+        "name": "おかずの粗熱を取る",
+        "minutes": 5,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "おかずを弁当箱に詰め、ごはんにごまをふる",
         "minutes": 3,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "直近3日がからあげ・卵炒め系だったので、卵でも調理法を変えた味玉メインにしました。前夜に卵をゆでてめんつゆに漬けておけば、朝は切って詰めるだけで10分ほど短縮できます。",
+    "comment": "3日連続で卵の主菜が続いているので、味玉・オムレツとは食感の違う「そぼろ」に変えて飽きを避けました。在庫登録がないので、卵・冷凍野菜の残量を今日のうちに確認しておくと安心です。",
     "_usage": {
-      "input_tokens": 3344,
-      "output_tokens": 2179
+      "input_tokens": 3357,
+      "output_tokens": 1147
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-08-31 01:28 JST"
+  "generated_at": "2026-09-01 04:00 JST"
 }
