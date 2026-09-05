@@ -6,7 +6,7 @@
   "latest_leave": "06:35",
   "slack_minutes": 26.5,
   "makespan_minutes": 63.5,
-  "bento_minutes": 28.0,
+  "bento_minutes": 26.0,
   "timeline": [
     {
       "type": "task",
@@ -22,10 +22,10 @@
     {
       "type": "task",
       "id": "bento_1",
-      "name": "冷凍からあげをレンジ加熱する",
+      "name": "冷凍ブロッコリーといんげんをレンジで解凍する",
       "start": "05:00",
-      "end": "05:04",
-      "seconds": 240,
+      "end": "05:03",
+      "seconds": 180,
       "attended": false,
       "background": false,
       "kind": "bento"
@@ -66,11 +66,11 @@
     {
       "type": "task",
       "id": "bento_2",
-      "name": "冷凍ブロッコリーといんげんをまとめてレンジ加熱する",
-      "start": "05:04",
-      "end": "05:08",
-      "seconds": 240,
-      "attended": false,
+      "name": "卵2個を溶き、塩こしょうと酒を少々混ぜる",
+      "start": "05:07",
+      "end": "05:09",
+      "seconds": 120,
+      "attended": true,
       "background": false,
       "kind": "bento"
     },
@@ -88,10 +88,10 @@
     {
       "type": "task",
       "id": "bento_3",
-      "name": "ブロッコリーの水気を切ってマヨ・こしょうで和える",
-      "start": "05:08",
+      "name": "解凍した野菜の水気をしっかり切る",
+      "start": "05:09",
       "end": "05:11",
-      "seconds": 180,
+      "seconds": 120,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -99,7 +99,7 @@
     {
       "type": "task",
       "id": "bento_4",
-      "name": "いんげんを半分に切り、塩・ごま油・ごまで和える",
+      "name": "フライパンで卵を半熟に炒めて取り出す",
       "start": "05:11",
       "end": "05:14",
       "seconds": 180,
@@ -110,10 +110,10 @@
     {
       "type": "task",
       "id": "bento_5",
-      "name": "フライパンでからあげにめんつゆ・みりんを煮からめる",
+      "name": "同じフライパンでブロッコリーを炒め、醤油・酒・こしょうで味付けし卵を戻す",
       "start": "05:14",
-      "end": "05:19",
-      "seconds": 300,
+      "end": "05:18",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -121,9 +121,20 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "おかずをバットに広げて粗熱を取る",
-      "start": "05:19",
-      "end": "05:24",
+      "name": "いんげんを醤油・みりん・砂糖・ごまで甘辛に和える",
+      "start": "05:18",
+      "end": "05:21",
+      "seconds": 180,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_7",
+      "name": "おかずを皿に広げて粗熱を取る",
+      "start": "05:21",
+      "end": "05:26",
       "seconds": 300,
       "attended": false,
       "background": false,
@@ -131,7 +142,7 @@
     },
     {
       "type": "gap",
-      "seconds": 1110
+      "seconds": 960
     },
     {
       "type": "task",
@@ -168,8 +179,8 @@
     },
     {
       "type": "task",
-      "id": "bento_7",
-      "name": "おかずを弁当箱に詰め、ごはんにごまをふる",
+      "id": "bento_8",
+      "name": "おかずを弁当箱に詰め、ごはんにのり・ごま・塩をふる",
       "start": "05:55",
       "end": "05:59",
       "seconds": 240,
@@ -190,82 +201,83 @@
     }
   ],
   "menu": {
-    "menu_name": "鶏そぼろ風・冷凍からあげのめんつゆ煮弁当…ではなく、豚肉がないので卵以外で：冷凍からあげのおろし風めんつゆ照り弁当",
+    "menu_name": "卵とブロッコリーの中華風炒め弁当",
     "items": [
       {
-        "name": "ごはん（ごま少々）",
-        "note": "炊きあがったごはんを詰め、白ごまをふる。",
+        "name": "ごはん（のり・ごま）",
+        "note": "詰めたごはんに焼きのりをちぎってのせ、ごまと塩少々をふる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍からあげのめんつゆ照り煮",
-        "note": "冷凍からあげをレンジ加熱し、フライパンでめんつゆ・みりんを煮からめる。",
+        "name": "卵とブロッコリーの中華風炒め",
+        "note": "溶き卵を半熟に炒めて一度取り出し、解凍したブロッコリーを醤油・酒・こしょうで炒めて卵を戻し合わせる。",
         "uses_stock": []
       },
       {
-        "name": "ブロッコリーのマヨこしょう和え",
-        "note": "冷凍ブロッコリーをレンジ加熱し、水気を切ってマヨとこしょうで和える。",
-        "uses_stock": []
-      },
-      {
-        "name": "いんげんの塩ごま和え",
-        "note": "冷凍いんげんをレンジ加熱し、食べやすく切って塩・ごま油・白ごまで和える。",
+        "name": "いんげんの甘辛ごま和え",
+        "note": "レンジ解凍したいんげんを醤油・みりん・砂糖・ごまで和える。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍からあげをレンジ加熱する",
-        "minutes": 4,
+        "name": "冷凍ブロッコリーといんげんをレンジで解凍する",
+        "minutes": 3,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "冷凍ブロッコリーといんげんをまとめてレンジ加熱する",
-        "minutes": 4,
-        "attended": false,
+        "name": "卵2個を溶き、塩こしょうと酒を少々混ぜる",
+        "minutes": 2,
+        "attended": true,
         "needs_rice": false
       },
       {
-        "name": "ブロッコリーの水気を切ってマヨ・こしょうで和える",
+        "name": "解凍した野菜の水気をしっかり切る",
+        "minutes": 2,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "フライパンで卵を半熟に炒めて取り出す",
         "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "いんげんを半分に切り、塩・ごま油・ごまで和える",
+        "name": "同じフライパンでブロッコリーを炒め、醤油・酒・こしょうで味付けし卵を戻す",
+        "minutes": 4,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "いんげんを醤油・みりん・砂糖・ごまで甘辛に和える",
         "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "フライパンでからあげにめんつゆ・みりんを煮からめる",
-        "minutes": 5,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "おかずをバットに広げて粗熱を取る",
+        "name": "おかずを皿に広げて粗熱を取る",
         "minutes": 5,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "おかずを弁当箱に詰め、ごはんにごまをふる",
+        "name": "おかずを弁当箱に詰め、ごはんにのり・ごま・塩をふる",
         "minutes": 4,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "直近は卵メインが続いていたので、常備の冷凍からあげをめんつゆ照りにして変化をつけました。副菜は前夜にレンジ加熱＋和えるまで済ませておくと朝は詰めるだけになります。",
+    "comment": "在庫登録がないので常備の卵と冷凍野菜だけで完結、直近続いたからあげとゆで卵を外しました。前夜に卵を割って溶いておくと朝が2分短縮できます。",
     "_usage": {
-      "input_tokens": 3363,
-      "output_tokens": 816
+      "input_tokens": 3426,
+      "output_tokens": 1202
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-09-05 01:07 JST"
+  "generated_at": "2026-09-05 23:56 JST"
 }
