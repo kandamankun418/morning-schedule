@@ -1,11 +1,11 @@
 {
-  "date": "2026-09-08",
-  "date_label": "2026年9月8日（火）",
-  "leave_time": "06:02",
+  "date": "2026-09-09",
+  "date_label": "2026年9月9日（水）",
+  "leave_time": "06:03",
   "target_leave": "06:30",
   "latest_leave": "06:35",
-  "slack_minutes": 27.5,
-  "makespan_minutes": 62.5,
+  "slack_minutes": 26.5,
+  "makespan_minutes": 63.5,
   "bento_minutes": 27.0,
   "timeline": [
     {
@@ -18,17 +18,6 @@
       "attended": true,
       "background": false,
       "kind": "fixed"
-    },
-    {
-      "type": "task",
-      "id": "bento_1",
-      "name": "冷凍からあげをレンジで加熱する",
-      "start": "05:00",
-      "end": "05:04",
-      "seconds": 240,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
     },
     {
       "type": "task",
@@ -65,19 +54,8 @@
     },
     {
       "type": "task",
-      "id": "bento_2",
-      "name": "冷凍ブロッコリーといんげんをレンジで加熱する",
-      "start": "05:04",
-      "end": "05:07",
-      "seconds": 180,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_3",
-      "name": "照り焼きだれ（醤油・みりん・砂糖・酒）を合わせる",
+      "id": "bento_1",
+      "name": "炊飯をセットし、冷凍ブロッコリーを耐熱容器に入れてレンジ加熱（600W約2分）",
       "start": "05:07",
       "end": "05:09",
       "seconds": 120,
@@ -98,10 +76,36 @@
     },
     {
       "type": "task",
-      "id": "bento_4",
-      "name": "フライパンでからあげにたれを絡める",
+      "id": "bento_2",
+      "name": "レンジ加熱の待ち時間（その間に卵2個を割って塩こしょうで溶いておく）",
       "start": "05:09",
-      "end": "05:14",
+      "end": "05:12",
+      "seconds": 180,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "gap",
+      "seconds": 180
+    },
+    {
+      "type": "task",
+      "id": "bento_3",
+      "name": "ブロッコリーの水気をしっかり切り、マヨネーズと白ごまで和えて置いておく",
+      "start": "05:12",
+      "end": "05:15",
+      "seconds": 180,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_4",
+      "name": "フライパンに油をひき、冷凍いんげんを炒めて塩こしょうで味付け、皿に取り出す",
+      "start": "05:15",
+      "end": "05:20",
       "seconds": 300,
       "attended": true,
       "background": false,
@@ -110,10 +114,10 @@
     {
       "type": "task",
       "id": "bento_5",
-      "name": "ブロッコリーを塩・ごま油・ごまで和える",
-      "start": "05:14",
-      "end": "05:16",
-      "seconds": 120,
+      "name": "同じフライパンでオムレツを半熟に焼いて巻き、まな板に取り出す",
+      "start": "05:20",
+      "end": "05:25",
+      "seconds": 300,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -121,20 +125,9 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "いんげんを切ってマヨ・おかかで和える",
-      "start": "05:16",
-      "end": "05:19",
-      "seconds": 180,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_7",
-      "name": "おかずの粗熱を取る",
-      "start": "05:19",
-      "end": "05:24",
+      "name": "オムレツといんげんの粗熱を取る（この間に洗い物）",
+      "start": "05:25",
+      "end": "05:30",
       "seconds": 300,
       "attended": false,
       "background": false,
@@ -142,7 +135,7 @@
     },
     {
       "type": "gap",
-      "seconds": 1080
+      "seconds": 720
     },
     {
       "type": "task",
@@ -179,11 +172,11 @@
     },
     {
       "type": "task",
-      "id": "bento_8",
-      "name": "おかずを弁当箱に詰める",
+      "id": "bento_7",
+      "name": "オムレツを食べやすく切り、おかずを弁当箱に詰めてケチャップを添える",
       "start": "05:55",
-      "end": "05:58",
-      "seconds": 180,
+      "end": "05:59",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -192,8 +185,8 @@
       "type": "task",
       "id": "bento_pack",
       "name": "お弁当に詰める",
-      "start": "05:58",
-      "end": "06:02",
+      "start": "05:59",
+      "end": "06:03",
       "seconds": 240,
       "attended": true,
       "background": false,
@@ -201,88 +194,82 @@
     }
   ],
   "menu": {
-    "menu_name": "からあげの甘辛照り焼き弁当",
+    "menu_name": "ケチャップオムレツ弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
-        "note": "炊きたてを弁当箱に詰め、白ごまをふる。",
+        "note": "炊きたてごはんを詰めて白ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍からあげの甘辛照り焼き",
-        "note": "冷凍からあげをレンジで解凍加熱し、フライパンで醤油・みりん・砂糖のたれを絡める。",
+        "name": "ふんわりケチャップオムレツ",
+        "note": "卵2個を塩こしょうで溶き、油をひいたフライパンで半熟に巻く。冷めてから切り、ケチャップを添える。",
         "uses_stock": []
       },
       {
-        "name": "ブロッコリーの塩ごま和え",
-        "note": "冷凍ブロッコリーをレンジ加熱し、塩・ごま油・白ごまで和える。",
+        "name": "いんげんの塩こしょうソテー",
+        "note": "冷凍いんげんをフライパンで油炒めし、塩こしょうで味付け。",
         "uses_stock": []
       },
       {
-        "name": "いんげんのマヨおかか和え",
-        "note": "冷凍いんげんをレンジ加熱して食べやすく切り、マヨネーズとかつおぶしで和える。",
+        "name": "ブロッコリーのごまマヨ和え",
+        "note": "冷凍ブロッコリーをレンジ加熱し、水気を切ってマヨネーズと白ごまで和える。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍からあげをレンジで加熱する",
+        "name": "炊飯をセットし、冷凍ブロッコリーを耐熱容器に入れてレンジ加熱（600W約2分）",
+        "minutes": 2,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "レンジ加熱の待ち時間（その間に卵2個を割って塩こしょうで溶いておく）",
+        "minutes": 3,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "ブロッコリーの水気をしっかり切り、マヨネーズと白ごまで和えて置いておく",
+        "minutes": 3,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "フライパンに油をひき、冷凍いんげんを炒めて塩こしょうで味付け、皿に取り出す",
+        "minutes": 5,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "同じフライパンでオムレツを半熟に焼いて巻き、まな板に取り出す",
+        "minutes": 5,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "オムレツといんげんの粗熱を取る（この間に洗い物）",
+        "minutes": 5,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "オムレツを食べやすく切り、おかずを弁当箱に詰めてケチャップを添える",
         "minutes": 4,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "冷凍ブロッコリーといんげんをレンジで加熱する",
-        "minutes": 3,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "照り焼きだれ（醤油・みりん・砂糖・酒）を合わせる",
-        "minutes": 2,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "フライパンでからあげにたれを絡める",
-        "minutes": 5,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "ブロッコリーを塩・ごま油・ごまで和える",
-        "minutes": 2,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "いんげんを切ってマヨ・おかかで和える",
-        "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "おかずの粗熱を取る",
-        "minutes": 5,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "おかずを弁当箱に詰める",
-        "minutes": 3,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "卵メインが続いていたので、久しぶりの冷凍からあげで気分を変えました。照り焼きだれは前夜に合わせておくと朝が2分短縮できます。",
+    "comment": "在庫登録がないため常備の卵と冷凍野菜だけで完結する構成にしました。オムレツは前夜に卵を溶いて冷蔵しておくと朝が2分短縮できます。",
     "_usage": {
-      "input_tokens": 3357,
-      "output_tokens": 963
+      "input_tokens": 3351,
+      "output_tokens": 1664
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-09-07 00:17 JST"
+  "generated_at": "2026-09-08 02:38 JST"
 }
