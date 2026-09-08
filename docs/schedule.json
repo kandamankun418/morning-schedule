@@ -1,12 +1,12 @@
 {
-  "date": "2026-09-09",
-  "date_label": "2026年9月9日（水）",
-  "leave_time": "06:03",
+  "date": "2026-09-10",
+  "date_label": "2026年9月10日（木）",
+  "leave_time": "06:02",
   "target_leave": "06:30",
   "latest_leave": "06:35",
-  "slack_minutes": 26.5,
-  "makespan_minutes": 63.5,
-  "bento_minutes": 27.0,
+  "slack_minutes": 27.5,
+  "makespan_minutes": 62.5,
+  "bento_minutes": 31.0,
   "timeline": [
     {
       "type": "task",
@@ -55,10 +55,10 @@
     {
       "type": "task",
       "id": "bento_1",
-      "name": "炊飯をセットし、冷凍ブロッコリーを耐熱容器に入れてレンジ加熱（600W約2分）",
+      "name": "冷凍ブロッコリーといんげんを耐熱容器に出してレンジにかける",
       "start": "05:07",
-      "end": "05:09",
-      "seconds": 120,
+      "end": "05:08",
+      "seconds": 60,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -77,25 +77,25 @@
     {
       "type": "task",
       "id": "bento_2",
-      "name": "レンジ加熱の待ち時間（その間に卵2個を割って塩こしょうで溶いておく）",
-      "start": "05:09",
+      "name": "レンジ加熱の待ち（約4分）",
+      "start": "05:08",
       "end": "05:12",
-      "seconds": 180,
+      "seconds": 240,
       "attended": false,
       "background": false,
       "kind": "bento"
     },
     {
       "type": "gap",
-      "seconds": 180
+      "seconds": 240
     },
     {
       "type": "task",
       "id": "bento_3",
-      "name": "ブロッコリーの水気をしっかり切り、マヨネーズと白ごまで和えて置いておく",
+      "name": "甘辛だれ（醤油・みりん・砂糖・酒 各小さじ1〜2）を混ぜておく",
       "start": "05:12",
-      "end": "05:15",
-      "seconds": 180,
+      "end": "05:14",
+      "seconds": 120,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -103,10 +103,10 @@
     {
       "type": "task",
       "id": "bento_4",
-      "name": "フライパンに油をひき、冷凍いんげんを炒めて塩こしょうで味付け、皿に取り出す",
-      "start": "05:15",
-      "end": "05:20",
-      "seconds": 300,
+      "name": "フライパンに油をひき、冷凍餃子を並べて焼き始める",
+      "start": "05:14",
+      "end": "05:16",
+      "seconds": 120,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -114,20 +114,9 @@
     {
       "type": "task",
       "id": "bento_5",
-      "name": "同じフライパンでオムレツを半熟に焼いて巻き、まな板に取り出す",
-      "start": "05:20",
-      "end": "05:25",
-      "seconds": 300,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_6",
-      "name": "オムレツといんげんの粗熱を取る（この間に洗い物）",
-      "start": "05:25",
-      "end": "05:30",
+      "name": "水を入れてフタをし蒸し焼き（待ち）",
+      "start": "05:16",
+      "end": "05:21",
       "seconds": 300,
       "attended": false,
       "background": false,
@@ -135,7 +124,55 @@
     },
     {
       "type": "gap",
-      "seconds": 720
+      "seconds": 300
+    },
+    {
+      "type": "task",
+      "id": "bento_6",
+      "name": "加熱済みブロッコリーの水気を切り、マヨ・おかか・醤油で和える",
+      "start": "05:21",
+      "end": "05:24",
+      "seconds": 180,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_7",
+      "name": "いんげんの水気を切り、めんつゆと白ごまで和える",
+      "start": "05:24",
+      "end": "05:26",
+      "seconds": 120,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_8",
+      "name": "餃子のフタを取って水分を飛ばし、甘辛だれを絡める",
+      "start": "05:26",
+      "end": "05:30",
+      "seconds": 240,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_9",
+      "name": "おかずの粗熱を取る（待ち）",
+      "start": "05:30",
+      "end": "05:35",
+      "seconds": 300,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "gap",
+      "seconds": 420
     },
     {
       "type": "task",
@@ -172,11 +209,11 @@
     },
     {
       "type": "task",
-      "id": "bento_7",
-      "name": "オムレツを食べやすく切り、おかずを弁当箱に詰めてケチャップを添える",
+      "id": "bento_10",
+      "name": "おかずを弁当箱に詰める",
       "start": "05:55",
-      "end": "05:59",
-      "seconds": 240,
+      "end": "05:58",
+      "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -185,8 +222,8 @@
       "type": "task",
       "id": "bento_pack",
       "name": "お弁当に詰める",
-      "start": "05:59",
-      "end": "06:03",
+      "start": "05:58",
+      "end": "06:02",
       "seconds": 240,
       "attended": true,
       "background": false,
@@ -194,82 +231,100 @@
     }
   ],
   "menu": {
-    "menu_name": "ケチャップオムレツ弁当",
+    "menu_name": "冷凍餃子の甘辛だれ弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
-        "note": "炊きたてごはんを詰めて白ごまをふる。",
+        "note": "炊きあがったごはんを弁当箱に詰め、白ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "ふんわりケチャップオムレツ",
-        "note": "卵2個を塩こしょうで溶き、油をひいたフライパンで半熟に巻く。冷めてから切り、ケチャップを添える。",
+        "name": "冷凍餃子の甘辛だれ",
+        "note": "冷凍餃子をフライパンで焼き、醤油・みりん・砂糖・酒の甘辛だれを絡める。",
         "uses_stock": []
       },
       {
-        "name": "いんげんの塩こしょうソテー",
-        "note": "冷凍いんげんをフライパンで油炒めし、塩こしょうで味付け。",
+        "name": "ブロッコリーのおかかマヨ和え",
+        "note": "冷凍ブロッコリーをレンジ加熱し、マヨネーズ・かつおぶし・醤油少々で和える。",
         "uses_stock": []
       },
       {
-        "name": "ブロッコリーのごまマヨ和え",
-        "note": "冷凍ブロッコリーをレンジ加熱し、水気を切ってマヨネーズと白ごまで和える。",
+        "name": "いんげんのめんつゆごま和え",
+        "note": "冷凍いんげんをレンジ加熱し、めんつゆと白ごまで和える。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "炊飯をセットし、冷凍ブロッコリーを耐熱容器に入れてレンジ加熱（600W約2分）",
+        "name": "冷凍ブロッコリーといんげんを耐熱容器に出してレンジにかける",
+        "minutes": 1,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "レンジ加熱の待ち（約4分）",
+        "minutes": 4,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "甘辛だれ（醤油・みりん・砂糖・酒 各小さじ1〜2）を混ぜておく",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "レンジ加熱の待ち時間（その間に卵2個を割って塩こしょうで溶いておく）",
-        "minutes": 3,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "ブロッコリーの水気をしっかり切り、マヨネーズと白ごまで和えて置いておく",
-        "minutes": 3,
+        "name": "フライパンに油をひき、冷凍餃子を並べて焼き始める",
+        "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "フライパンに油をひき、冷凍いんげんを炒めて塩こしょうで味付け、皿に取り出す",
-        "minutes": 5,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "同じフライパンでオムレツを半熟に焼いて巻き、まな板に取り出す",
-        "minutes": 5,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "オムレツといんげんの粗熱を取る（この間に洗い物）",
+        "name": "水を入れてフタをし蒸し焼き（待ち）",
         "minutes": 5,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "オムレツを食べやすく切り、おかずを弁当箱に詰めてケチャップを添える",
+        "name": "加熱済みブロッコリーの水気を切り、マヨ・おかか・醤油で和える",
+        "minutes": 3,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "いんげんの水気を切り、めんつゆと白ごまで和える",
+        "minutes": 2,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "餃子のフタを取って水分を飛ばし、甘辛だれを絡める",
         "minutes": 4,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "おかずの粗熱を取る（待ち）",
+        "minutes": 5,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "おかずを弁当箱に詰める",
+        "minutes": 3,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "在庫登録がないため常備の卵と冷凍野菜だけで完結する構成にしました。オムレツは前夜に卵を溶いて冷蔵しておくと朝が2分短縮できます。",
+    "comment": "卵とからあげが続いていたので、冷凍餃子で主菜の気分を変えました。餃子がなければ冷凍シュウマイや冷凍ハンバーグでも同じ甘辛だれが使えます。",
     "_usage": {
-      "input_tokens": 3351,
-      "output_tokens": 1664
+      "input_tokens": 3355,
+      "output_tokens": 1529
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-09-08 02:38 JST"
+  "generated_at": "2026-09-09 01:25 JST"
 }
