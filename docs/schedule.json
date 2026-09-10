@@ -1,12 +1,12 @@
 {
-  "date": "2026-09-11",
-  "date_label": "2026年9月11日（金）",
-  "leave_time": "06:03",
+  "date": "2026-09-12",
+  "date_label": "2026年9月12日（土）",
+  "leave_time": "06:02",
   "target_leave": "06:30",
   "latest_leave": "06:35",
-  "slack_minutes": 26.5,
-  "makespan_minutes": 63.5,
-  "bento_minutes": 29.0,
+  "slack_minutes": 27.5,
+  "makespan_minutes": 62.5,
+  "bento_minutes": 26.0,
   "timeline": [
     {
       "type": "task",
@@ -55,7 +55,7 @@
     {
       "type": "task",
       "id": "bento_1",
-      "name": "炊飯をセットし、冷凍しゅうまい・冷凍野菜を取り出す",
+      "name": "冷凍ブロッコリーとからあげをレンジにセットして加熱開始",
       "start": "05:07",
       "end": "05:09",
       "seconds": 120,
@@ -77,35 +77,9 @@
     {
       "type": "task",
       "id": "bento_2",
-      "name": "冷凍ブロッコリーといんげんを耐熱皿に広げてレンジ加熱",
+      "name": "レンジ加熱の待ち時間（甘酢ケチャップだれを混ぜて用意）",
       "start": "05:09",
-      "end": "05:13",
-      "seconds": 240,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "gap",
-      "seconds": 240
-    },
-    {
-      "type": "task",
-      "id": "bento_3",
-      "name": "甘酢あんの調味料（ケチャップ・砂糖・醤油・酢・水）を混ぜておく",
-      "start": "05:13",
-      "end": "05:15",
-      "seconds": 120,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_4",
-      "name": "冷凍しゅうまいをレンジで加熱",
-      "start": "05:15",
-      "end": "05:18",
+      "end": "05:12",
       "seconds": 180,
       "attended": false,
       "background": false,
@@ -117,10 +91,32 @@
     },
     {
       "type": "task",
+      "id": "bento_3",
+      "name": "フライパンで冷凍いんげんを炒める",
+      "start": "05:12",
+      "end": "05:16",
+      "seconds": 240,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_4",
+      "name": "いんげんに醤油・みりん・砂糖を加えて煮からめ、ごまをふって取り出す",
+      "start": "05:16",
+      "end": "05:19",
+      "seconds": 180,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
       "id": "bento_5",
-      "name": "ブロッコリー・いんげんの水気をしっかり拭き、それぞれ和える",
-      "start": "05:18",
-      "end": "05:22",
+      "name": "同じフライパンで甘酢ケチャップだれを煮立て、からあげを和える",
+      "start": "05:19",
+      "end": "05:23",
       "seconds": 240,
       "attended": true,
       "background": false,
@@ -129,20 +125,9 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "フライパンに油を熱し、しゅうまいを軽く焼き付ける",
-      "start": "05:22",
+      "name": "ブロッコリーの水気を切り、マヨネーズとこしょうで和える",
+      "start": "05:23",
       "end": "05:25",
-      "seconds": 180,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_7",
-      "name": "甘酢あんを加えて絡め、火を止める",
-      "start": "05:25",
-      "end": "05:27",
       "seconds": 120,
       "attended": true,
       "background": false,
@@ -150,10 +135,10 @@
     },
     {
       "type": "task",
-      "id": "bento_8",
+      "id": "bento_7",
       "name": "おかずの粗熱を取る",
-      "start": "05:27",
-      "end": "05:32",
+      "start": "05:25",
+      "end": "05:30",
       "seconds": 300,
       "attended": false,
       "background": false,
@@ -161,7 +146,7 @@
     },
     {
       "type": "gap",
-      "seconds": 600
+      "seconds": 720
     },
     {
       "type": "task",
@@ -198,11 +183,11 @@
     },
     {
       "type": "task",
-      "id": "bento_9",
+      "id": "bento_8",
       "name": "おかずを弁当箱に詰め、ごはんにごまをふる",
       "start": "05:55",
-      "end": "05:59",
-      "seconds": 240,
+      "end": "05:58",
+      "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -211,8 +196,8 @@
       "type": "task",
       "id": "bento_pack",
       "name": "お弁当に詰める",
-      "start": "05:59",
-      "end": "06:03",
+      "start": "05:58",
+      "end": "06:02",
       "seconds": 240,
       "attended": true,
       "background": false,
@@ -220,68 +205,62 @@
     }
   ],
   "menu": {
-    "menu_name": "鶏そぼろ風・冷凍しゅうまいの甘酢あん弁当",
+    "menu_name": "からあげの甘酢ケチャップ弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
-        "note": "炊きあがりを詰めて白ごまをふる。",
+        "note": "炊きあがったごはんを弁当箱に詰め、白ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍しゅうまいの甘酢あん",
-        "note": "レンジで加熱したしゅうまいを、ケチャップ・砂糖・酢（なければめんつゆ+ケチャップ）のたれでフライパンに絡める。",
+        "name": "冷凍からあげの甘酢ケチャップ和え",
+        "note": "冷凍からあげをレンジ加熱し、ケチャップ・砂糖・酢・醤油のたれをフライパンで軽く煮からめる。",
         "uses_stock": []
       },
       {
-        "name": "いんげんの粉チーズ風マヨ和え",
-        "note": "冷凍いんげんをレンジ解凍し、水気を拭いてマヨとこしょうで和える。",
+        "name": "いんげんの甘辛ごま炒め",
+        "note": "冷凍いんげんを油で炒め、醤油・みりん・砂糖で味付けし白ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "ブロッコリーのめんつゆおかか和え",
-        "note": "冷凍ブロッコリーをレンジ解凍し、水気を切ってめんつゆとかつお節で和える。",
+        "name": "ブロッコリーのマヨこしょう和え",
+        "note": "冷凍ブロッコリーをレンジ加熱し、マヨネーズと粗びきこしょうで和える。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "炊飯をセットし、冷凍しゅうまい・冷凍野菜を取り出す",
+        "name": "冷凍ブロッコリーとからあげをレンジにセットして加熱開始",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "冷凍ブロッコリーといんげんを耐熱皿に広げてレンジ加熱",
-        "minutes": 4,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "甘酢あんの調味料（ケチャップ・砂糖・醤油・酢・水）を混ぜておく",
-        "minutes": 2,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "冷凍しゅうまいをレンジで加熱",
+        "name": "レンジ加熱の待ち時間（甘酢ケチャップだれを混ぜて用意）",
         "minutes": 3,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "ブロッコリー・いんげんの水気をしっかり拭き、それぞれ和える",
+        "name": "フライパンで冷凍いんげんを炒める",
         "minutes": 4,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "フライパンに油を熱し、しゅうまいを軽く焼き付ける",
+        "name": "いんげんに醤油・みりん・砂糖を加えて煮からめ、ごまをふって取り出す",
         "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "甘酢あんを加えて絡め、火を止める",
+        "name": "同じフライパンで甘酢ケチャップだれを煮立て、からあげを和える",
+        "minutes": 4,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "ブロッコリーの水気を切り、マヨネーズとこしょうで和える",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
@@ -294,20 +273,20 @@
       },
       {
         "name": "おかずを弁当箱に詰め、ごはんにごまをふる",
-        "minutes": 4,
+        "minutes": 3,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "卵・からあげ・餃子が続いていたので冷凍しゅうまいで気分を変えました。在庫登録がないので常備の冷凍野菜と調味料だけで完結する構成です。",
+    "comment": "在庫登録がないので常備の冷凍からあげ・冷凍野菜だけで組みました。甘酢ケチャップだれは前日に混ぜて冷蔵しておくと朝が3分短縮できます。",
     "_usage": {
-      "input_tokens": 3358,
-      "output_tokens": 908
+      "input_tokens": 3381,
+      "output_tokens": 1402
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-09-10 01:21 JST"
+  "generated_at": "2026-09-11 01:11 JST"
 }
