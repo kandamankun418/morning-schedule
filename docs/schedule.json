@@ -1,12 +1,12 @@
 {
-  "date": "2026-09-12",
-  "date_label": "2026年9月12日（土）",
+  "date": "2026-09-13",
+  "date_label": "2026年9月13日（日）",
   "leave_time": "06:02",
   "target_leave": "06:30",
   "latest_leave": "06:35",
   "slack_minutes": 27.5,
   "makespan_minutes": 62.5,
-  "bento_minutes": 26.0,
+  "bento_minutes": 33.0,
   "timeline": [
     {
       "type": "task",
@@ -55,10 +55,10 @@
     {
       "type": "task",
       "id": "bento_1",
-      "name": "冷凍ブロッコリーとからあげをレンジにセットして加熱開始",
+      "name": "米を研いで炊飯器をセットする",
       "start": "05:07",
-      "end": "05:09",
-      "seconds": 120,
+      "end": "05:11",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -77,9 +77,9 @@
     {
       "type": "task",
       "id": "bento_2",
-      "name": "レンジ加熱の待ち時間（甘酢ケチャップだれを混ぜて用意）",
-      "start": "05:09",
-      "end": "05:12",
+      "name": "冷凍ブロッコリーを耐熱容器に入れてレンジ加熱（待ち時間）",
+      "start": "05:11",
+      "end": "05:14",
       "seconds": 180,
       "attended": false,
       "background": false,
@@ -92,20 +92,9 @@
     {
       "type": "task",
       "id": "bento_3",
-      "name": "フライパンで冷凍いんげんを炒める",
-      "start": "05:12",
-      "end": "05:16",
-      "seconds": 240,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_4",
-      "name": "いんげんに醤油・みりん・砂糖を加えて煮からめ、ごまをふって取り出す",
-      "start": "05:16",
-      "end": "05:19",
+      "name": "卵2個を割ってめんつゆを混ぜ、卵液を作る",
+      "start": "05:14",
+      "end": "05:17",
       "seconds": 180,
       "attended": true,
       "background": false,
@@ -113,32 +102,21 @@
     },
     {
       "type": "task",
+      "id": "bento_4",
+      "name": "フライパンでめんつゆ卵焼きを巻いて焼く",
+      "start": "05:17",
+      "end": "05:24",
+      "seconds": 420,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
       "id": "bento_5",
-      "name": "同じフライパンで甘酢ケチャップだれを煮立て、からあげを和える",
-      "start": "05:19",
-      "end": "05:23",
-      "seconds": 240,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_6",
-      "name": "ブロッコリーの水気を切り、マヨネーズとこしょうで和える",
-      "start": "05:23",
-      "end": "05:25",
-      "seconds": 120,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_7",
-      "name": "おかずの粗熱を取る",
-      "start": "05:25",
-      "end": "05:30",
+      "name": "卵焼きを取り出し、粗熱を取る（放置）",
+      "start": "05:24",
+      "end": "05:29",
       "seconds": 300,
       "attended": false,
       "background": false,
@@ -146,14 +124,58 @@
     },
     {
       "type": "gap",
-      "seconds": 720
+      "seconds": 300
+    },
+    {
+      "type": "task",
+      "id": "bento_6",
+      "name": "同じフライパンで冷凍いんげんを炒め、ケチャップ・塩こしょうで味付け",
+      "start": "05:29",
+      "end": "05:34",
+      "seconds": 300,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_7",
+      "name": "ブロッコリーの水気を切り、マヨネーズとかつお節で和える",
+      "start": "05:34",
+      "end": "05:36",
+      "seconds": 120,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_8",
+      "name": "卵焼きを切り分け、おかずを弁当箱に詰める",
+      "start": "05:36",
+      "end": "05:40",
+      "seconds": 240,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_pack",
+      "name": "お弁当に詰める",
+      "start": "05:40",
+      "end": "05:44",
+      "seconds": 240,
+      "attended": true,
+      "background": false,
+      "kind": "fixed"
     },
     {
       "type": "task",
       "id": "breakfast",
       "name": "朝ごはんを食べる",
-      "start": "05:37",
-      "end": "05:47",
+      "start": "05:44",
+      "end": "05:54",
       "seconds": 600,
       "attended": true,
       "background": false,
@@ -163,8 +185,8 @@
       "type": "task",
       "id": "brush_teeth",
       "name": "歯を磨く",
-      "start": "05:47",
-      "end": "05:52",
+      "start": "05:54",
+      "end": "05:59",
       "seconds": 300,
       "attended": true,
       "background": false,
@@ -174,119 +196,97 @@
       "type": "task",
       "id": "change_clothes",
       "name": "着替える",
-      "start": "05:52",
-      "end": "05:55",
-      "seconds": 180,
-      "attended": true,
-      "background": false,
-      "kind": "fixed"
-    },
-    {
-      "type": "task",
-      "id": "bento_8",
-      "name": "おかずを弁当箱に詰め、ごはんにごまをふる",
-      "start": "05:55",
-      "end": "05:58",
-      "seconds": 180,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_pack",
-      "name": "お弁当に詰める",
-      "start": "05:58",
+      "start": "05:59",
       "end": "06:02",
-      "seconds": 240,
+      "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "fixed"
     }
   ],
   "menu": {
-    "menu_name": "からあげの甘酢ケチャップ弁当",
+    "menu_name": "めんつゆ卵焼き弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
-        "note": "炊きあがったごはんを弁当箱に詰め、白ごまをふる。",
+        "note": "炊きたてを詰めて、白ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍からあげの甘酢ケチャップ和え",
-        "note": "冷凍からあげをレンジ加熱し、ケチャップ・砂糖・酢・醤油のたれをフライパンで軽く煮からめる。",
+        "name": "めんつゆ卵焼き",
+        "note": "卵2個にめんつゆ大さじ1弱を混ぜ、フライパンで2〜3回巻いて焼く。",
         "uses_stock": []
       },
       {
-        "name": "いんげんの甘辛ごま炒め",
-        "note": "冷凍いんげんを油で炒め、醤油・みりん・砂糖で味付けし白ごまをふる。",
+        "name": "いんげんのケチャップソテー",
+        "note": "冷凍いんげんを油で炒め、ケチャップ・塩こしょうでからめる。",
         "uses_stock": []
       },
       {
-        "name": "ブロッコリーのマヨこしょう和え",
-        "note": "冷凍ブロッコリーをレンジ加熱し、マヨネーズと粗びきこしょうで和える。",
+        "name": "ブロッコリーのマヨおかか和え",
+        "note": "レンジ解凍した冷凍ブロッコリーをマヨネーズとかつお節で和える。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍ブロッコリーとからあげをレンジにセットして加熱開始",
-        "minutes": 2,
+        "name": "米を研いで炊飯器をセットする",
+        "minutes": 4,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "レンジ加熱の待ち時間（甘酢ケチャップだれを混ぜて用意）",
+        "name": "冷凍ブロッコリーを耐熱容器に入れてレンジ加熱（待ち時間）",
         "minutes": 3,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "フライパンで冷凍いんげんを炒める",
-        "minutes": 4,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "いんげんに醤油・みりん・砂糖を加えて煮からめ、ごまをふって取り出す",
+        "name": "卵2個を割ってめんつゆを混ぜ、卵液を作る",
         "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "同じフライパンで甘酢ケチャップだれを煮立て、からあげを和える",
-        "minutes": 4,
+        "name": "フライパンでめんつゆ卵焼きを巻いて焼く",
+        "minutes": 7,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "ブロッコリーの水気を切り、マヨネーズとこしょうで和える",
-        "minutes": 2,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "おかずの粗熱を取る",
+        "name": "卵焼きを取り出し、粗熱を取る（放置）",
         "minutes": 5,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "おかずを弁当箱に詰め、ごはんにごまをふる",
-        "minutes": 3,
+        "name": "同じフライパンで冷凍いんげんを炒め、ケチャップ・塩こしょうで味付け",
+        "minutes": 5,
         "attended": true,
-        "needs_rice": true
+        "needs_rice": false
+      },
+      {
+        "name": "ブロッコリーの水気を切り、マヨネーズとかつお節で和える",
+        "minutes": 2,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "卵焼きを切り分け、おかずを弁当箱に詰める",
+        "minutes": 4,
+        "attended": true,
+        "needs_rice": false
       }
     ],
     "stock_consumed": [],
-    "comment": "在庫登録がないので常備の冷凍からあげ・冷凍野菜だけで組みました。甘酢ケチャップだれは前日に混ぜて冷蔵しておくと朝が3分短縮できます。",
+    "comment": "在庫登録がないため常備の卵と冷凍野菜だけで完結する構成にしました。前夜に卵液を作って冷蔵しておくと朝は焼くだけで数分短縮できます。",
     "_usage": {
-      "input_tokens": 3381,
-      "output_tokens": 1402
+      "input_tokens": 3393,
+      "output_tokens": 1170
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-09-11 01:11 JST"
+  "generated_at": "2026-09-12 01:15 JST"
 }
