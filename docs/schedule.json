@@ -1,12 +1,12 @@
 {
-  "date": "2026-09-14",
-  "date_label": "2026年9月14日（月）",
+  "date": "2026-09-15",
+  "date_label": "2026年9月15日（火）",
   "leave_time": "06:02",
   "target_leave": "06:30",
   "latest_leave": "06:35",
   "slack_minutes": 27.5,
   "makespan_minutes": 62.5,
-  "bento_minutes": 29.0,
+  "bento_minutes": 27.0,
   "timeline": [
     {
       "type": "task",
@@ -18,17 +18,6 @@
       "attended": true,
       "background": false,
       "kind": "fixed"
-    },
-    {
-      "type": "task",
-      "id": "bento_1",
-      "name": "冷凍ブロッコリーをレンジ加熱する",
-      "start": "05:00",
-      "end": "05:02",
-      "seconds": 120,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
     },
     {
       "type": "task",
@@ -65,8 +54,8 @@
     },
     {
       "type": "task",
-      "id": "bento_2",
-      "name": "照り焼きだれ（醤油・みりん・砂糖・酢）を合わせておく",
+      "id": "bento_1",
+      "name": "冷凍ブロッコリーといんげんを耐熱皿に出してレンジ加熱スタート",
       "start": "05:07",
       "end": "05:09",
       "seconds": 120,
@@ -87,10 +76,36 @@
     },
     {
       "type": "task",
-      "id": "bento_3",
-      "name": "フライパンに油を熱し、冷凍餃子を並べて焼く",
+      "id": "bento_2",
+      "name": "レンジ加熱の待ち時間",
       "start": "05:09",
       "end": "05:12",
+      "seconds": 180,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_3",
+      "name": "冷凍しゅうまいをレンジで加熱する",
+      "start": "05:12",
+      "end": "05:15",
+      "seconds": 180,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "gap",
+      "seconds": 360
+    },
+    {
+      "type": "task",
+      "id": "bento_4",
+      "name": "ブロッコリーの水気を切り、塩・ごま油・白ごまで和える",
+      "start": "05:15",
+      "end": "05:18",
       "seconds": 180,
       "attended": true,
       "background": false,
@@ -98,26 +113,11 @@
     },
     {
       "type": "task",
-      "id": "bento_4",
-      "name": "水を少量加えフタをして蒸し焼きにする",
-      "start": "05:12",
-      "end": "05:17",
-      "seconds": 300,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "gap",
-      "seconds": 300
-    },
-    {
-      "type": "task",
       "id": "bento_5",
-      "name": "ブロッコリーの水気を切り、マヨ＋すりごまで和える",
-      "start": "05:17",
+      "name": "いんげんの水気を切り、マヨネーズと黒こしょうで和える",
+      "start": "05:18",
       "end": "05:20",
-      "seconds": 180,
+      "seconds": 120,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -125,10 +125,10 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "餃子のフタを外して水分をとばし、たれをからめる",
+      "name": "フライパンに油を熱し、しゅうまいを焼き色がつくまで焼く",
       "start": "05:20",
-      "end": "05:23",
-      "seconds": 180,
+      "end": "05:24",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -136,10 +136,10 @@
     {
       "type": "task",
       "id": "bento_7",
-      "name": "同じフライパンで冷凍いんげんを炒め、塩こしょうする",
-      "start": "05:23",
+      "name": "ケチャップ・醤油・みりんを加えて照りよく絡める",
+      "start": "05:24",
       "end": "05:27",
-      "seconds": 240,
+      "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -195,7 +195,7 @@
     {
       "type": "task",
       "id": "bento_9",
-      "name": "おかずを弁当箱に詰める",
+      "name": "おかずをお弁当箱に詰める",
       "start": "05:55",
       "end": "05:58",
       "seconds": 180,
@@ -216,69 +216,69 @@
     }
   ],
   "menu": {
-    "menu_name": "冷凍餃子のポン風しょうゆ照り弁当",
+    "menu_name": "冷凍しゅうまいのケチャップ照り焼き弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
-        "note": "炊きたてを詰めて、白ごまをふる。",
+        "note": "炊きたてごはんを詰めて、白ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍餃子の甘酢しょうゆ照り",
-        "note": "フライパンで焼き目をつけ、醤油・みりん・砂糖・酢のたれをからめる。",
+        "name": "冷凍しゅうまいのケチャップ照り焼き",
+        "note": "レンジで解凍したしゅうまいをフライパンで焼き、ケチャップ・醤油・みりんを絡める。",
         "uses_stock": []
       },
       {
-        "name": "いんげんの塩こしょうソテー",
-        "note": "冷凍いんげんを油で炒め、塩こしょうで味つけ。",
+        "name": "冷凍ブロッコリーの塩ごま和え",
+        "note": "レンジ加熱し水気を切り、塩・ごま油・白ごまで和える。",
         "uses_stock": []
       },
       {
-        "name": "ブロッコリーのごまマヨ和え",
-        "note": "レンジ解凍して水気を切り、マヨネーズとすりごまで和える。",
+        "name": "冷凍いんげんのマヨこしょう和え",
+        "note": "レンジ加熱後、マヨネーズと黒こしょうで和える。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍ブロッコリーをレンジ加熱する",
-        "minutes": 2,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "照り焼きだれ（醤油・みりん・砂糖・酢）を合わせておく",
+        "name": "冷凍ブロッコリーといんげんを耐熱皿に出してレンジ加熱スタート",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "フライパンに油を熱し、冷凍餃子を並べて焼く",
+        "name": "レンジ加熱の待ち時間",
         "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "水を少量加えフタをして蒸し焼きにする",
-        "minutes": 5,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "ブロッコリーの水気を切り、マヨ＋すりごまで和える",
+        "name": "冷凍しゅうまいをレンジで加熱する",
+        "minutes": 3,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "ブロッコリーの水気を切り、塩・ごま油・白ごまで和える",
         "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "餃子のフタを外して水分をとばし、たれをからめる",
-        "minutes": 3,
+        "name": "いんげんの水気を切り、マヨネーズと黒こしょうで和える",
+        "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "同じフライパンで冷凍いんげんを炒め、塩こしょうする",
+        "name": "フライパンに油を熱し、しゅうまいを焼き色がつくまで焼く",
         "minutes": 4,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "ケチャップ・醤油・みりんを加えて照りよく絡める",
+        "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
@@ -289,21 +289,21 @@
         "needs_rice": false
       },
       {
-        "name": "おかずを弁当箱に詰める",
+        "name": "おかずをお弁当箱に詰める",
         "minutes": 3,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "在庫登録がないので常備の冷凍餃子・冷凍野菜で組みました。餃子は4日前なので味付けを甘酢しょうゆに変えて変化をつけています。",
+    "comment": "3日以内の餃子・卵焼き・からあげを避けて、久しぶりのしゅうまいをケチャップ照りでアレンジしました。手を動かすのは約20分なので炊飯の30分待ちに収まります。",
     "_usage": {
-      "input_tokens": 3390,
-      "output_tokens": 998
+      "input_tokens": 3406,
+      "output_tokens": 1142
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-09-13 00:21 JST"
+  "generated_at": "2026-09-14 00:58 JST"
 }
