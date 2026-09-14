@@ -1,12 +1,12 @@
 {
-  "date": "2026-09-15",
-  "date_label": "2026年9月15日（火）",
+  "date": "2026-09-16",
+  "date_label": "2026年9月16日（水）",
   "leave_time": "06:02",
   "target_leave": "06:30",
   "latest_leave": "06:35",
   "slack_minutes": 27.5,
   "makespan_minutes": 62.5,
-  "bento_minutes": 27.0,
+  "bento_minutes": 29.0,
   "timeline": [
     {
       "type": "task",
@@ -55,7 +55,7 @@
     {
       "type": "task",
       "id": "bento_1",
-      "name": "冷凍ブロッコリーといんげんを耐熱皿に出してレンジ加熱スタート",
+      "name": "冷凍からあげと冷凍野菜を袋から出して分量を取る",
       "start": "05:07",
       "end": "05:09",
       "seconds": 120,
@@ -77,7 +77,7 @@
     {
       "type": "task",
       "id": "bento_2",
-      "name": "レンジ加熱の待ち時間",
+      "name": "ブロッコリーをレンジで解凍加熱（待ち）",
       "start": "05:09",
       "end": "05:12",
       "seconds": 180,
@@ -86,26 +86,26 @@
       "kind": "bento"
     },
     {
+      "type": "gap",
+      "seconds": 180
+    },
+    {
       "type": "task",
       "id": "bento_3",
-      "name": "冷凍しゅうまいをレンジで加熱する",
+      "name": "マヨしょうゆだれを小皿で混ぜておく",
       "start": "05:12",
-      "end": "05:15",
-      "seconds": 180,
-      "attended": false,
+      "end": "05:13",
+      "seconds": 60,
+      "attended": true,
       "background": false,
       "kind": "bento"
     },
     {
-      "type": "gap",
-      "seconds": 360
-    },
-    {
       "type": "task",
       "id": "bento_4",
-      "name": "ブロッコリーの水気を切り、塩・ごま油・白ごまで和える",
-      "start": "05:15",
-      "end": "05:18",
+      "name": "ブロッコリーの水気を切って塩・ごま油・ごまで和える",
+      "start": "05:13",
+      "end": "05:16",
       "seconds": 180,
       "attended": true,
       "background": false,
@@ -114,10 +114,10 @@
     {
       "type": "task",
       "id": "bento_5",
-      "name": "いんげんの水気を切り、マヨネーズと黒こしょうで和える",
-      "start": "05:18",
+      "name": "フライパンでいんげんを炒める",
+      "start": "05:16",
       "end": "05:20",
-      "seconds": 120,
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -125,10 +125,10 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "フライパンに油を熱し、しゅうまいを焼き色がつくまで焼く",
+      "name": "めんつゆを絡めて水分を飛ばし、バットに取り出す",
       "start": "05:20",
-      "end": "05:24",
-      "seconds": 240,
+      "end": "05:22",
+      "seconds": 120,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -136,20 +136,9 @@
     {
       "type": "task",
       "id": "bento_7",
-      "name": "ケチャップ・醤油・みりんを加えて照りよく絡める",
-      "start": "05:24",
-      "end": "05:27",
-      "seconds": 180,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_8",
-      "name": "おかずの粗熱を取る",
-      "start": "05:27",
-      "end": "05:31",
+      "name": "からあげをレンジで加熱（待ち）",
+      "start": "05:22",
+      "end": "05:26",
       "seconds": 240,
       "attended": false,
       "background": false,
@@ -157,7 +146,33 @@
     },
     {
       "type": "gap",
-      "seconds": 600
+      "seconds": 240
+    },
+    {
+      "type": "task",
+      "id": "bento_8",
+      "name": "熱いからあげにマヨしょうゆだれを絡める",
+      "start": "05:26",
+      "end": "05:28",
+      "seconds": 120,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_9",
+      "name": "おかずの粗熱を取る（放置）",
+      "start": "05:28",
+      "end": "05:33",
+      "seconds": 300,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "gap",
+      "seconds": 540
     },
     {
       "type": "task",
@@ -194,8 +209,8 @@
     },
     {
       "type": "task",
-      "id": "bento_9",
-      "name": "おかずをお弁当箱に詰める",
+      "id": "bento_10",
+      "name": "おかずを弁当箱に詰めて仕上げにごまをふる",
       "start": "05:55",
       "end": "05:58",
       "seconds": 180,
@@ -216,94 +231,100 @@
     }
   ],
   "menu": {
-    "menu_name": "冷凍しゅうまいのケチャップ照り焼き弁当",
+    "menu_name": "冷凍からあげのマヨしょうゆ弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
-        "note": "炊きたてごはんを詰めて、白ごまをふる。",
+        "note": "炊きたてを弁当箱に詰め、白ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍しゅうまいのケチャップ照り焼き",
-        "note": "レンジで解凍したしゅうまいをフライパンで焼き、ケチャップ・醤油・みりんを絡める。",
+        "name": "冷凍からあげのマヨしょうゆ和え",
+        "note": "レンジで加熱したからあげに、マヨネーズ＋しょうゆ少々のたれを絡める。",
         "uses_stock": []
       },
       {
         "name": "冷凍ブロッコリーの塩ごま和え",
-        "note": "レンジ加熱し水気を切り、塩・ごま油・白ごまで和える。",
+        "note": "レンジ解凍して水気を切り、塩・ごま油・白ごまで和える。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんのマヨこしょう和え",
-        "note": "レンジ加熱後、マヨネーズと黒こしょうで和える。",
+        "name": "冷凍いんげんのめんつゆ炒め",
+        "note": "フライパンで軽く炒め、めんつゆを回しかけて水分を飛ばす。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍ブロッコリーといんげんを耐熱皿に出してレンジ加熱スタート",
+        "name": "冷凍からあげと冷凍野菜を袋から出して分量を取る",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "レンジ加熱の待ち時間",
+        "name": "ブロッコリーをレンジで解凍加熱（待ち）",
         "minutes": 3,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "冷凍しゅうまいをレンジで加熱する",
-        "minutes": 3,
-        "attended": false,
+        "name": "マヨしょうゆだれを小皿で混ぜておく",
+        "minutes": 1,
+        "attended": true,
         "needs_rice": false
       },
       {
-        "name": "ブロッコリーの水気を切り、塩・ごま油・白ごまで和える",
+        "name": "ブロッコリーの水気を切って塩・ごま油・ごまで和える",
         "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "いんげんの水気を切り、マヨネーズと黒こしょうで和える",
+        "name": "フライパンでいんげんを炒める",
+        "minutes": 4,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "めんつゆを絡めて水分を飛ばし、バットに取り出す",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "フライパンに油を熱し、しゅうまいを焼き色がつくまで焼く",
-        "minutes": 4,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "ケチャップ・醤油・みりんを加えて照りよく絡める",
-        "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "おかずの粗熱を取る",
+        "name": "からあげをレンジで加熱（待ち）",
         "minutes": 4,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "おかずをお弁当箱に詰める",
+        "name": "熱いからあげにマヨしょうゆだれを絡める",
+        "minutes": 2,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "おかずの粗熱を取る（放置）",
+        "minutes": 5,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "おかずを弁当箱に詰めて仕上げにごまをふる",
         "minutes": 3,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "3日以内の餃子・卵焼き・からあげを避けて、久しぶりのしゅうまいをケチャップ照りでアレンジしました。手を動かすのは約20分なので炊飯の30分待ちに収まります。",
+    "comment": "在庫登録がないので常備の冷凍からあげ・冷凍野菜で構成しました。3日以内のしゅうまい・餃子・卵焼きを避け、味付けもマヨしょうゆで変化をつけています。手を動かす時間は約17分で炊飯待ち30分に収まります。",
     "_usage": {
-      "input_tokens": 3406,
-      "output_tokens": 1142
+      "input_tokens": 3425,
+      "output_tokens": 1369
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-09-14 00:58 JST"
+  "generated_at": "2026-09-15 02:58 JST"
 }
