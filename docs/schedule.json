@@ -1,12 +1,12 @@
 {
-  "date": "2026-09-17",
-  "date_label": "2026年9月17日（木）",
-  "leave_time": "06:03",
+  "date": "2026-09-18",
+  "date_label": "2026年9月18日（金）",
+  "leave_time": "05:59",
   "target_leave": "06:30",
   "latest_leave": "06:35",
-  "slack_minutes": 26.5,
-  "makespan_minutes": 63.5,
-  "bento_minutes": 28.0,
+  "slack_minutes": 30.5,
+  "makespan_minutes": 59.5,
+  "bento_minutes": 23.0,
   "timeline": [
     {
       "type": "task",
@@ -18,6 +18,17 @@
       "attended": true,
       "background": false,
       "kind": "fixed"
+    },
+    {
+      "type": "task",
+      "id": "bento_1",
+      "name": "冷凍ブロッコリーといんげんを耐熱皿に出してレンジ加熱",
+      "start": "05:00",
+      "end": "05:03",
+      "seconds": 180,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
     },
     {
       "type": "task",
@@ -54,8 +65,8 @@
     },
     {
       "type": "task",
-      "id": "bento_1",
-      "name": "冷凍ブロッコリーといんげんを耐熱皿に出してレンジ加熱を開始",
+      "id": "bento_2",
+      "name": "照り焼きだれ（しょうゆ・みりん・砂糖）を小皿で合わせる",
       "start": "05:07",
       "end": "05:08",
       "seconds": 60,
@@ -76,25 +87,10 @@
     },
     {
       "type": "task",
-      "id": "bento_2",
-      "name": "レンジ加熱の待ち時間（3分）",
+      "id": "bento_3",
+      "name": "フライパンに油をひき、冷凍餃子を凍ったまま並べて焼く",
       "start": "05:08",
       "end": "05:11",
-      "seconds": 180,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "gap",
-      "seconds": 180
-    },
-    {
-      "type": "task",
-      "id": "bento_3",
-      "name": "卵3個を割り、マヨネーズ・塩・水を加えて溶きほぐす",
-      "start": "05:11",
-      "end": "05:14",
       "seconds": 180,
       "attended": true,
       "background": false,
@@ -103,20 +99,9 @@
     {
       "type": "task",
       "id": "bento_4",
-      "name": "卵焼き器を温め、数回に分けて巻きながら卵焼きを焼く",
-      "start": "05:14",
-      "end": "05:21",
-      "seconds": 420,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_5",
-      "name": "卵焼きをまきすや皿に取り出して粗熱を取る",
-      "start": "05:21",
-      "end": "05:25",
+      "name": "水を少量入れてふたをし、蒸し焼きにする",
+      "start": "05:11",
+      "end": "05:15",
       "seconds": 240,
       "attended": false,
       "background": false,
@@ -128,11 +113,22 @@
     },
     {
       "type": "task",
+      "id": "bento_5",
+      "name": "ふたを取り水分を飛ばし、たれをからめて照りを出す",
+      "start": "05:15",
+      "end": "05:18",
+      "seconds": 180,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
       "id": "bento_6",
-      "name": "フライパンでいんげんをしょうゆ・みりん・砂糖で甘辛に炒め、ごまをふる",
-      "start": "05:25",
-      "end": "05:29",
-      "seconds": 240,
+      "name": "加熱した野菜の水気をしっかり切る",
+      "start": "05:18",
+      "end": "05:20",
+      "seconds": 120,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -140,24 +136,46 @@
     {
       "type": "task",
       "id": "bento_7",
-      "name": "ブロッコリーの水気を切り、マヨネーズとこしょうで和える",
-      "start": "05:29",
-      "end": "05:31",
-      "seconds": 120,
+      "name": "いんげんをごまマヨで、ブロッコリーをめんつゆおかかで和える",
+      "start": "05:20",
+      "end": "05:23",
+      "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
     },
     {
+      "type": "task",
+      "id": "bento_8",
+      "name": "餃子と副菜を冷ましてから弁当箱に詰める",
+      "start": "05:23",
+      "end": "05:27",
+      "seconds": 240,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
       "type": "gap",
-      "seconds": 360
+      "seconds": 840
+    },
+    {
+      "type": "task",
+      "id": "bento_pack",
+      "name": "お弁当に詰める",
+      "start": "05:37",
+      "end": "05:41",
+      "seconds": 240,
+      "attended": true,
+      "background": false,
+      "kind": "fixed"
     },
     {
       "type": "task",
       "id": "breakfast",
       "name": "朝ごはんを食べる",
-      "start": "05:37",
-      "end": "05:47",
+      "start": "05:41",
+      "end": "05:51",
       "seconds": 600,
       "attended": true,
       "background": false,
@@ -167,8 +185,8 @@
       "type": "task",
       "id": "brush_teeth",
       "name": "歯を磨く",
-      "start": "05:47",
-      "end": "05:52",
+      "start": "05:51",
+      "end": "05:56",
       "seconds": 300,
       "attended": true,
       "background": false,
@@ -178,119 +196,97 @@
       "type": "task",
       "id": "change_clothes",
       "name": "着替える",
-      "start": "05:52",
-      "end": "05:55",
-      "seconds": 180,
-      "attended": true,
-      "background": false,
-      "kind": "fixed"
-    },
-    {
-      "type": "task",
-      "id": "bento_8",
-      "name": "卵焼きを切り、おかずを弁当箱に詰める",
-      "start": "05:55",
+      "start": "05:56",
       "end": "05:59",
-      "seconds": 240,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_pack",
-      "name": "お弁当に詰める",
-      "start": "05:59",
-      "end": "06:03",
-      "seconds": 240,
+      "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "fixed"
     }
   ],
   "menu": {
-    "menu_name": "ふんわり塩マヨ卵焼き弁当",
+    "menu_name": "冷凍餃子の香ばし照り焼き弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
-        "note": "炊きたてを弁当箱に詰め、白ごまをふる。",
+        "note": "炊きあがったごはんを詰めて、白ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "ふんわり塩マヨ卵焼き",
-        "note": "卵3個にマヨネーズ小さじ1・塩少々・水小さじ2を混ぜ、巻きながら焼く。",
+        "name": "冷凍餃子の香ばし照り焼き",
+        "note": "凍ったままフライパンで焼き、しょうゆ・みりん・砂糖各小さじ1弱をからめる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんの甘辛ごま炒め",
-        "note": "レンジ解凍後、しょうゆ・みりん・砂糖で絡めて白ごまをふる。",
+        "name": "冷凍いんげんのごまマヨ和え",
+        "note": "レンジ加熱後、マヨネーズと白ごま、塩少々で和える。",
         "uses_stock": []
       },
       {
-        "name": "冷凍ブロッコリーのマヨこしょう和え",
-        "note": "レンジ加熱して水気を切り、マヨネーズと粗びきこしょうで和える。",
+        "name": "冷凍ブロッコリーのめんつゆおかか和え",
+        "note": "レンジ加熱して水気を切り、めんつゆとかつお節で和える。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍ブロッコリーといんげんを耐熱皿に出してレンジ加熱を開始",
+        "name": "冷凍ブロッコリーといんげんを耐熱皿に出してレンジ加熱",
+        "minutes": 3,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "照り焼きだれ（しょうゆ・みりん・砂糖）を小皿で合わせる",
         "minutes": 1,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "レンジ加熱の待ち時間（3分）",
-        "minutes": 3,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "卵3個を割り、マヨネーズ・塩・水を加えて溶きほぐす",
+        "name": "フライパンに油をひき、冷凍餃子を凍ったまま並べて焼く",
         "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "卵焼き器を温め、数回に分けて巻きながら卵焼きを焼く",
-        "minutes": 7,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "卵焼きをまきすや皿に取り出して粗熱を取る",
+        "name": "水を少量入れてふたをし、蒸し焼きにする",
         "minutes": 4,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "フライパンでいんげんをしょうゆ・みりん・砂糖で甘辛に炒め、ごまをふる",
-        "minutes": 4,
+        "name": "ふたを取り水分を飛ばし、たれをからめて照りを出す",
+        "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "ブロッコリーの水気を切り、マヨネーズとこしょうで和える",
+        "name": "加熱した野菜の水気をしっかり切る",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "卵焼きを切り、おかずを弁当箱に詰める",
-        "minutes": 4,
+        "name": "いんげんをごまマヨで、ブロッコリーをめんつゆおかかで和える",
+        "minutes": 3,
         "attended": true,
-        "needs_rice": true
+        "needs_rice": false
+      },
+      {
+        "name": "餃子と副菜を冷ましてから弁当箱に詰める",
+        "minutes": 4,
+        "attended": false,
+        "needs_rice": false
       }
     ],
     "stock_consumed": [],
-    "comment": "3日連続で冷凍主菜だったので、今日は卵焼きでリセット。卵液にマヨを入れると冷めてもふんわりで、前夜に卵をパックから出して室温近くにしておくと巻きやすいです。",
+    "comment": "在庫登録がないので常備の冷凍食品だけで組みました。卵とからあげは直近で続いたので、久しぶりの餃子を主菜にしています。",
     "_usage": {
-      "input_tokens": 3435,
-      "output_tokens": 1133
+      "input_tokens": 3460,
+      "output_tokens": 1012
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-09-16 01:42 JST"
+  "generated_at": "2026-09-17 01:35 JST"
 }
