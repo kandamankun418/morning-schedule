@@ -1,12 +1,12 @@
 {
-  "date": "2026-09-20",
-  "date_label": "2026年9月20日（日）",
-  "leave_time": "06:02",
+  "date": "2026-09-21",
+  "date_label": "2026年9月21日（月）",
+  "leave_time": "06:03",
   "target_leave": "06:30",
   "latest_leave": "06:35",
-  "slack_minutes": 27.5,
-  "makespan_minutes": 62.5,
-  "bento_minutes": 27.0,
+  "slack_minutes": 26.5,
+  "makespan_minutes": 63.5,
+  "bento_minutes": 32.0,
   "timeline": [
     {
       "type": "task",
@@ -55,10 +55,10 @@
     {
       "type": "task",
       "id": "bento_1",
-      "name": "冷凍からあげをレンジで加熱する（皿に並べてスタート）",
+      "name": "米を研いで炊飯をセットする",
       "start": "05:07",
-      "end": "05:08",
-      "seconds": 60,
+      "end": "05:11",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -77,9 +77,57 @@
     {
       "type": "task",
       "id": "bento_2",
-      "name": "からあげのレンジ加熱待ち",
-      "start": "05:08",
-      "end": "05:12",
+      "name": "冷凍ブロッコリーといんげんを耐熱皿に並べラップをする",
+      "start": "05:11",
+      "end": "05:13",
+      "seconds": 120,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_3",
+      "name": "冷凍野菜をレンジ加熱（600W約3分）",
+      "start": "05:13",
+      "end": "05:16",
+      "seconds": 180,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "gap",
+      "seconds": 180
+    },
+    {
+      "type": "task",
+      "id": "bento_4",
+      "name": "卵液を作る（卵2個＋めんつゆ・砂糖・水）",
+      "start": "05:16",
+      "end": "05:19",
+      "seconds": 180,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_5",
+      "name": "卵焼きを焼いて巻く",
+      "start": "05:19",
+      "end": "05:25",
+      "seconds": 360,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_6",
+      "name": "卵焼きを取り出して粗熱を取る",
+      "start": "05:25",
+      "end": "05:29",
       "seconds": 240,
       "attended": false,
       "background": false,
@@ -91,55 +139,11 @@
     },
     {
       "type": "task",
-      "id": "bento_3",
-      "name": "冷凍いんげん・ブロッコリーをそれぞれレンジ加熱にかける",
-      "start": "05:12",
-      "end": "05:13",
-      "seconds": 60,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_4",
-      "name": "野菜のレンジ加熱待ち（その間に照り焼きのたれを合わせる）",
-      "start": "05:13",
-      "end": "05:16",
-      "seconds": 180,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_5",
-      "name": "フライパンでからあげにたれを絡めて照りを出す",
-      "start": "05:16",
-      "end": "05:21",
-      "seconds": 300,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_6",
-      "name": "同じフライパンでブロッコリーを塩こしょうソテーする",
-      "start": "05:21",
-      "end": "05:24",
-      "seconds": 180,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
       "id": "bento_7",
-      "name": "いんげんの水気を切ってごまマヨで和える",
-      "start": "05:24",
-      "end": "05:26",
-      "seconds": 120,
+      "name": "いんげんをフライパンでケチャップソテーにする",
+      "start": "05:29",
+      "end": "05:33",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -147,17 +151,17 @@
     {
       "type": "task",
       "id": "bento_8",
-      "name": "おかずの粗熱を取る",
-      "start": "05:26",
-      "end": "05:31",
-      "seconds": 300,
-      "attended": false,
+      "name": "ブロッコリーを塩ごまで和える",
+      "start": "05:33",
+      "end": "05:35",
+      "seconds": 120,
+      "attended": true,
       "background": false,
       "kind": "bento"
     },
     {
       "type": "gap",
-      "seconds": 660
+      "seconds": 120
     },
     {
       "type": "task",
@@ -195,10 +199,10 @@
     {
       "type": "task",
       "id": "bento_9",
-      "name": "ごはんにごまをふり、おかずを詰める",
+      "name": "卵焼きを切り、おかずを弁当箱に詰める",
       "start": "05:55",
-      "end": "05:58",
-      "seconds": 180,
+      "end": "05:59",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -207,8 +211,8 @@
       "type": "task",
       "id": "bento_pack",
       "name": "お弁当に詰める",
-      "start": "05:58",
-      "end": "06:02",
+      "start": "05:59",
+      "end": "06:03",
       "seconds": 240,
       "attended": true,
       "background": false,
@@ -216,94 +220,94 @@
     }
   ],
   "menu": {
-    "menu_name": "冷凍からあげの甘辛みりん照り弁当",
+    "menu_name": "甘辛だし巻き風卵焼き弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
-        "note": "炊きたてを弁当箱に詰め、白ごまをふる。",
+        "note": "炊きあがりを弁当箱に詰め、白ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍からあげの甘辛みりん照り",
-        "note": "レンジで解凍加熱し、フライパンで醤油・みりん・砂糖のたれを絡める。",
+        "name": "甘辛だし巻き風卵焼き",
+        "note": "卵2個にめんつゆ・砂糖少々・水大さじ1を混ぜ、巻きながら焼く。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんのごまマヨ和え",
-        "note": "レンジ加熱後、マヨネーズとすりごま、塩少々で和える。",
+        "name": "冷凍いんげんのケチャップソテー",
+        "note": "レンジ解凍したいんげんを油で炒め、ケチャップと塩こしょうで味付け。",
         "uses_stock": []
       },
       {
-        "name": "冷凍ブロッコリーの塩こしょうソテー",
-        "note": "レンジ解凍後、油で軽く炒めて塩こしょう。",
+        "name": "冷凍ブロッコリーの塩ごま和え",
+        "note": "レンジ加熱後に水気を切り、ごま油・塩・白ごまで和える。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍からあげをレンジで加熱する（皿に並べてスタート）",
-        "minutes": 1,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "からあげのレンジ加熱待ち",
+        "name": "米を研いで炊飯をセットする",
         "minutes": 4,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "冷凍いんげん・ブロッコリーをそれぞれレンジ加熱にかける",
-        "minutes": 1,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "野菜のレンジ加熱待ち（その間に照り焼きのたれを合わせる）",
-        "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "フライパンでからあげにたれを絡めて照りを出す",
-        "minutes": 5,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "同じフライパンでブロッコリーを塩こしょうソテーする",
-        "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "いんげんの水気を切ってごまマヨで和える",
+        "name": "冷凍ブロッコリーといんげんを耐熱皿に並べラップをする",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "おかずの粗熱を取る",
-        "minutes": 5,
+        "name": "冷凍野菜をレンジ加熱（600W約3分）",
+        "minutes": 3,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "ごはんにごまをふり、おかずを詰める",
+        "name": "卵液を作る（卵2個＋めんつゆ・砂糖・水）",
         "minutes": 3,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "卵焼きを焼いて巻く",
+        "minutes": 6,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "卵焼きを取り出して粗熱を取る",
+        "minutes": 4,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "いんげんをフライパンでケチャップソテーにする",
+        "minutes": 4,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "ブロッコリーを塩ごまで和える",
+        "minutes": 2,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "卵焼きを切り、おかずを弁当箱に詰める",
+        "minutes": 4,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "直近3日はしゅうまい・餃子・卵焼きが続いたので、4日空いたからあげを主菜にしました。たれは前夜に混ぜておくと朝の工程が2分ほど短縮できます。",
+    "comment": "3日以内に出していない卵焼きを主菜にし、味付けもケチャップ・塩ごまで前日と重ならないようにしました。卵液は前夜に作って冷蔵しておくと朝が3分短縮できます。",
     "_usage": {
-      "input_tokens": 3505,
-      "output_tokens": 1006
+      "input_tokens": 3516,
+      "output_tokens": 967
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-09-19 01:11 JST"
+  "generated_at": "2026-09-20 00:43 JST"
 }
