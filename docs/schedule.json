@@ -1,12 +1,12 @@
 {
-  "date": "2026-09-23",
-  "date_label": "2026年9月23日（水）",
+  "date": "2026-09-24",
+  "date_label": "2026年9月24日（木）",
   "leave_time": "06:02",
   "target_leave": "06:30",
   "latest_leave": "06:35",
   "slack_minutes": 27.5,
   "makespan_minutes": 62.5,
-  "bento_minutes": 27.0,
+  "bento_minutes": 28.0,
   "timeline": [
     {
       "type": "task",
@@ -22,10 +22,10 @@
     {
       "type": "task",
       "id": "bento_1",
-      "name": "冷凍ブロッコリーを耐熱皿に並べてレンジ加熱（600W約2分）",
+      "name": "冷凍からあげをレンジで加熱する",
       "start": "05:00",
-      "end": "05:02",
-      "seconds": 120,
+      "end": "05:04",
+      "seconds": 240,
       "attended": false,
       "background": false,
       "kind": "bento"
@@ -66,7 +66,7 @@
     {
       "type": "task",
       "id": "bento_2",
-      "name": "みそだれを合わせる（みそ・みりん・醤油・砂糖）",
+      "name": "甘酢ケチャップだれを合わせる（ケチャップ・砂糖・酢・しょうゆ）",
       "start": "05:07",
       "end": "05:09",
       "seconds": 120,
@@ -88,36 +88,36 @@
     {
       "type": "task",
       "id": "bento_3",
-      "name": "フライパンに油をひき、冷凍餃子を並べて焼く",
+      "name": "冷凍ブロッコリーをレンジで加熱する",
       "start": "05:09",
       "end": "05:12",
       "seconds": 180,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_4",
-      "name": "餃子に少量の水を入れ蓋をして蒸し焼き",
-      "start": "05:12",
-      "end": "05:16",
-      "seconds": 240,
       "attended": false,
       "background": false,
       "kind": "bento"
     },
     {
       "type": "gap",
-      "seconds": 240
+      "seconds": 180
+    },
+    {
+      "type": "task",
+      "id": "bento_4",
+      "name": "フライパンでからあげにたれを絡める",
+      "start": "05:12",
+      "end": "05:16",
+      "seconds": 240,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
     },
     {
       "type": "task",
       "id": "bento_5",
-      "name": "ブロッコリーの水気を切り、マヨ＋醤油で和える",
+      "name": "同じフライパンで冷凍いんげんをバターしょうゆ炒めにする",
       "start": "05:16",
-      "end": "05:18",
-      "seconds": 120,
+      "end": "05:21",
+      "seconds": 300,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -125,10 +125,10 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "餃子の蓋を取り水分を飛ばし、みそだれを絡めて取り出す",
-      "start": "05:18",
-      "end": "05:21",
-      "seconds": 180,
+      "name": "ブロッコリーの水気を切り、めんつゆとおかかで和える",
+      "start": "05:21",
+      "end": "05:23",
+      "seconds": 120,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -136,28 +136,17 @@
     {
       "type": "task",
       "id": "bento_7",
-      "name": "同じフライパンで冷凍いんげんを炒め、塩こしょうで味付け",
-      "start": "05:21",
-      "end": "05:25",
-      "seconds": 240,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_8",
       "name": "おかずの粗熱を取る",
-      "start": "05:25",
-      "end": "05:29",
-      "seconds": 240,
+      "start": "05:23",
+      "end": "05:28",
+      "seconds": 300,
       "attended": false,
       "background": false,
       "kind": "bento"
     },
     {
       "type": "gap",
-      "seconds": 720
+      "seconds": 840
     },
     {
       "type": "task",
@@ -194,8 +183,8 @@
     },
     {
       "type": "task",
-      "id": "bento_9",
-      "name": "ごはんに白ごまをふり、おかずを詰める",
+      "id": "bento_8",
+      "name": "おかずを弁当箱に詰める",
       "start": "05:55",
       "end": "05:58",
       "seconds": 180,
@@ -216,7 +205,7 @@
     }
   ],
   "menu": {
-    "menu_name": "冷凍餃子のみそだれ照り焼き弁当",
+    "menu_name": "冷凍からあげの甘酢ケチャップ炒め弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
@@ -224,86 +213,80 @@
         "uses_stock": []
       },
       {
-        "name": "冷凍餃子のみそだれ照り焼き",
-        "note": "凍ったままフライパンで焼き、みそ・みりん・醤油・砂糖のたれを絡める。",
+        "name": "冷凍からあげの甘酢ケチャップ炒め",
+        "note": "冷凍からあげをレンジで解凍加熱し、ケチャップ・砂糖・酢・しょうゆのたれをフライパンで絡める。",
         "uses_stock": []
       },
       {
-        "name": "冷凍ブロッコリーのマヨしょうゆ和え",
-        "note": "レンジ加熱して水気を切り、マヨ＋醤油少々で和える。",
+        "name": "冷凍ブロッコリーのめんつゆおかか和え",
+        "note": "レンジ加熱して水気を切り、めんつゆとかつお節で和える。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんの塩こしょうソテー",
-        "note": "油をひいたフライパンでさっと炒め、塩こしょうで味付け。",
+        "name": "冷凍いんげんのバターしょうゆ炒め",
+        "note": "凍ったままフライパンで炒め、バターとしょうゆで味付け。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍ブロッコリーを耐熱皿に並べてレンジ加熱（600W約2分）",
-        "minutes": 2,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "みそだれを合わせる（みそ・みりん・醤油・砂糖）",
-        "minutes": 2,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "フライパンに油をひき、冷凍餃子を並べて焼く",
-        "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "餃子に少量の水を入れ蓋をして蒸し焼き",
+        "name": "冷凍からあげをレンジで加熱する",
         "minutes": 4,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "ブロッコリーの水気を切り、マヨ＋醤油で和える",
+        "name": "甘酢ケチャップだれを合わせる（ケチャップ・砂糖・酢・しょうゆ）",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "餃子の蓋を取り水分を飛ばし、みそだれを絡めて取り出す",
+        "name": "冷凍ブロッコリーをレンジで加熱する",
         "minutes": 3,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "フライパンでからあげにたれを絡める",
+        "minutes": 4,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "同じフライパンで冷凍いんげんを炒め、塩こしょうで味付け",
-        "minutes": 4,
+        "name": "同じフライパンで冷凍いんげんをバターしょうゆ炒めにする",
+        "minutes": 5,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "ブロッコリーの水気を切り、めんつゆとおかかで和える",
+        "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
         "name": "おかずの粗熱を取る",
-        "minutes": 4,
+        "minutes": 5,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "ごはんに白ごまをふり、おかずを詰める",
+        "name": "おかずを弁当箱に詰める",
         "minutes": 3,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "在庫登録がないので常備の冷凍食品でまとめました。みそだれだけ前夜に混ぜておくと朝が2分短縮できます。",
+    "comment": "在庫登録がないので常備の冷凍食品でまとめました。前夜に甘酢だれを混ぜて冷蔵しておくと朝が2分短縮できます。",
     "_usage": {
-      "input_tokens": 3507,
-      "output_tokens": 1099
+      "input_tokens": 3535,
+      "output_tokens": 1068
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-09-22 03:06 JST"
+  "generated_at": "2026-09-23 01:41 JST"
 }
