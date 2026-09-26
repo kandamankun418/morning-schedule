@@ -1,12 +1,12 @@
 {
-  "date": "2026-09-27",
-  "date_label": "2026年9月27日（日）",
-  "leave_time": "06:03",
+  "date": "2026-09-28",
+  "date_label": "2026年9月28日（月）",
+  "leave_time": "06:02",
   "target_leave": "06:30",
   "latest_leave": "06:35",
-  "slack_minutes": 26.5,
-  "makespan_minutes": 63.5,
-  "bento_minutes": 27.0,
+  "slack_minutes": 27.5,
+  "makespan_minutes": 62.5,
+  "bento_minutes": 28.0,
   "timeline": [
     {
       "type": "task",
@@ -22,7 +22,7 @@
     {
       "type": "task",
       "id": "bento_1",
-      "name": "冷凍ブロッコリーを耐熱皿に出してレンジ加熱",
+      "name": "冷凍ブロッコリーといんげんをレンジ加熱する",
       "start": "05:00",
       "end": "05:03",
       "seconds": 180,
@@ -66,10 +66,10 @@
     {
       "type": "task",
       "id": "bento_2",
-      "name": "卵2個を溶き、砂糖・しょうゆ・みりんを混ぜる",
+      "name": "南蛮だれ（しょうゆ・砂糖・酢・みりん）を計って混ぜておく",
       "start": "05:07",
-      "end": "05:10",
-      "seconds": 180,
+      "end": "05:09",
+      "seconds": 120,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -88,10 +88,10 @@
     {
       "type": "task",
       "id": "bento_3",
-      "name": "フライパンで甘辛の炒り卵（そぼろ状）を作る",
-      "start": "05:10",
+      "name": "白身魚フライをフライパンに並べ、少量の油で両面を焼く",
+      "start": "05:09",
       "end": "05:15",
-      "seconds": 300,
+      "seconds": 360,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -99,25 +99,21 @@
     {
       "type": "task",
       "id": "bento_4",
-      "name": "炒り卵をバットに移して粗熱を取る",
+      "name": "火を弱めて南蛮だれを加え、からめて取り出す",
       "start": "05:15",
-      "end": "05:19",
-      "seconds": 240,
-      "attended": false,
+      "end": "05:18",
+      "seconds": 180,
+      "attended": true,
       "background": false,
       "kind": "bento"
     },
     {
-      "type": "gap",
-      "seconds": 240
-    },
-    {
       "type": "task",
       "id": "bento_5",
-      "name": "同じフライパンで冷凍いんげんをめんつゆバター炒め",
-      "start": "05:19",
-      "end": "05:24",
-      "seconds": 300,
+      "name": "同じフライパンでいんげんを炒め、塩こしょうで味つけ",
+      "start": "05:18",
+      "end": "05:21",
+      "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -125,17 +121,28 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "ブロッコリーの水気を切り、塩・ごま油・白ごまで和える",
-      "start": "05:24",
-      "end": "05:27",
+      "name": "ブロッコリーの水気を切り、マヨ・かつお節・しょうゆで和える",
+      "start": "05:21",
+      "end": "05:24",
       "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
     },
     {
+      "type": "task",
+      "id": "bento_7",
+      "name": "おかずの粗熱を取る",
+      "start": "05:24",
+      "end": "05:29",
+      "seconds": 300,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
       "type": "gap",
-      "seconds": 600
+      "seconds": 780
     },
     {
       "type": "task",
@@ -172,11 +179,11 @@
     },
     {
       "type": "task",
-      "id": "bento_7",
-      "name": "おかずを詰めて仕上げに白ごまをふる",
+      "id": "bento_8",
+      "name": "おかずを弁当箱に詰める",
       "start": "05:55",
-      "end": "05:59",
-      "seconds": 240,
+      "end": "05:58",
+      "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -185,8 +192,8 @@
       "type": "task",
       "id": "bento_pack",
       "name": "お弁当に詰める",
-      "start": "05:59",
-      "end": "06:03",
+      "start": "05:58",
+      "end": "06:02",
       "seconds": 240,
       "attended": true,
       "background": false,
@@ -194,82 +201,88 @@
     }
   ],
   "menu": {
-    "menu_name": "豚こま風・鶏そぼろ弁当…ではなく「甘辛そぼろ卵弁当」",
+    "menu_name": "白身魚フライの南蛮だれ弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
-        "note": "炊きあがったごはんを詰め、白ごまをふる。",
+        "note": "炊きあがったごはんを弁当箱に詰め、白ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "卵そぼろの甘辛炒り卵",
-        "note": "卵2個に砂糖・しょうゆ・みりんを混ぜ、フライパンで箸4本でかき混ぜながら炒り卵にする。",
+        "name": "冷凍白身魚フライの南蛮だれ",
+        "note": "トースターまたはフライパンで加熱し、しょうゆ・砂糖・酢・みりんの甘酢だれをからめる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんのめんつゆバター炒め",
-        "note": "凍ったままフライパンで炒め、めんつゆとバター少々で味付け。",
+        "name": "冷凍いんげんの塩こしょうソテー",
+        "note": "レンジ解凍後、油でさっと炒めて塩こしょう。",
         "uses_stock": []
       },
       {
-        "name": "冷凍ブロッコリーの塩ごま和え",
-        "note": "レンジ解凍して水気を切り、塩・ごま油・白ごまで和える。",
+        "name": "冷凍ブロッコリーのマヨおかか和え",
+        "note": "レンジ加熱して水気を切り、マヨネーズとかつお節、しょうゆ少々で和える。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍ブロッコリーを耐熱皿に出してレンジ加熱",
+        "name": "冷凍ブロッコリーといんげんをレンジ加熱する",
         "minutes": 3,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "卵2個を溶き、砂糖・しょうゆ・みりんを混ぜる",
+        "name": "南蛮だれ（しょうゆ・砂糖・酢・みりん）を計って混ぜておく",
+        "minutes": 2,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "白身魚フライをフライパンに並べ、少量の油で両面を焼く",
+        "minutes": 6,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "火を弱めて南蛮だれを加え、からめて取り出す",
         "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "フライパンで甘辛の炒り卵（そぼろ状）を作る",
-        "minutes": 5,
+        "name": "同じフライパンでいんげんを炒め、塩こしょうで味つけ",
+        "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "炒り卵をバットに移して粗熱を取る",
-        "minutes": 4,
+        "name": "ブロッコリーの水気を切り、マヨ・かつお節・しょうゆで和える",
+        "minutes": 3,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "おかずの粗熱を取る",
+        "minutes": 5,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "同じフライパンで冷凍いんげんをめんつゆバター炒め",
-        "minutes": 5,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "ブロッコリーの水気を切り、塩・ごま油・白ごまで和える",
+        "name": "おかずを弁当箱に詰める",
         "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "おかずを詰めて仕上げに白ごまをふる",
-        "minutes": 4,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "直近は卵焼き・冷凍主菜が続いたので、同じ卵でも食感の違う甘辛そぼろに変更しました。炒り卵は前夜に作って冷蔵しておくと朝は詰めるだけで10分短縮できます。",
+    "comment": "在庫登録がないので常備の冷凍食品だけで完結させました。前夜に南蛮だれを合わせておくと朝が3分短縮できます。",
     "_usage": {
-      "input_tokens": 3552,
-      "output_tokens": 804
+      "input_tokens": 3570,
+      "output_tokens": 1138
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-09-26 01:58 JST"
+  "generated_at": "2026-09-27 01:09 JST"
 }
