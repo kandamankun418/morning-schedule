@@ -1,12 +1,12 @@
 {
-  "date": "2026-09-28",
-  "date_label": "2026年9月28日（月）",
-  "leave_time": "06:02",
+  "date": "2026-09-29",
+  "date_label": "2026年9月29日（火）",
+  "leave_time": "06:03",
   "target_leave": "06:30",
   "latest_leave": "06:35",
-  "slack_minutes": 27.5,
-  "makespan_minutes": 62.5,
-  "bento_minutes": 28.0,
+  "slack_minutes": 26.5,
+  "makespan_minutes": 63.5,
+  "bento_minutes": 30.0,
   "timeline": [
     {
       "type": "task",
@@ -18,17 +18,6 @@
       "attended": true,
       "background": false,
       "kind": "fixed"
-    },
-    {
-      "type": "task",
-      "id": "bento_1",
-      "name": "冷凍ブロッコリーといんげんをレンジ加熱する",
-      "start": "05:00",
-      "end": "05:03",
-      "seconds": 180,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
     },
     {
       "type": "task",
@@ -65,8 +54,8 @@
     },
     {
       "type": "task",
-      "id": "bento_2",
-      "name": "南蛮だれ（しょうゆ・砂糖・酢・みりん）を計って混ぜておく",
+      "id": "bento_1",
+      "name": "冷凍いんげんとブロッコリーを耐熱皿に出しレンジ加熱を開始",
       "start": "05:07",
       "end": "05:09",
       "seconds": 120,
@@ -87,11 +76,26 @@
     },
     {
       "type": "task",
-      "id": "bento_3",
-      "name": "白身魚フライをフライパンに並べ、少量の油で両面を焼く",
+      "id": "bento_2",
+      "name": "レンジ加熱の待ち時間（その間に甘酢だれを計量して混ぜる）",
       "start": "05:09",
+      "end": "05:12",
+      "seconds": 180,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "gap",
+      "seconds": 180
+    },
+    {
+      "type": "task",
+      "id": "bento_3",
+      "name": "フライパンに油をひき冷凍餃子を並べて焼き始める",
+      "start": "05:12",
       "end": "05:15",
-      "seconds": 360,
+      "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -99,21 +103,25 @@
     {
       "type": "task",
       "id": "bento_4",
-      "name": "火を弱めて南蛮だれを加え、からめて取り出す",
+      "name": "水を加えてフタをし蒸し焼き（放置）",
       "start": "05:15",
-      "end": "05:18",
-      "seconds": 180,
-      "attended": true,
+      "end": "05:20",
+      "seconds": 300,
+      "attended": false,
       "background": false,
       "kind": "bento"
     },
     {
+      "type": "gap",
+      "seconds": 300
+    },
+    {
       "type": "task",
       "id": "bento_5",
-      "name": "同じフライパンでいんげんを炒め、塩こしょうで味つけ",
-      "start": "05:18",
-      "end": "05:21",
-      "seconds": 180,
+      "name": "野菜の水気を切り、いんげんをごまマヨで、ブロッコリーをめんつゆおかかで和える",
+      "start": "05:20",
+      "end": "05:24",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -121,10 +129,10 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "ブロッコリーの水気を切り、マヨ・かつお節・しょうゆで和える",
-      "start": "05:21",
-      "end": "05:24",
-      "seconds": 180,
+      "name": "フタを取り水分を飛ばし、甘酢だれをからめて焼き上げる",
+      "start": "05:24",
+      "end": "05:28",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -133,8 +141,8 @@
       "type": "task",
       "id": "bento_7",
       "name": "おかずの粗熱を取る",
-      "start": "05:24",
-      "end": "05:29",
+      "start": "05:28",
+      "end": "05:33",
       "seconds": 300,
       "attended": false,
       "background": false,
@@ -142,7 +150,7 @@
     },
     {
       "type": "gap",
-      "seconds": 780
+      "seconds": 540
     },
     {
       "type": "task",
@@ -180,10 +188,10 @@
     {
       "type": "task",
       "id": "bento_8",
-      "name": "おかずを弁当箱に詰める",
+      "name": "おかずを弁当箱に詰め、ごはんにごまをふる",
       "start": "05:55",
-      "end": "05:58",
-      "seconds": 180,
+      "end": "05:59",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -192,8 +200,8 @@
       "type": "task",
       "id": "bento_pack",
       "name": "お弁当に詰める",
-      "start": "05:58",
-      "end": "06:02",
+      "start": "05:59",
+      "end": "06:03",
       "seconds": 240,
       "attended": true,
       "background": false,
@@ -201,63 +209,63 @@
     }
   ],
   "menu": {
-    "menu_name": "白身魚フライの南蛮だれ弁当",
+    "menu_name": "冷凍餃子の甘酢あん弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
-        "note": "炊きあがったごはんを弁当箱に詰め、白ごまをふる。",
+        "note": "炊きたてごはんを詰め、白ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍白身魚フライの南蛮だれ",
-        "note": "トースターまたはフライパンで加熱し、しょうゆ・砂糖・酢・みりんの甘酢だれをからめる。",
+        "name": "冷凍餃子の甘酢あんからめ",
+        "note": "フライパンで餃子を焼き、酢・砂糖・しょうゆ・ケチャップの甘酢だれをからめる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんの塩こしょうソテー",
-        "note": "レンジ解凍後、油でさっと炒めて塩こしょう。",
+        "name": "冷凍いんげんのごまマヨ和え",
+        "note": "レンジ解凍して水気を切り、マヨネーズとすりごま、塩少々で和える。",
         "uses_stock": []
       },
       {
-        "name": "冷凍ブロッコリーのマヨおかか和え",
-        "note": "レンジ加熱して水気を切り、マヨネーズとかつお節、しょうゆ少々で和える。",
+        "name": "冷凍ブロッコリーのめんつゆおかか和え",
+        "note": "レンジ解凍して水気を切り、めんつゆとかつお節で和える。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍ブロッコリーといんげんをレンジ加熱する",
-        "minutes": 3,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "南蛮だれ（しょうゆ・砂糖・酢・みりん）を計って混ぜておく",
+        "name": "冷凍いんげんとブロッコリーを耐熱皿に出しレンジ加熱を開始",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "白身魚フライをフライパンに並べ、少量の油で両面を焼く",
-        "minutes": 6,
-        "attended": true,
+        "name": "レンジ加熱の待ち時間（その間に甘酢だれを計量して混ぜる）",
+        "minutes": 3,
+        "attended": false,
         "needs_rice": false
       },
       {
-        "name": "火を弱めて南蛮だれを加え、からめて取り出す",
+        "name": "フライパンに油をひき冷凍餃子を並べて焼き始める",
         "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "同じフライパンでいんげんを炒め、塩こしょうで味つけ",
-        "minutes": 3,
+        "name": "水を加えてフタをし蒸し焼き（放置）",
+        "minutes": 5,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "野菜の水気を切り、いんげんをごまマヨで、ブロッコリーをめんつゆおかかで和える",
+        "minutes": 4,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "ブロッコリーの水気を切り、マヨ・かつお節・しょうゆで和える",
-        "minutes": 3,
+        "name": "フタを取り水分を飛ばし、甘酢だれをからめて焼き上げる",
+        "minutes": 4,
         "attended": true,
         "needs_rice": false
       },
@@ -268,21 +276,21 @@
         "needs_rice": false
       },
       {
-        "name": "おかずを弁当箱に詰める",
-        "minutes": 3,
+        "name": "おかずを弁当箱に詰め、ごはんにごまをふる",
+        "minutes": 4,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "在庫登録がないので常備の冷凍食品だけで完結させました。前夜に南蛮だれを合わせておくと朝が3分短縮できます。",
+    "comment": "在庫登録がないので常備の冷凍餃子と冷凍野菜で構成しました。甘酢だれは前夜に合わせておくと朝は焼くだけで済みます。",
     "_usage": {
-      "input_tokens": 3570,
-      "output_tokens": 1138
+      "input_tokens": 3567,
+      "output_tokens": 1036
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-09-27 01:09 JST"
+  "generated_at": "2026-09-28 01:46 JST"
 }
