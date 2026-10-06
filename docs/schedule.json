@@ -1,12 +1,12 @@
 {
-  "date": "2026-10-07",
-  "date_label": "2026年10月7日（水）",
-  "leave_time": "06:03",
+  "date": "2026-10-08",
+  "date_label": "2026年10月8日（木）",
+  "leave_time": "06:01",
   "target_leave": "06:30",
   "latest_leave": "06:35",
-  "slack_minutes": 26.5,
-  "makespan_minutes": 63.5,
-  "bento_minutes": 30.0,
+  "slack_minutes": 28.5,
+  "makespan_minutes": 61.5,
+  "bento_minutes": 36.0,
   "timeline": [
     {
       "type": "task",
@@ -18,17 +18,6 @@
       "attended": true,
       "background": false,
       "kind": "fixed"
-    },
-    {
-      "type": "task",
-      "id": "bento_1",
-      "name": "冷凍しゅうまいをレンジで加熱する",
-      "start": "05:00",
-      "end": "05:03",
-      "seconds": 180,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
     },
     {
       "type": "task",
@@ -65,22 +54,11 @@
     },
     {
       "type": "task",
-      "id": "bento_2",
-      "name": "冷凍ブロッコリーをレンジで加熱する",
-      "start": "05:03",
-      "end": "05:06",
-      "seconds": 180,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_3",
-      "name": "照りだれ（しょうゆ・みりん・砂糖・酒）を小皿で合わせる",
+      "id": "bento_1",
+      "name": "炊飯をセットし、ゆで卵用の湯を沸かす",
       "start": "05:07",
-      "end": "05:09",
-      "seconds": 120,
+      "end": "05:10",
+      "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -98,22 +76,48 @@
     },
     {
       "type": "task",
-      "id": "bento_4",
-      "name": "フライパンでしゅうまいを軽く焼き、たれをからめる",
-      "start": "05:09",
-      "end": "05:14",
-      "seconds": 300,
-      "attended": true,
+      "id": "bento_2",
+      "name": "卵を茹でる（タルタル用・固ゆで）",
+      "start": "05:10",
+      "end": "05:18",
+      "seconds": 480,
+      "attended": false,
       "background": false,
       "kind": "bento"
     },
     {
       "type": "task",
+      "id": "bento_3",
+      "name": "白身魚フライをトースター（またはフライパン）で加熱",
+      "start": "05:18",
+      "end": "05:25",
+      "seconds": 420,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_4",
+      "name": "冷凍ブロッコリーをレンジ加熱",
+      "start": "05:25",
+      "end": "05:28",
+      "seconds": 180,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "gap",
+      "seconds": 1080
+    },
+    {
+      "type": "task",
       "id": "bento_5",
-      "name": "同じフライパンで冷凍いんげんを炒め、塩こしょうで味つけ",
-      "start": "05:14",
-      "end": "05:19",
-      "seconds": 300,
+      "name": "ブロッコリーの水気を切り、めんつゆとマヨで和える",
+      "start": "05:28",
+      "end": "05:30",
+      "seconds": 120,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -121,10 +125,10 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "ブロッコリーの水気をきってマヨ・おかかで和える",
-      "start": "05:19",
-      "end": "05:22",
-      "seconds": 180,
+      "name": "冷凍いんげんをバターで炒め、しょうゆで味付け",
+      "start": "05:30",
+      "end": "05:34",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -132,25 +136,43 @@
     {
       "type": "task",
       "id": "bento_7",
-      "name": "おかずの粗熱を取る",
-      "start": "05:22",
-      "end": "05:27",
+      "name": "ゆで卵を冷水にとって殻をむき、刻んでマヨ・塩こしょうでタルタル風ソースを作る",
+      "start": "05:34",
+      "end": "05:39",
       "seconds": 300,
-      "attended": false,
+      "attended": true,
       "background": false,
       "kind": "bento"
-    },
-    {
-      "type": "gap",
-      "seconds": 900
     },
     {
       "type": "task",
       "id": "breakfast",
       "name": "朝ごはんを食べる",
-      "start": "05:37",
-      "end": "05:47",
+      "start": "05:39",
+      "end": "05:49",
       "seconds": 600,
+      "attended": true,
+      "background": false,
+      "kind": "fixed"
+    },
+    {
+      "type": "task",
+      "id": "bento_8",
+      "name": "フライを食べやすく切り、おかずを粗熱を取ってから詰める",
+      "start": "05:39",
+      "end": "05:43",
+      "seconds": 240,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_pack",
+      "name": "お弁当に詰める",
+      "start": "05:49",
+      "end": "05:53",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "fixed"
@@ -159,8 +181,8 @@
       "type": "task",
       "id": "brush_teeth",
       "name": "歯を磨く",
-      "start": "05:47",
-      "end": "05:52",
+      "start": "05:53",
+      "end": "05:58",
       "seconds": 300,
       "attended": true,
       "background": false,
@@ -170,119 +192,97 @@
       "type": "task",
       "id": "change_clothes",
       "name": "着替える",
-      "start": "05:52",
-      "end": "05:55",
+      "start": "05:58",
+      "end": "06:01",
       "seconds": 180,
-      "attended": true,
-      "background": false,
-      "kind": "fixed"
-    },
-    {
-      "type": "task",
-      "id": "bento_8",
-      "name": "おかずを弁当箱に詰めてごまをふる",
-      "start": "05:55",
-      "end": "05:59",
-      "seconds": 240,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_pack",
-      "name": "お弁当に詰める",
-      "start": "05:59",
-      "end": "06:03",
-      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "fixed"
     }
   ],
   "menu": {
-    "menu_name": "冷凍しゅうまいのしょうゆ照り弁当",
+    "menu_name": "白身魚フライのタルタル風弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
-        "note": "炊きあがったごはんを弁当箱に詰め、白ごまをふる。",
+        "note": "炊きあがったごはんを詰め、白ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍しゅうまいのしょうゆ照り",
-        "note": "レンジで加熱したしゅうまいを、しょうゆ・みりん・砂糖のたれでフライパンでからめる。",
+        "name": "冷凍白身魚フライのタルタル風ソース",
+        "note": "フライをトースターかフライパンで加熱。マヨ＋刻みゆで卵＋塩こしょうのタルタル風ソースを添える。",
         "uses_stock": []
       },
       {
-        "name": "冷凍ブロッコリーのおかかマヨ和え",
-        "note": "レンジ加熱して水気をきり、マヨネーズと削り節（なければめんつゆ少々）で和える。",
+        "name": "冷凍ブロッコリーのめんつゆマヨ和え",
+        "note": "レンジ解凍して水気を切り、めんつゆ少々とマヨで和える。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんのこしょう炒め",
-        "note": "油で炒めて塩・こしょうで味つけ。",
+        "name": "冷凍いんげんのしょうゆバター炒め",
+        "note": "フライパンでバターと炒め、しょうゆをひとまわし。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍しゅうまいをレンジで加熱する",
+        "name": "炊飯をセットし、ゆで卵用の湯を沸かす",
+        "minutes": 3,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "卵を茹でる（タルタル用・固ゆで）",
+        "minutes": 8,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "白身魚フライをトースター（またはフライパン）で加熱",
+        "minutes": 7,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "冷凍ブロッコリーをレンジ加熱",
         "minutes": 3,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "冷凍ブロッコリーをレンジで加熱する",
-        "minutes": 3,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "照りだれ（しょうゆ・みりん・砂糖・酒）を小皿で合わせる",
+        "name": "ブロッコリーの水気を切り、めんつゆとマヨで和える",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "フライパンでしゅうまいを軽く焼き、たれをからめる",
-        "minutes": 5,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "同じフライパンで冷凍いんげんを炒め、塩こしょうで味つけ",
-        "minutes": 5,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "ブロッコリーの水気をきってマヨ・おかかで和える",
-        "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "おかずの粗熱を取る",
-        "minutes": 5,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "おかずを弁当箱に詰めてごまをふる",
+        "name": "冷凍いんげんをバターで炒め、しょうゆで味付け",
         "minutes": 4,
         "attended": true,
-        "needs_rice": true
+        "needs_rice": false
+      },
+      {
+        "name": "ゆで卵を冷水にとって殻をむき、刻んでマヨ・塩こしょうでタルタル風ソースを作る",
+        "minutes": 5,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "フライを食べやすく切り、おかずを粗熱を取ってから詰める",
+        "minutes": 4,
+        "attended": false,
+        "needs_rice": false
       }
     ],
     "stock_consumed": [],
-    "comment": "直近3日はからあげ・卵焼き・餃子だったので、久しぶりのしゅうまいを主菜にしました。たれは前夜に合わせておくと朝が2分短縮できます。",
+    "comment": "在庫登録がないので常備品だけで組みました。ゆで卵は前夜に茹でておくと朝が5分短縮できます。",
     "_usage": {
-      "input_tokens": 3571,
-      "output_tokens": 1025
+      "input_tokens": 3557,
+      "output_tokens": 988
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-10-06 05:27 JST"
+  "generated_at": "2026-10-07 03:11 JST"
 }
