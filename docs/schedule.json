@@ -1,12 +1,12 @@
 {
-  "date": "2026-10-08",
-  "date_label": "2026年10月8日（木）",
-  "leave_time": "06:01",
+  "date": "2026-10-09",
+  "date_label": "2026年10月9日（金）",
+  "leave_time": "06:02",
   "target_leave": "06:30",
   "latest_leave": "06:35",
-  "slack_minutes": 28.5,
-  "makespan_minutes": 61.5,
-  "bento_minutes": 36.0,
+  "slack_minutes": 27.5,
+  "makespan_minutes": 62.5,
+  "bento_minutes": 30.0,
   "timeline": [
     {
       "type": "task",
@@ -55,10 +55,10 @@
     {
       "type": "task",
       "id": "bento_1",
-      "name": "炊飯をセットし、ゆで卵用の湯を沸かす",
+      "name": "たれを合わせる（しょうゆ・みりん・砂糖・酒）",
       "start": "05:07",
-      "end": "05:10",
-      "seconds": 180,
+      "end": "05:09",
+      "seconds": 120,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -77,47 +77,51 @@
     {
       "type": "task",
       "id": "bento_2",
-      "name": "卵を茹でる（タルタル用・固ゆで）",
-      "start": "05:10",
-      "end": "05:18",
-      "seconds": 480,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_3",
-      "name": "白身魚フライをトースター（またはフライパン）で加熱",
-      "start": "05:18",
-      "end": "05:25",
-      "seconds": 420,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_4",
-      "name": "冷凍ブロッコリーをレンジ加熱",
-      "start": "05:25",
-      "end": "05:28",
-      "seconds": 180,
+      "name": "冷凍ブロッコリーをレンジ加熱（600W約2分）",
+      "start": "05:09",
+      "end": "05:11",
+      "seconds": 120,
       "attended": false,
       "background": false,
       "kind": "bento"
     },
     {
       "type": "gap",
-      "seconds": 1080
+      "seconds": 120
+    },
+    {
+      "type": "task",
+      "id": "bento_3",
+      "name": "フライパンに油を熱し冷凍餃子を並べて焼く",
+      "start": "05:11",
+      "end": "05:14",
+      "seconds": 180,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_4",
+      "name": "水を加えてフタをし蒸し焼き",
+      "start": "05:14",
+      "end": "05:19",
+      "seconds": 300,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "gap",
+      "seconds": 300
     },
     {
       "type": "task",
       "id": "bento_5",
-      "name": "ブロッコリーの水気を切り、めんつゆとマヨで和える",
-      "start": "05:28",
-      "end": "05:30",
-      "seconds": 120,
+      "name": "ブロッコリーの水気を切り、マヨ・塩・こしょうで和える",
+      "start": "05:19",
+      "end": "05:22",
+      "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -125,10 +129,10 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "冷凍いんげんをバターで炒め、しょうゆで味付け",
-      "start": "05:30",
-      "end": "05:34",
-      "seconds": 240,
+      "name": "餃子のフタを取り水分を飛ばし、たれをからめる",
+      "start": "05:22",
+      "end": "05:25",
+      "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -136,43 +140,36 @@
     {
       "type": "task",
       "id": "bento_7",
-      "name": "ゆで卵を冷水にとって殻をむき、刻んでマヨ・塩こしょうでタルタル風ソースを作る",
-      "start": "05:34",
-      "end": "05:39",
-      "seconds": 300,
+      "name": "同じフライパンで冷凍いんげんを炒め、しょうゆとごまで味つけ",
+      "start": "05:25",
+      "end": "05:29",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
     },
     {
       "type": "task",
-      "id": "breakfast",
-      "name": "朝ごはんを食べる",
-      "start": "05:39",
-      "end": "05:49",
-      "seconds": 600,
-      "attended": true,
-      "background": false,
-      "kind": "fixed"
-    },
-    {
-      "type": "task",
       "id": "bento_8",
-      "name": "フライを食べやすく切り、おかずを粗熱を取ってから詰める",
-      "start": "05:39",
-      "end": "05:43",
-      "seconds": 240,
+      "name": "おかずを粗熱取り",
+      "start": "05:29",
+      "end": "05:34",
+      "seconds": 300,
       "attended": false,
       "background": false,
       "kind": "bento"
     },
     {
+      "type": "gap",
+      "seconds": 480
+    },
+    {
       "type": "task",
-      "id": "bento_pack",
-      "name": "お弁当に詰める",
-      "start": "05:49",
-      "end": "05:53",
-      "seconds": 240,
+      "id": "breakfast",
+      "name": "朝ごはんを食べる",
+      "start": "05:37",
+      "end": "05:47",
+      "seconds": 600,
       "attended": true,
       "background": false,
       "kind": "fixed"
@@ -181,8 +178,8 @@
       "type": "task",
       "id": "brush_teeth",
       "name": "歯を磨く",
-      "start": "05:53",
-      "end": "05:58",
+      "start": "05:47",
+      "end": "05:52",
       "seconds": 300,
       "attended": true,
       "background": false,
@@ -192,97 +189,125 @@
       "type": "task",
       "id": "change_clothes",
       "name": "着替える",
-      "start": "05:58",
-      "end": "06:01",
+      "start": "05:52",
+      "end": "05:55",
       "seconds": 180,
+      "attended": true,
+      "background": false,
+      "kind": "fixed"
+    },
+    {
+      "type": "task",
+      "id": "bento_9",
+      "name": "おかずを弁当箱に詰める",
+      "start": "05:55",
+      "end": "05:58",
+      "seconds": 180,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_pack",
+      "name": "お弁当に詰める",
+      "start": "05:58",
+      "end": "06:02",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "fixed"
     }
   ],
   "menu": {
-    "menu_name": "白身魚フライのタルタル風弁当",
+    "menu_name": "冷凍餃子の照りじょうゆだれ弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
-        "note": "炊きあがったごはんを詰め、白ごまをふる。",
+        "note": "炊きあがったごはんを弁当箱に詰め、白ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍白身魚フライのタルタル風ソース",
-        "note": "フライをトースターかフライパンで加熱。マヨ＋刻みゆで卵＋塩こしょうのタルタル風ソースを添える。",
+        "name": "冷凍餃子の照りじょうゆだれ",
+        "note": "フライパンで焼き目をつけて蒸し焼きにし、しょうゆ・みりん・砂糖・酒のたれをからめる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍ブロッコリーのめんつゆマヨ和え",
-        "note": "レンジ解凍して水気を切り、めんつゆ少々とマヨで和える。",
+        "name": "冷凍ブロッコリーの塩マヨこしょう和え",
+        "note": "レンジ加熱して水気を切り、マヨネーズ・塩・こしょうで和える。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんのしょうゆバター炒め",
-        "note": "フライパンでバターと炒め、しょうゆをひとまわし。",
+        "name": "冷凍いんげんのごましょうゆ炒め",
+        "note": "油で炒めてしょうゆを回しかけ、白ごまをふる。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "炊飯をセットし、ゆで卵用の湯を沸かす",
-        "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "卵を茹でる（タルタル用・固ゆで）",
-        "minutes": 8,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "白身魚フライをトースター（またはフライパン）で加熱",
-        "minutes": 7,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "冷凍ブロッコリーをレンジ加熱",
-        "minutes": 3,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "ブロッコリーの水気を切り、めんつゆとマヨで和える",
+        "name": "たれを合わせる（しょうゆ・みりん・砂糖・酒）",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "冷凍いんげんをバターで炒め、しょうゆで味付け",
-        "minutes": 4,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "ゆで卵を冷水にとって殻をむき、刻んでマヨ・塩こしょうでタルタル風ソースを作る",
-        "minutes": 5,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "フライを食べやすく切り、おかずを粗熱を取ってから詰める",
-        "minutes": 4,
+        "name": "冷凍ブロッコリーをレンジ加熱（600W約2分）",
+        "minutes": 2,
         "attended": false,
         "needs_rice": false
+      },
+      {
+        "name": "フライパンに油を熱し冷凍餃子を並べて焼く",
+        "minutes": 3,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "水を加えてフタをし蒸し焼き",
+        "minutes": 5,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "ブロッコリーの水気を切り、マヨ・塩・こしょうで和える",
+        "minutes": 3,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "餃子のフタを取り水分を飛ばし、たれをからめる",
+        "minutes": 3,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "同じフライパンで冷凍いんげんを炒め、しょうゆとごまで味つけ",
+        "minutes": 4,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "おかずを粗熱取り",
+        "minutes": 5,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "おかずを弁当箱に詰める",
+        "minutes": 3,
+        "attended": true,
+        "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "在庫登録がないので常備品だけで組みました。ゆで卵は前夜に茹でておくと朝が5分短縮できます。",
+    "comment": "直近3日の白身魚フライ・しゅうまい・からあげを避けて餃子に。フライパンは餃子→いんげんの順で使い回すと洗い物が減り、炊飯の30分にちょうど収まります。",
     "_usage": {
-      "input_tokens": 3557,
-      "output_tokens": 988
+      "input_tokens": 3560,
+      "output_tokens": 1226
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-10-07 03:11 JST"
+  "generated_at": "2026-10-08 03:44 JST"
 }
