@@ -1,12 +1,12 @@
 {
-  "date": "2026-10-13",
-  "date_label": "2026年10月13日（火）",
-  "leave_time": "06:03",
+  "date": "2026-10-14",
+  "date_label": "2026年10月14日（水）",
+  "leave_time": "06:02",
   "target_leave": "06:30",
   "latest_leave": "06:35",
-  "slack_minutes": 26.5,
-  "makespan_minutes": 63.5,
-  "bento_minutes": 30.0,
+  "slack_minutes": 27.5,
+  "makespan_minutes": 62.5,
+  "bento_minutes": 31.0,
   "timeline": [
     {
       "type": "task",
@@ -18,6 +18,17 @@
       "attended": true,
       "background": false,
       "kind": "fixed"
+    },
+    {
+      "type": "task",
+      "id": "bento_1",
+      "name": "冷凍ブロッコリーを耐熱皿に出してレンジ加熱",
+      "start": "05:00",
+      "end": "05:03",
+      "seconds": 180,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
     },
     {
       "type": "task",
@@ -54,11 +65,11 @@
     },
     {
       "type": "task",
-      "id": "bento_1",
-      "name": "卵液を作る（卵3個＋めんつゆ・砂糖・みりん）",
+      "id": "bento_2",
+      "name": "フライパンに油をひき、冷凍白身魚フライを並べて弱めの中火で焼く",
       "start": "05:07",
-      "end": "05:10",
-      "seconds": 180,
+      "end": "05:11",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -76,26 +87,11 @@
     },
     {
       "type": "task",
-      "id": "bento_2",
-      "name": "冷凍ブロッコリーをレンジ加熱（待ち時間）",
-      "start": "05:10",
-      "end": "05:13",
-      "seconds": 180,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "gap",
-      "seconds": 180
-    },
-    {
-      "type": "task",
       "id": "bento_3",
-      "name": "卵焼きを焼いて巻く",
-      "start": "05:13",
-      "end": "05:20",
-      "seconds": 420,
+      "name": "フライを裏返して反対面も焼き、取り出して冷ます",
+      "start": "05:11",
+      "end": "05:15",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -103,25 +99,21 @@
     {
       "type": "task",
       "id": "bento_4",
-      "name": "卵焼きを取り出して粗熱を取る",
-      "start": "05:20",
-      "end": "05:25",
-      "seconds": 300,
-      "attended": false,
+      "name": "ケチャップ・しょうゆ・みりんを合わせてフライパンで軽く煮詰め、フライにからめる",
+      "start": "05:15",
+      "end": "05:18",
+      "seconds": 180,
+      "attended": true,
       "background": false,
       "kind": "bento"
     },
     {
-      "type": "gap",
-      "seconds": 300
-    },
-    {
       "type": "task",
       "id": "bento_5",
-      "name": "冷凍いんげんを炒めて塩こしょうで味付け",
-      "start": "05:25",
-      "end": "05:30",
-      "seconds": 300,
+      "name": "ブロッコリーの水気を切り、マヨネーズ・しょうゆ・すりごまで和える",
+      "start": "05:18",
+      "end": "05:21",
+      "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -129,17 +121,39 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "ブロッコリーの水気を切っておかかマヨで和える",
-      "start": "05:30",
-      "end": "05:33",
+      "name": "フライパンをさっと拭き、冷凍いんげんを炒める",
+      "start": "05:21",
+      "end": "05:24",
       "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
     },
     {
+      "type": "task",
+      "id": "bento_7",
+      "name": "溶き卵を加えて塩こしょうし、ふんわり炒めて取り出す",
+      "start": "05:24",
+      "end": "05:27",
+      "seconds": 180,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_8",
+      "name": "おかずの粗熱を取る",
+      "start": "05:27",
+      "end": "05:32",
+      "seconds": 300,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
       "type": "gap",
-      "seconds": 240
+      "seconds": 600
     },
     {
       "type": "task",
@@ -176,11 +190,11 @@
     },
     {
       "type": "task",
-      "id": "bento_7",
-      "name": "卵焼きを切り、おかずを弁当箱に詰める",
+      "id": "bento_9",
+      "name": "おかずを弁当箱に詰める",
       "start": "05:55",
-      "end": "05:59",
-      "seconds": 240,
+      "end": "05:58",
+      "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -189,8 +203,8 @@
       "type": "task",
       "id": "bento_pack",
       "name": "お弁当に詰める",
-      "start": "05:59",
-      "end": "06:03",
+      "start": "05:58",
+      "end": "06:02",
       "seconds": 240,
       "attended": true,
       "background": false,
@@ -198,82 +212,94 @@
     }
   ],
   "menu": {
-    "menu_name": "甘辛だし卵焼き弁当",
+    "menu_name": "白身魚フライのケチャップしょうゆだれ弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
-        "note": "炊きたてを弁当箱に詰め、白ごまをふる。",
+        "note": "炊きあがったごはんを弁当箱に詰め、白ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "甘辛だし卵焼き",
-        "note": "卵3個にめんつゆ・砂糖・みりんを混ぜ、卵焼き器で巻いて焼く。粗熱を取って切る。",
+        "name": "冷凍白身魚フライのケチャップしょうゆだれ",
+        "note": "フライをトースターまたはフライパンで温め、ケチャップ・しょうゆ・みりんを煮立てたたれをからめる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍ブロッコリーのおかかマヨ和え",
-        "note": "レンジ解凍して水気を切り、マヨネーズとかつお節・しょうゆ少々で和える。",
+        "name": "冷凍ブロッコリーのごまマヨ和え",
+        "note": "レンジ解凍して水気を切り、マヨネーズ・しょうゆ少々・すりごまで和える。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんの塩こしょう炒め",
-        "note": "油で炒め、塩こしょうで味付け。",
+        "name": "冷凍いんげんの卵炒め",
+        "note": "いんげんを油で炒め、溶き卵を加えて塩こしょうでふんわり炒める。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "卵液を作る（卵3個＋めんつゆ・砂糖・みりん）",
-        "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "冷凍ブロッコリーをレンジ加熱（待ち時間）",
+        "name": "冷凍ブロッコリーを耐熱皿に出してレンジ加熱",
         "minutes": 3,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "卵焼きを焼いて巻く",
-        "minutes": 7,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "卵焼きを取り出して粗熱を取る",
-        "minutes": 5,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "冷凍いんげんを炒めて塩こしょうで味付け",
-        "minutes": 5,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "ブロッコリーの水気を切っておかかマヨで和える",
-        "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "卵焼きを切り、おかずを弁当箱に詰める",
+        "name": "フライパンに油をひき、冷凍白身魚フライを並べて弱めの中火で焼く",
         "minutes": 4,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "フライを裏返して反対面も焼き、取り出して冷ます",
+        "minutes": 4,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "ケチャップ・しょうゆ・みりんを合わせてフライパンで軽く煮詰め、フライにからめる",
+        "minutes": 3,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "ブロッコリーの水気を切り、マヨネーズ・しょうゆ・すりごまで和える",
+        "minutes": 3,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "フライパンをさっと拭き、冷凍いんげんを炒める",
+        "minutes": 3,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "溶き卵を加えて塩こしょうし、ふんわり炒めて取り出す",
+        "minutes": 3,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "おかずの粗熱を取る",
+        "minutes": 5,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "おかずを弁当箱に詰める",
+        "minutes": 3,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "在庫登録がないので常備の卵と冷凍野菜だけで完結する構成にしました。卵焼きは前夜に焼いて冷蔵しておくと、朝は10分ほど短縮できます。",
+    "comment": "在庫登録がないので常備の冷凍食品と卵で構成しました。3日以内の卵焼き・しゅうまい・からあげを避け、フライ系でマンネリ回避しています。",
     "_usage": {
-      "input_tokens": 3592,
-      "output_tokens": 973
+      "input_tokens": 3585,
+      "output_tokens": 1165
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-10-12 02:35 JST"
+  "generated_at": "2026-10-13 06:09 JST"
 }
