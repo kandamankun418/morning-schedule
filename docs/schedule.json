@@ -1,12 +1,12 @@
 {
-  "date": "2026-10-14",
-  "date_label": "2026年10月14日（水）",
+  "date": "2026-10-15",
+  "date_label": "2026年10月15日（木）",
   "leave_time": "06:02",
   "target_leave": "06:30",
   "latest_leave": "06:35",
   "slack_minutes": 27.5,
   "makespan_minutes": 62.5,
-  "bento_minutes": 31.0,
+  "bento_minutes": 32.0,
   "timeline": [
     {
       "type": "task",
@@ -18,17 +18,6 @@
       "attended": true,
       "background": false,
       "kind": "fixed"
-    },
-    {
-      "type": "task",
-      "id": "bento_1",
-      "name": "冷凍ブロッコリーを耐熱皿に出してレンジ加熱",
-      "start": "05:00",
-      "end": "05:03",
-      "seconds": 180,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
     },
     {
       "type": "task",
@@ -65,11 +54,11 @@
     },
     {
       "type": "task",
-      "id": "bento_2",
-      "name": "フライパンに油をひき、冷凍白身魚フライを並べて弱めの中火で焼く",
+      "id": "bento_1",
+      "name": "餃子のたれを合わせる（しょうゆ・みりん・砂糖・酒）",
       "start": "05:07",
-      "end": "05:11",
-      "seconds": 240,
+      "end": "05:09",
+      "seconds": 120,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -87,21 +76,25 @@
     },
     {
       "type": "task",
-      "id": "bento_3",
-      "name": "フライを裏返して反対面も焼き、取り出して冷ます",
-      "start": "05:11",
-      "end": "05:15",
-      "seconds": 240,
-      "attended": true,
+      "id": "bento_2",
+      "name": "冷凍ブロッコリーを耐熱皿に入れてレンジ加熱（待ち）",
+      "start": "05:09",
+      "end": "05:12",
+      "seconds": 180,
+      "attended": false,
       "background": false,
       "kind": "bento"
     },
     {
+      "type": "gap",
+      "seconds": 180
+    },
+    {
       "type": "task",
-      "id": "bento_4",
-      "name": "ケチャップ・しょうゆ・みりんを合わせてフライパンで軽く煮詰め、フライにからめる",
-      "start": "05:15",
-      "end": "05:18",
+      "id": "bento_3",
+      "name": "フライパンに油をひき冷凍餃子を並べて焼き始める",
+      "start": "05:12",
+      "end": "05:15",
       "seconds": 180,
       "attended": true,
       "background": false,
@@ -109,10 +102,25 @@
     },
     {
       "type": "task",
+      "id": "bento_4",
+      "name": "水を入れて蓋をし蒸し焼き（待ち）",
+      "start": "05:15",
+      "end": "05:20",
+      "seconds": 300,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "gap",
+      "seconds": 300
+    },
+    {
+      "type": "task",
       "id": "bento_5",
-      "name": "ブロッコリーの水気を切り、マヨネーズ・しょうゆ・すりごまで和える",
-      "start": "05:18",
-      "end": "05:21",
+      "name": "ブロッコリーの水気を切りマヨしょうゆで和える",
+      "start": "05:20",
+      "end": "05:23",
       "seconds": 180,
       "attended": true,
       "background": false,
@@ -121,10 +129,10 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "フライパンをさっと拭き、冷凍いんげんを炒める",
-      "start": "05:21",
-      "end": "05:24",
-      "seconds": 180,
+      "name": "蓋を取って水分を飛ばし、たれをからめて白ごまをふる",
+      "start": "05:23",
+      "end": "05:27",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -132,10 +140,10 @@
     {
       "type": "task",
       "id": "bento_7",
-      "name": "溶き卵を加えて塩こしょうし、ふんわり炒めて取り出す",
-      "start": "05:24",
-      "end": "05:27",
-      "seconds": 180,
+      "name": "餃子を取り出し、同じフライパンで冷凍いんげんを炒めて塩こしょう・ごまで味付け",
+      "start": "05:27",
+      "end": "05:31",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -143,9 +151,9 @@
     {
       "type": "task",
       "id": "bento_8",
-      "name": "おかずの粗熱を取る",
-      "start": "05:27",
-      "end": "05:32",
+      "name": "おかずの粗熱を取る（待ち）",
+      "start": "05:31",
+      "end": "05:36",
       "seconds": 300,
       "attended": false,
       "background": false,
@@ -153,7 +161,7 @@
     },
     {
       "type": "gap",
-      "seconds": 600
+      "seconds": 360
     },
     {
       "type": "task",
@@ -212,7 +220,7 @@
     }
   ],
   "menu": {
-    "menu_name": "白身魚フライのケチャップしょうゆだれ弁当",
+    "menu_name": "冷凍餃子の甘辛ごまだれ弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
@@ -220,66 +228,66 @@
         "uses_stock": []
       },
       {
-        "name": "冷凍白身魚フライのケチャップしょうゆだれ",
-        "note": "フライをトースターまたはフライパンで温め、ケチャップ・しょうゆ・みりんを煮立てたたれをからめる。",
+        "name": "冷凍餃子の甘辛ごまだれ",
+        "note": "冷凍餃子をフライパンで焼き、しょうゆ・みりん・砂糖・酒のたれをからめて白ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍ブロッコリーのごまマヨ和え",
-        "note": "レンジ解凍して水気を切り、マヨネーズ・しょうゆ少々・すりごまで和える。",
+        "name": "冷凍ブロッコリーのマヨしょうゆ和え",
+        "note": "レンジ加熱して水気を切り、マヨネーズ＋しょうゆ少々で和える。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんの卵炒め",
-        "note": "いんげんを油で炒め、溶き卵を加えて塩こしょうでふんわり炒める。",
+        "name": "冷凍いんげんのごま塩炒め",
+        "note": "餃子を焼いたフライパンでさっと炒め、塩こしょうと白ごまで味付け。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍ブロッコリーを耐熱皿に出してレンジ加熱",
+        "name": "餃子のたれを合わせる（しょうゆ・みりん・砂糖・酒）",
+        "minutes": 2,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "冷凍ブロッコリーを耐熱皿に入れてレンジ加熱（待ち）",
         "minutes": 3,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "フライパンに油をひき、冷凍白身魚フライを並べて弱めの中火で焼く",
+        "name": "フライパンに油をひき冷凍餃子を並べて焼き始める",
+        "minutes": 3,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "水を入れて蓋をし蒸し焼き（待ち）",
+        "minutes": 5,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "ブロッコリーの水気を切りマヨしょうゆで和える",
+        "minutes": 3,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "蓋を取って水分を飛ばし、たれをからめて白ごまをふる",
         "minutes": 4,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "フライを裏返して反対面も焼き、取り出して冷ます",
+        "name": "餃子を取り出し、同じフライパンで冷凍いんげんを炒めて塩こしょう・ごまで味付け",
         "minutes": 4,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "ケチャップ・しょうゆ・みりんを合わせてフライパンで軽く煮詰め、フライにからめる",
-        "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "ブロッコリーの水気を切り、マヨネーズ・しょうゆ・すりごまで和える",
-        "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "フライパンをさっと拭き、冷凍いんげんを炒める",
-        "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "溶き卵を加えて塩こしょうし、ふんわり炒めて取り出す",
-        "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "おかずの粗熱を取る",
+        "name": "おかずの粗熱を取る（待ち）",
         "minutes": 5,
         "attended": false,
         "needs_rice": false
@@ -292,14 +300,14 @@
       }
     ],
     "stock_consumed": [],
-    "comment": "在庫登録がないので常備の冷凍食品と卵で構成しました。3日以内の卵焼き・しゅうまい・からあげを避け、フライ系でマンネリ回避しています。",
+    "comment": "直近3日の白身魚フライ・卵焼き・しゅうまいを避けて、6日ぶりの冷凍餃子にしました。前夜にたれを合わせておくと朝が2分短縮できます。",
     "_usage": {
-      "input_tokens": 3585,
-      "output_tokens": 1165
+      "input_tokens": 3582,
+      "output_tokens": 1082
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-10-13 06:09 JST"
+  "generated_at": "2026-10-14 04:07 JST"
 }
