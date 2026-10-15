@@ -1,12 +1,12 @@
 {
-  "date": "2026-10-16",
-  "date_label": "2026年10月16日（金）",
-  "leave_time": "05:59",
+  "date": "2026-10-17",
+  "date_label": "2026年10月17日（土）",
+  "leave_time": "06:03",
   "target_leave": "06:30",
   "latest_leave": "06:35",
-  "slack_minutes": 30.5,
-  "makespan_minutes": 59.5,
-  "bento_minutes": 28.0,
+  "slack_minutes": 26.5,
+  "makespan_minutes": 63.5,
+  "bento_minutes": 29.0,
   "timeline": [
     {
       "type": "task",
@@ -22,7 +22,7 @@
     {
       "type": "task",
       "id": "bento_1",
-      "name": "冷凍ブロッコリーをレンジで加熱する",
+      "name": "冷凍ブロッコリーといんげんを耐熱皿に出してレンジ加熱",
       "start": "05:00",
       "end": "05:03",
       "seconds": 180,
@@ -66,10 +66,10 @@
     {
       "type": "task",
       "id": "bento_2",
-      "name": "卵液を作る（卵2個＋マヨ・塩こしょう）",
+      "name": "甘辛だれ（醤油・みりん・砂糖）を小皿で合わせる",
       "start": "05:07",
-      "end": "05:10",
-      "seconds": 180,
+      "end": "05:09",
+      "seconds": 120,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -88,20 +88,9 @@
     {
       "type": "task",
       "id": "bento_3",
-      "name": "フライパンでオムレツを焼く",
-      "start": "05:10",
-      "end": "05:16",
-      "seconds": 360,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_4",
-      "name": "オムレツを取り出して粗熱を取る",
-      "start": "05:16",
-      "end": "05:20",
+      "name": "冷凍からあげをレンジで加熱",
+      "start": "05:09",
+      "end": "05:13",
       "seconds": 240,
       "attended": false,
       "background": false,
@@ -113,21 +102,10 @@
     },
     {
       "type": "task",
-      "id": "bento_5",
-      "name": "同じフライパンで冷凍いんげんをバターしょうゆ炒め",
-      "start": "05:20",
-      "end": "05:25",
-      "seconds": 300,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_6",
-      "name": "ブロッコリーの水気を切ってめんつゆ・おかかで和える",
-      "start": "05:25",
-      "end": "05:28",
+      "id": "bento_4",
+      "name": "ブロッコリーの水気を切ってマヨ・こしょう・醤油で和える",
+      "start": "05:13",
+      "end": "05:16",
       "seconds": 180,
       "attended": true,
       "background": false,
@@ -135,36 +113,47 @@
     },
     {
       "type": "task",
-      "id": "bento_7",
-      "name": "オムレツを切り分けておかずを詰める",
-      "start": "05:28",
-      "end": "05:32",
+      "id": "bento_5",
+      "name": "フライパンでいんげんをバター炒めし、めんつゆで味付け",
+      "start": "05:16",
+      "end": "05:20",
       "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
     },
     {
-      "type": "gap",
-      "seconds": 300
-    },
-    {
       "type": "task",
-      "id": "bento_pack",
-      "name": "お弁当に詰める",
-      "start": "05:37",
-      "end": "05:41",
+      "id": "bento_6",
+      "name": "同じフライパンで甘辛だれを煮立て、からあげをからめる",
+      "start": "05:20",
+      "end": "05:24",
       "seconds": 240,
       "attended": true,
       "background": false,
-      "kind": "fixed"
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_7",
+      "name": "おかずの粗熱を取る",
+      "start": "05:24",
+      "end": "05:29",
+      "seconds": 300,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "gap",
+      "seconds": 780
     },
     {
       "type": "task",
       "id": "breakfast",
       "name": "朝ごはんを食べる",
-      "start": "05:41",
-      "end": "05:51",
+      "start": "05:37",
+      "end": "05:47",
       "seconds": 600,
       "attended": true,
       "background": false,
@@ -174,8 +163,8 @@
       "type": "task",
       "id": "brush_teeth",
       "name": "歯を磨く",
-      "start": "05:51",
-      "end": "05:56",
+      "start": "05:47",
+      "end": "05:52",
       "seconds": 300,
       "attended": true,
       "background": false,
@@ -185,16 +174,38 @@
       "type": "task",
       "id": "change_clothes",
       "name": "着替える",
-      "start": "05:56",
-      "end": "05:59",
+      "start": "05:52",
+      "end": "05:55",
       "seconds": 180,
+      "attended": true,
+      "background": false,
+      "kind": "fixed"
+    },
+    {
+      "type": "task",
+      "id": "bento_8",
+      "name": "おかずを弁当箱に詰め、マヨを少量添える",
+      "start": "05:55",
+      "end": "05:59",
+      "seconds": 240,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_pack",
+      "name": "お弁当に詰める",
+      "start": "05:59",
+      "end": "06:03",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "fixed"
     }
   ],
   "menu": {
-    "menu_name": "のり塩風オムレツ弁当",
+    "menu_name": "冷凍からあげの甘辛マヨだれ弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
@@ -202,74 +213,80 @@
         "uses_stock": []
       },
       {
-        "name": "ふんわりマヨオムレツ",
-        "note": "卵2個にマヨネーズ小さじ1、塩こしょうを混ぜ、フライパンで半熟に巻いて焼く。",
+        "name": "冷凍からあげの甘辛マヨだれ",
+        "note": "レンジで加熱した冷凍からあげに、醤油・みりん・砂糖を煮立てた甘辛だれをからめ、マヨを少量添える。",
         "uses_stock": []
       },
       {
-        "name": "冷凍ブロッコリーのめんつゆおかか和え",
-        "note": "レンジ解凍して水気を切り、めんつゆとかつお節で和える。",
+        "name": "冷凍ブロッコリーのこしょうマヨ和え",
+        "note": "レンジ解凍して水気を切り、マヨ・こしょう・少量の醤油で和える。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんのバターしょうゆ炒め",
-        "note": "凍ったままフライパンでバターと炒め、しょうゆを回しかける。",
+        "name": "冷凍いんげんのめんつゆバター炒め",
+        "note": "フライパンでバターと炒め、めんつゆを回しかけて水分を飛ばす。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍ブロッコリーをレンジで加熱する",
+        "name": "冷凍ブロッコリーといんげんを耐熱皿に出してレンジ加熱",
         "minutes": 3,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "卵液を作る（卵2個＋マヨ・塩こしょう）",
-        "minutes": 3,
+        "name": "甘辛だれ（醤油・みりん・砂糖）を小皿で合わせる",
+        "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "フライパンでオムレツを焼く",
-        "minutes": 6,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "オムレツを取り出して粗熱を取る",
+        "name": "冷凍からあげをレンジで加熱",
         "minutes": 4,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "同じフライパンで冷凍いんげんをバターしょうゆ炒め",
+        "name": "ブロッコリーの水気を切ってマヨ・こしょう・醤油で和える",
+        "minutes": 3,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "フライパンでいんげんをバター炒めし、めんつゆで味付け",
+        "minutes": 4,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "同じフライパンで甘辛だれを煮立て、からあげをからめる",
+        "minutes": 4,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "おかずの粗熱を取る",
         "minutes": 5,
-        "attended": true,
+        "attended": false,
         "needs_rice": false
       },
       {
-        "name": "ブロッコリーの水気を切ってめんつゆ・おかかで和える",
-        "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "オムレツを切り分けておかずを詰める",
+        "name": "おかずを弁当箱に詰め、マヨを少量添える",
         "minutes": 4,
         "attended": true,
-        "needs_rice": false
+        "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "ここ数日は揚げ物や餃子が続いていたので、卵メインでさっぱりまとめました（卵焼きは10/13なので味付けを変えてオムレツに）。前夜に卵液だけ作って冷蔵しておくと朝が5分短縮できます。",
+    "comment": "在庫登録がないので常備の冷凍食品だけで完結する構成にしました。甘辛だれは前夜に合わせておくと朝が2分短縮できます。",
     "_usage": {
-      "input_tokens": 3546,
-      "output_tokens": 746
+      "input_tokens": 3531,
+      "output_tokens": 814
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-10-15 01:56 JST"
+  "generated_at": "2026-10-16 01:43 JST"
 }
