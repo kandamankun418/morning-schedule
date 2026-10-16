@@ -1,12 +1,12 @@
 {
-  "date": "2026-10-17",
-  "date_label": "2026年10月17日（土）",
-  "leave_time": "06:03",
+  "date": "2026-10-18",
+  "date_label": "2026年10月18日（日）",
+  "leave_time": "06:02",
   "target_leave": "06:30",
   "latest_leave": "06:35",
-  "slack_minutes": 26.5,
-  "makespan_minutes": 63.5,
-  "bento_minutes": 29.0,
+  "slack_minutes": 27.5,
+  "makespan_minutes": 62.5,
+  "bento_minutes": 25.0,
   "timeline": [
     {
       "type": "task",
@@ -66,7 +66,7 @@
     {
       "type": "task",
       "id": "bento_2",
-      "name": "甘辛だれ（醤油・みりん・砂糖）を小皿で合わせる",
+      "name": "卵2個を割りほぐし、塩こしょうを混ぜる",
       "start": "05:07",
       "end": "05:09",
       "seconds": 120,
@@ -88,24 +88,9 @@
     {
       "type": "task",
       "id": "bento_3",
-      "name": "冷凍からあげをレンジで加熱",
+      "name": "ブロッコリーの水気を切り、ごま油・塩・ごまで和える",
       "start": "05:09",
-      "end": "05:13",
-      "seconds": 240,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "gap",
-      "seconds": 240
-    },
-    {
-      "type": "task",
-      "id": "bento_4",
-      "name": "ブロッコリーの水気を切ってマヨ・こしょう・醤油で和える",
-      "start": "05:13",
-      "end": "05:16",
+      "end": "05:12",
       "seconds": 180,
       "attended": true,
       "background": false,
@@ -113,11 +98,22 @@
     },
     {
       "type": "task",
-      "id": "bento_5",
-      "name": "フライパンでいんげんをバター炒めし、めんつゆで味付け",
-      "start": "05:16",
-      "end": "05:20",
+      "id": "bento_4",
+      "name": "フライパンでいんげんを甘辛しょうゆ炒めにする",
+      "start": "05:12",
+      "end": "05:16",
       "seconds": 240,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_5",
+      "name": "同じフライパンで卵をふんわり炒め、ケチャップとしょうゆをからめる",
+      "start": "05:16",
+      "end": "05:21",
+      "seconds": 300,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -125,20 +121,9 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "同じフライパンで甘辛だれを煮立て、からあげをからめる",
-      "start": "05:20",
-      "end": "05:24",
-      "seconds": 240,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_7",
       "name": "おかずの粗熱を取る",
-      "start": "05:24",
-      "end": "05:29",
+      "start": "05:21",
+      "end": "05:26",
       "seconds": 300,
       "attended": false,
       "background": false,
@@ -146,7 +131,7 @@
     },
     {
       "type": "gap",
-      "seconds": 780
+      "seconds": 960
     },
     {
       "type": "task",
@@ -183,11 +168,11 @@
     },
     {
       "type": "task",
-      "id": "bento_8",
-      "name": "おかずを弁当箱に詰め、マヨを少量添える",
+      "id": "bento_7",
+      "name": "おかずをお弁当箱に詰める",
       "start": "05:55",
-      "end": "05:59",
-      "seconds": 240,
+      "end": "05:58",
+      "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -196,8 +181,8 @@
       "type": "task",
       "id": "bento_pack",
       "name": "お弁当に詰める",
-      "start": "05:59",
-      "end": "06:03",
+      "start": "05:58",
+      "end": "06:02",
       "seconds": 240,
       "attended": true,
       "background": false,
@@ -205,7 +190,7 @@
     }
   ],
   "menu": {
-    "menu_name": "冷凍からあげの甘辛マヨだれ弁当",
+    "menu_name": "ふんわり卵のケチャップそぼろ風弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
@@ -213,18 +198,18 @@
         "uses_stock": []
       },
       {
-        "name": "冷凍からあげの甘辛マヨだれ",
-        "note": "レンジで加熱した冷凍からあげに、醤油・みりん・砂糖を煮立てた甘辛だれをからめ、マヨを少量添える。",
+        "name": "ケチャップ卵スクランブル",
+        "note": "卵2個に塩こしょうを混ぜ、油でふんわり炒めてケチャップとしょうゆ少々をからめる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍ブロッコリーのこしょうマヨ和え",
-        "note": "レンジ解凍して水気を切り、マヨ・こしょう・少量の醤油で和える。",
+        "name": "冷凍いんげんの甘辛しょうゆ炒め",
+        "note": "レンジ解凍したいんげんを、しょうゆ・みりん・砂糖でさっと炒める。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんのめんつゆバター炒め",
-        "note": "フライパンでバターと炒め、めんつゆを回しかけて水分を飛ばす。",
+        "name": "冷凍ブロッコリーの塩ごま和え",
+        "note": "レンジ解凍して水気を切り、ごま油・塩・白ごまで和える。",
         "uses_stock": []
       }
     ],
@@ -236,32 +221,26 @@
         "needs_rice": false
       },
       {
-        "name": "甘辛だれ（醤油・みりん・砂糖）を小皿で合わせる",
+        "name": "卵2個を割りほぐし、塩こしょうを混ぜる",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "冷凍からあげをレンジで加熱",
-        "minutes": 4,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "ブロッコリーの水気を切ってマヨ・こしょう・醤油で和える",
+        "name": "ブロッコリーの水気を切り、ごま油・塩・ごまで和える",
         "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "フライパンでいんげんをバター炒めし、めんつゆで味付け",
+        "name": "フライパンでいんげんを甘辛しょうゆ炒めにする",
         "minutes": 4,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "同じフライパンで甘辛だれを煮立て、からあげをからめる",
-        "minutes": 4,
+        "name": "同じフライパンで卵をふんわり炒め、ケチャップとしょうゆをからめる",
+        "minutes": 5,
         "attended": true,
         "needs_rice": false
       },
@@ -272,21 +251,21 @@
         "needs_rice": false
       },
       {
-        "name": "おかずを弁当箱に詰め、マヨを少量添える",
-        "minutes": 4,
+        "name": "おかずをお弁当箱に詰める",
+        "minutes": 3,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "在庫登録がないので常備の冷凍食品だけで完結する構成にしました。甘辛だれは前夜に合わせておくと朝が2分短縮できます。",
+    "comment": "3日以内のからあげ・オムレツと重ならないよう、ケチャップ味の卵そぼろ風にしました。卵液は前夜に溶いて冷蔵しておくと朝が2分短縮できます。",
     "_usage": {
-      "input_tokens": 3531,
-      "output_tokens": 814
+      "input_tokens": 3533,
+      "output_tokens": 765
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-10-16 01:43 JST"
+  "generated_at": "2026-10-17 01:25 JST"
 }
