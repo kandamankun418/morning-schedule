@@ -1,12 +1,12 @@
 {
-  "date": "2026-10-18",
-  "date_label": "2026年10月18日（日）",
+  "date": "2026-10-19",
+  "date_label": "2026年10月19日（月）",
   "leave_time": "06:02",
   "target_leave": "06:30",
   "latest_leave": "06:35",
   "slack_minutes": 27.5,
   "makespan_minutes": 62.5,
-  "bento_minutes": 25.0,
+  "bento_minutes": 28.0,
   "timeline": [
     {
       "type": "task",
@@ -22,7 +22,7 @@
     {
       "type": "task",
       "id": "bento_1",
-      "name": "冷凍ブロッコリーといんげんを耐熱皿に出してレンジ加熱",
+      "name": "冷凍ブロッコリーを耐熱皿に出してレンジ加熱",
       "start": "05:00",
       "end": "05:03",
       "seconds": 180,
@@ -66,7 +66,7 @@
     {
       "type": "task",
       "id": "bento_2",
-      "name": "卵2個を割りほぐし、塩こしょうを混ぜる",
+      "name": "しゅうまいのたれ（しょうゆ・みりん・砂糖・ごま油）を混ぜておく",
       "start": "05:07",
       "end": "05:09",
       "seconds": 120,
@@ -88,7 +88,7 @@
     {
       "type": "task",
       "id": "bento_3",
-      "name": "ブロッコリーの水気を切り、ごま油・塩・ごまで和える",
+      "name": "ブロッコリーの水気を切り、マヨ・こしょうで和える",
       "start": "05:09",
       "end": "05:12",
       "seconds": 180,
@@ -99,18 +99,22 @@
     {
       "type": "task",
       "id": "bento_4",
-      "name": "フライパンでいんげんを甘辛しょうゆ炒めにする",
+      "name": "冷凍しゅうまいをレンジ加熱",
       "start": "05:12",
       "end": "05:16",
       "seconds": 240,
-      "attended": true,
+      "attended": false,
       "background": false,
       "kind": "bento"
     },
     {
+      "type": "gap",
+      "seconds": 240
+    },
+    {
       "type": "task",
       "id": "bento_5",
-      "name": "同じフライパンで卵をふんわり炒め、ケチャップとしょうゆをからめる",
+      "name": "フライパンで冷凍いんげんを炒め、めんつゆとごまを絡める",
       "start": "05:16",
       "end": "05:21",
       "seconds": 300,
@@ -121,9 +125,20 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "おかずの粗熱を取る",
+      "name": "加熱したしゅうまいにたれを絡める（フライパンで軽く煮からめる）",
       "start": "05:21",
-      "end": "05:26",
+      "end": "05:24",
+      "seconds": 180,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_7",
+      "name": "おかずの粗熱を取る",
+      "start": "05:24",
+      "end": "05:29",
       "seconds": 300,
       "attended": false,
       "background": false,
@@ -131,7 +146,7 @@
     },
     {
       "type": "gap",
-      "seconds": 960
+      "seconds": 780
     },
     {
       "type": "task",
@@ -168,8 +183,8 @@
     },
     {
       "type": "task",
-      "id": "bento_7",
-      "name": "おかずをお弁当箱に詰める",
+      "id": "bento_8",
+      "name": "おかずを弁当箱に詰める",
       "start": "05:55",
       "end": "05:58",
       "seconds": 180,
@@ -190,7 +205,7 @@
     }
   ],
   "menu": {
-    "menu_name": "ふんわり卵のケチャップそぼろ風弁当",
+    "menu_name": "冷凍しゅうまいのごまみそ風しょうゆだれ弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
@@ -198,49 +213,55 @@
         "uses_stock": []
       },
       {
-        "name": "ケチャップ卵スクランブル",
-        "note": "卵2個に塩こしょうを混ぜ、油でふんわり炒めてケチャップとしょうゆ少々をからめる。",
+        "name": "冷凍しゅうまいのごま風味しょうゆだれ",
+        "note": "レンジで加熱し、しょうゆ・みりん・砂糖・ごま油のたれを絡める。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんの甘辛しょうゆ炒め",
-        "note": "レンジ解凍したいんげんを、しょうゆ・みりん・砂糖でさっと炒める。",
+        "name": "冷凍いんげんのめんつゆごま炒め",
+        "note": "油で炒めてめんつゆを絡め、白ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍ブロッコリーの塩ごま和え",
-        "note": "レンジ解凍して水気を切り、ごま油・塩・白ごまで和える。",
+        "name": "冷凍ブロッコリーのマヨこしょう和え",
+        "note": "レンジ解凍して水気を切り、マヨ＋こしょうで和える。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍ブロッコリーといんげんを耐熱皿に出してレンジ加熱",
+        "name": "冷凍ブロッコリーを耐熱皿に出してレンジ加熱",
         "minutes": 3,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "卵2個を割りほぐし、塩こしょうを混ぜる",
+        "name": "しゅうまいのたれ（しょうゆ・みりん・砂糖・ごま油）を混ぜておく",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "ブロッコリーの水気を切り、ごま油・塩・ごまで和える",
+        "name": "ブロッコリーの水気を切り、マヨ・こしょうで和える",
         "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "フライパンでいんげんを甘辛しょうゆ炒めにする",
+        "name": "冷凍しゅうまいをレンジ加熱",
         "minutes": 4,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "フライパンで冷凍いんげんを炒め、めんつゆとごまを絡める",
+        "minutes": 5,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "同じフライパンで卵をふんわり炒め、ケチャップとしょうゆをからめる",
-        "minutes": 5,
+        "name": "加熱したしゅうまいにたれを絡める（フライパンで軽く煮からめる）",
+        "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
@@ -251,21 +272,21 @@
         "needs_rice": false
       },
       {
-        "name": "おかずをお弁当箱に詰める",
+        "name": "おかずを弁当箱に詰める",
         "minutes": 3,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "3日以内のからあげ・オムレツと重ならないよう、ケチャップ味の卵そぼろ風にしました。卵液は前夜に溶いて冷蔵しておくと朝が2分短縮できます。",
+    "comment": "直近3日が卵・からあげ続きだったので、5日空いた冷凍しゅうまいを別のたれで。手を動かすのは約16分、炊飯待ちに収まります。",
     "_usage": {
-      "input_tokens": 3533,
-      "output_tokens": 765
+      "input_tokens": 3531,
+      "output_tokens": 1037
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-10-17 01:25 JST"
+  "generated_at": "2026-10-18 00:20 JST"
 }
