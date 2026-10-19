@@ -1,12 +1,12 @@
 {
-  "date": "2026-10-20",
-  "date_label": "2026年10月20日（火）",
-  "leave_time": "06:02",
+  "date": "2026-10-21",
+  "date_label": "2026年10月21日（水）",
+  "leave_time": "06:03",
   "target_leave": "06:30",
   "latest_leave": "06:35",
-  "slack_minutes": 27.5,
-  "makespan_minutes": 62.5,
-  "bento_minutes": 31.0,
+  "slack_minutes": 26.5,
+  "makespan_minutes": 63.5,
+  "bento_minutes": 22.0,
   "timeline": [
     {
       "type": "task",
@@ -22,10 +22,10 @@
     {
       "type": "task",
       "id": "bento_1",
-      "name": "冷凍ブロッコリーといんげんをレンジで解凍加熱する",
+      "name": "冷凍ブロッコリーといんげんを耐熱皿に出してレンジ加熱",
       "start": "05:00",
-      "end": "05:04",
-      "seconds": 240,
+      "end": "05:03",
+      "seconds": 180,
       "attended": false,
       "background": false,
       "kind": "bento"
@@ -66,7 +66,7 @@
     {
       "type": "task",
       "id": "bento_2",
-      "name": "餃子のたれ（しょうゆ・みりん・砂糖・酒）を混ぜておく",
+      "name": "卵2個を割りほぐし、めんつゆ・砂糖少々を混ぜる",
       "start": "05:07",
       "end": "05:09",
       "seconds": 120,
@@ -88,35 +88,35 @@
     {
       "type": "task",
       "id": "bento_3",
-      "name": "フライパンに油をひき冷凍餃子を並べ、水を入れて蓋をし蒸し焼きにする",
+      "name": "フライパンで炒り卵を作る（箸で手早くほぐす）",
       "start": "05:09",
-      "end": "05:15",
-      "seconds": 360,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "gap",
-      "seconds": 360
-    },
-    {
-      "type": "task",
-      "id": "bento_4",
-      "name": "ブロッコリーをしょうゆ・ごま油・白ごまで和える",
-      "start": "05:15",
-      "end": "05:18",
-      "seconds": 180,
+      "end": "05:13",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
     },
     {
       "type": "task",
+      "id": "bento_4",
+      "name": "炒り卵を皿に取り出して冷ます",
+      "start": "05:13",
+      "end": "05:16",
+      "seconds": 180,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "gap",
+      "seconds": 180
+    },
+    {
+      "type": "task",
       "id": "bento_5",
-      "name": "餃子の蓋を取り水分を飛ばし、たれを絡めて照りを出す",
-      "start": "05:18",
-      "end": "05:22",
+      "name": "同じフライパンでいんげんをバターしょうゆ炒め",
+      "start": "05:16",
+      "end": "05:20",
       "seconds": 240,
       "attended": true,
       "background": false,
@@ -125,28 +125,17 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "同じフライパンでいんげんを炒め、ケチャップ・塩こしょうで味付け",
-      "start": "05:22",
-      "end": "05:26",
-      "seconds": 240,
+      "name": "ブロッコリーの水気を切ってマヨ・こしょうで和える",
+      "start": "05:20",
+      "end": "05:22",
+      "seconds": 120,
       "attended": true,
       "background": false,
       "kind": "bento"
     },
     {
-      "type": "task",
-      "id": "bento_7",
-      "name": "おかずの粗熱を取る",
-      "start": "05:26",
-      "end": "05:31",
-      "seconds": 300,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
-    },
-    {
       "type": "gap",
-      "seconds": 660
+      "seconds": 900
     },
     {
       "type": "task",
@@ -183,11 +172,11 @@
     },
     {
       "type": "task",
-      "id": "bento_8",
-      "name": "おかずを詰め、餃子にマヨネーズを細くかける",
+      "id": "bento_7",
+      "name": "おかずを詰めて白ごまをふり、粗熱を取ってから蓋をする",
       "start": "05:55",
-      "end": "05:58",
-      "seconds": 180,
+      "end": "05:59",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -196,8 +185,8 @@
       "type": "task",
       "id": "bento_pack",
       "name": "お弁当に詰める",
-      "start": "05:58",
-      "end": "06:02",
+      "start": "05:59",
+      "end": "06:03",
       "seconds": 240,
       "attended": true,
       "background": false,
@@ -205,88 +194,82 @@
     }
   ],
   "menu": {
-    "menu_name": "冷凍餃子の照りしょうゆマヨだれ弁当",
+    "menu_name": "二色そぼろ風・炒り卵弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
-        "note": "炊きあがったごはんを弁当箱に詰め、白ごまをふる。",
+        "note": "炊きあがりを詰めて白ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍餃子の照りしょうゆマヨだれ",
-        "note": "フライパンで冷凍餃子を焼き、しょうゆ・みりん・砂糖のたれを絡めて仕上げにマヨネーズを細く。",
+        "name": "めんつゆ炒り卵",
+        "note": "卵2個にめんつゆ・砂糖少々を混ぜ、油をひいたフライパンで箸4本で手早く炒る。",
         "uses_stock": []
       },
       {
-        "name": "冷凍ブロッコリーのごましょうゆ和え",
-        "note": "レンジ加熱し、しょうゆ少々とごま油・白ごまで和える。",
+        "name": "冷凍いんげんのしょうゆバター炒め",
+        "note": "レンジ解凍したいんげんをバターで炒め、しょうゆで味付け。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんのケチャップ炒め",
-        "note": "解凍したいんげんを油で炒め、ケチャップと塩こしょうで味付け。",
+        "name": "冷凍ブロッコリーのマヨこしょう和え",
+        "note": "レンジ加熱して水気を切り、マヨネーズとこしょうで和える。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍ブロッコリーといんげんをレンジで解凍加熱する",
-        "minutes": 4,
+        "name": "冷凍ブロッコリーといんげんを耐熱皿に出してレンジ加熱",
+        "minutes": 3,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "餃子のたれ（しょうゆ・みりん・砂糖・酒）を混ぜておく",
+        "name": "卵2個を割りほぐし、めんつゆ・砂糖少々を混ぜる",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "フライパンに油をひき冷凍餃子を並べ、水を入れて蓋をし蒸し焼きにする",
-        "minutes": 6,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "ブロッコリーをしょうゆ・ごま油・白ごまで和える",
-        "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "餃子の蓋を取り水分を飛ばし、たれを絡めて照りを出す",
+        "name": "フライパンで炒り卵を作る（箸で手早くほぐす）",
         "minutes": 4,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "同じフライパンでいんげんを炒め、ケチャップ・塩こしょうで味付け",
+        "name": "炒り卵を皿に取り出して冷ます",
+        "minutes": 3,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "同じフライパンでいんげんをバターしょうゆ炒め",
         "minutes": 4,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "おかずの粗熱を取る",
-        "minutes": 5,
-        "attended": false,
+        "name": "ブロッコリーの水気を切ってマヨ・こしょうで和える",
+        "minutes": 2,
+        "attended": true,
         "needs_rice": false
       },
       {
-        "name": "おかずを詰め、餃子にマヨネーズを細くかける",
-        "minutes": 3,
+        "name": "おかずを詰めて白ごまをふり、粗熱を取ってから蓋をする",
+        "minutes": 4,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "在庫登録がないので常備の冷凍餃子と冷凍野菜で構成しました。コンロ工程は炊飯待ち30分に収まります。",
+    "comment": "3日以内の餃子・しゅうまいを避け、常備の卵が主役の軽い一品に。卵液は前夜に溶いて冷蔵しておくと朝が2分短縮できます。",
     "_usage": {
-      "input_tokens": 3541,
-      "output_tokens": 1145
+      "input_tokens": 3549,
+      "output_tokens": 758
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-10-19 00:41 JST"
+  "generated_at": "2026-10-20 03:36 JST"
 }
