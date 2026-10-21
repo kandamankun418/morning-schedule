@@ -1,12 +1,12 @@
 {
-  "date": "2026-10-22",
-  "date_label": "2026年10月22日（木）",
+  "date": "2026-10-23",
+  "date_label": "2026年10月23日（金）",
   "leave_time": "06:02",
   "target_leave": "06:30",
   "latest_leave": "06:35",
   "slack_minutes": 27.5,
   "makespan_minutes": 62.5,
-  "bento_minutes": 29.0,
+  "bento_minutes": 24.0,
   "timeline": [
     {
       "type": "task",
@@ -18,6 +18,17 @@
       "attended": true,
       "background": false,
       "kind": "fixed"
+    },
+    {
+      "type": "task",
+      "id": "bento_1",
+      "name": "冷凍ブロッコリーといんげんをレンジで解凍する",
+      "start": "05:00",
+      "end": "05:03",
+      "seconds": 180,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
     },
     {
       "type": "task",
@@ -54,11 +65,11 @@
     },
     {
       "type": "task",
-      "id": "bento_1",
-      "name": "冷凍からあげを耐熱皿に並べてレンジ加熱を開始",
+      "id": "bento_2",
+      "name": "卵液を作る（卵2個＋マヨ＋めんつゆ）",
       "start": "05:07",
-      "end": "05:08",
-      "seconds": 60,
+      "end": "05:09",
+      "seconds": 120,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -76,26 +87,11 @@
     },
     {
       "type": "task",
-      "id": "bento_2",
-      "name": "レンジ加熱の待ち時間（からあげ）",
-      "start": "05:08",
-      "end": "05:12",
-      "seconds": 240,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "gap",
-      "seconds": 240
-    },
-    {
-      "type": "task",
       "id": "bento_3",
-      "name": "冷凍ブロッコリーといんげんを別々の耐熱容器に入れレンジ加熱",
-      "start": "05:12",
-      "end": "05:13",
-      "seconds": 60,
+      "name": "フライパンで卵をそぼろ状に炒めて取り出す",
+      "start": "05:09",
+      "end": "05:14",
+      "seconds": 300,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -103,25 +99,21 @@
     {
       "type": "task",
       "id": "bento_4",
-      "name": "野菜のレンジ加熱待ち",
-      "start": "05:13",
-      "end": "05:17",
+      "name": "同じフライパンでいんげんをバター・ケチャップで炒める",
+      "start": "05:14",
+      "end": "05:18",
       "seconds": 240,
-      "attended": false,
+      "attended": true,
       "background": false,
       "kind": "bento"
     },
     {
-      "type": "gap",
-      "seconds": 240
-    },
-    {
       "type": "task",
       "id": "bento_5",
-      "name": "フライパンでしょうゆ・みりん・砂糖・酒のたれを煮立て、からあげをからめる",
-      "start": "05:17",
-      "end": "05:22",
-      "seconds": 300,
+      "name": "ブロッコリーをしょうゆ・ごま油・ごまで和える",
+      "start": "05:18",
+      "end": "05:20",
+      "seconds": 120,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -129,31 +121,9 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "いんげんの水気を切り、マヨ・しょうゆ・すりごまで和える",
-      "start": "05:22",
-      "end": "05:25",
-      "seconds": 180,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_7",
-      "name": "ブロッコリーの水気を切り、めんつゆとかつお節で和える",
-      "start": "05:25",
-      "end": "05:28",
-      "seconds": 180,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_8",
       "name": "おかずの粗熱を取る",
-      "start": "05:28",
-      "end": "05:33",
+      "start": "05:20",
+      "end": "05:25",
       "seconds": 300,
       "attended": false,
       "background": false,
@@ -161,7 +131,7 @@
     },
     {
       "type": "gap",
-      "seconds": 540
+      "seconds": 1020
     },
     {
       "type": "task",
@@ -198,8 +168,8 @@
     },
     {
       "type": "task",
-      "id": "bento_9",
-      "name": "おかずをお弁当箱に詰める",
+      "id": "bento_7",
+      "name": "おかずを弁当箱に詰める",
       "start": "05:55",
       "end": "05:58",
       "seconds": 180,
@@ -220,69 +190,57 @@
     }
   ],
   "menu": {
-    "menu_name": "冷凍からあげの甘辛おろし風しょうゆだれ弁当",
+    "menu_name": "ふんわり卵のめんつゆマヨそぼろ弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
-        "note": "炊きあがったごはんを詰め、白ごまをふる。",
+        "note": "炊きあがったごはんを詰めて、白ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍からあげの甘辛しょうゆだれ",
-        "note": "冷凍からあげをレンジ加熱し、しょうゆ・みりん・砂糖・酒のたれをフライパンで煮からめる。",
+        "name": "ふんわり卵のめんつゆマヨそぼろ",
+        "note": "卵2個にマヨネーズ小さじ1とめんつゆ小さじ2を混ぜ、油を引いたフライパンで菜箸4本で細かくそぼろ状に炒める。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんのごまマヨ和え",
-        "note": "レンジ加熱したいんげんをマヨネーズ・しょうゆ・すりごまで和える。",
+        "name": "冷凍ブロッコリーの塩こんぶ風しょうゆごま和え",
+        "note": "レンジ解凍したブロッコリーを、しょうゆ少々・ごま油・白ごまで和える。",
         "uses_stock": []
       },
       {
-        "name": "冷凍ブロッコリーのめんつゆおかか和え",
-        "note": "レンジ加熱して水気を切り、めんつゆとかつお節で和える。",
+        "name": "冷凍いんげんのケチャップバター炒め",
+        "note": "解凍したいんげんをバターで炒め、ケチャップと塩こしょうで味付け。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍からあげを耐熱皿に並べてレンジ加熱を開始",
-        "minutes": 1,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "レンジ加熱の待ち時間（からあげ）",
-        "minutes": 4,
+        "name": "冷凍ブロッコリーといんげんをレンジで解凍する",
+        "minutes": 3,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "冷凍ブロッコリーといんげんを別々の耐熱容器に入れレンジ加熱",
-        "minutes": 1,
+        "name": "卵液を作る（卵2個＋マヨ＋めんつゆ）",
+        "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "野菜のレンジ加熱待ち",
-        "minutes": 4,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "フライパンでしょうゆ・みりん・砂糖・酒のたれを煮立て、からあげをからめる",
+        "name": "フライパンで卵をそぼろ状に炒めて取り出す",
         "minutes": 5,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "いんげんの水気を切り、マヨ・しょうゆ・すりごまで和える",
-        "minutes": 3,
+        "name": "同じフライパンでいんげんをバター・ケチャップで炒める",
+        "minutes": 4,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "ブロッコリーの水気を切り、めんつゆとかつお節で和える",
-        "minutes": 3,
+        "name": "ブロッコリーをしょうゆ・ごま油・ごまで和える",
+        "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
@@ -293,21 +251,21 @@
         "needs_rice": false
       },
       {
-        "name": "おかずをお弁当箱に詰める",
+        "name": "おかずを弁当箱に詰める",
         "minutes": 3,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "卵メインが続いていたので、3日以内に出していない冷凍からあげを主菜にしました。たれは前夜に合わせておくと朝が1分短縮できます。",
+    "comment": "3日以内のからあげ・炒り卵とかぶらないよう、マヨ入りのふんわり卵そぼろにしました。在庫登録がないので常備の卵と冷凍野菜だけで完結します。",
     "_usage": {
-      "input_tokens": 3537,
-      "output_tokens": 865
+      "input_tokens": 3543,
+      "output_tokens": 787
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-10-21 01:40 JST"
+  "generated_at": "2026-10-22 01:59 JST"
 }
