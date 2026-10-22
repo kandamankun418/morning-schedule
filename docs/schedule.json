@@ -1,12 +1,12 @@
 {
-  "date": "2026-10-23",
-  "date_label": "2026年10月23日（金）",
-  "leave_time": "06:02",
+  "date": "2026-10-24",
+  "date_label": "2026年10月24日（土）",
+  "leave_time": "06:03",
   "target_leave": "06:30",
   "latest_leave": "06:35",
-  "slack_minutes": 27.5,
-  "makespan_minutes": 62.5,
-  "bento_minutes": 24.0,
+  "slack_minutes": 26.5,
+  "makespan_minutes": 63.5,
+  "bento_minutes": 29.0,
   "timeline": [
     {
       "type": "task",
@@ -18,17 +18,6 @@
       "attended": true,
       "background": false,
       "kind": "fixed"
-    },
-    {
-      "type": "task",
-      "id": "bento_1",
-      "name": "冷凍ブロッコリーといんげんをレンジで解凍する",
-      "start": "05:00",
-      "end": "05:03",
-      "seconds": 180,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
     },
     {
       "type": "task",
@@ -65,8 +54,8 @@
     },
     {
       "type": "task",
-      "id": "bento_2",
-      "name": "卵液を作る（卵2個＋マヨ＋めんつゆ）",
+      "id": "bento_1",
+      "name": "冷凍ブロッコリーとしゅうまいを耐熱皿に出してレンジへ",
       "start": "05:07",
       "end": "05:09",
       "seconds": 120,
@@ -87,32 +76,25 @@
     },
     {
       "type": "task",
-      "id": "bento_3",
-      "name": "フライパンで卵をそぼろ状に炒めて取り出す",
+      "id": "bento_2",
+      "name": "レンジ加熱の待ち時間",
       "start": "05:09",
-      "end": "05:14",
-      "seconds": 300,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_4",
-      "name": "同じフライパンでいんげんをバター・ケチャップで炒める",
-      "start": "05:14",
-      "end": "05:18",
+      "end": "05:13",
       "seconds": 240,
-      "attended": true,
+      "attended": false,
       "background": false,
       "kind": "bento"
     },
     {
+      "type": "gap",
+      "seconds": 240
+    },
+    {
       "type": "task",
-      "id": "bento_5",
-      "name": "ブロッコリーをしょうゆ・ごま油・ごまで和える",
-      "start": "05:18",
-      "end": "05:20",
+      "id": "bento_3",
+      "name": "ケチャップ照りだれを計って混ぜておく",
+      "start": "05:13",
+      "end": "05:15",
       "seconds": 120,
       "attended": true,
       "background": false,
@@ -120,10 +102,43 @@
     },
     {
       "type": "task",
-      "id": "bento_6",
-      "name": "おかずの粗熱を取る",
+      "id": "bento_4",
+      "name": "冷凍いんげんをフライパンでバター炒めし塩こしょうする",
+      "start": "05:15",
+      "end": "05:20",
+      "seconds": 300,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_5",
+      "name": "同じフライパンでしゅうまいにケチャップだれを絡める",
       "start": "05:20",
-      "end": "05:25",
+      "end": "05:24",
+      "seconds": 240,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_6",
+      "name": "ブロッコリーの水気を切りマヨしょうゆで和える",
+      "start": "05:24",
+      "end": "05:27",
+      "seconds": 180,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_7",
+      "name": "おかずの粗熱を取る",
+      "start": "05:27",
+      "end": "05:32",
       "seconds": 300,
       "attended": false,
       "background": false,
@@ -131,7 +146,7 @@
     },
     {
       "type": "gap",
-      "seconds": 1020
+      "seconds": 600
     },
     {
       "type": "task",
@@ -168,11 +183,11 @@
     },
     {
       "type": "task",
-      "id": "bento_7",
-      "name": "おかずを弁当箱に詰める",
+      "id": "bento_8",
+      "name": "おかずを弁当箱に詰めてごまをふる",
       "start": "05:55",
-      "end": "05:58",
-      "seconds": 180,
+      "end": "05:59",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -181,8 +196,8 @@
       "type": "task",
       "id": "bento_pack",
       "name": "お弁当に詰める",
-      "start": "05:58",
-      "end": "06:02",
+      "start": "05:59",
+      "end": "06:03",
       "seconds": 240,
       "attended": true,
       "background": false,
@@ -190,57 +205,63 @@
     }
   ],
   "menu": {
-    "menu_name": "ふんわり卵のめんつゆマヨそぼろ弁当",
+    "menu_name": "冷凍しゅうまいのケチャップ照りだれ弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
-        "note": "炊きあがったごはんを詰めて、白ごまをふる。",
+        "note": "炊きあがったごはんを詰め、白ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "ふんわり卵のめんつゆマヨそぼろ",
-        "note": "卵2個にマヨネーズ小さじ1とめんつゆ小さじ2を混ぜ、油を引いたフライパンで菜箸4本で細かくそぼろ状に炒める。",
+        "name": "冷凍しゅうまいのケチャップ照りだれ",
+        "note": "しゅうまいをレンジ加熱し、ケチャップ・しょうゆ・みりん・砂糖のたれをフライパンで絡める。",
         "uses_stock": []
       },
       {
-        "name": "冷凍ブロッコリーの塩こんぶ風しょうゆごま和え",
-        "note": "レンジ解凍したブロッコリーを、しょうゆ少々・ごま油・白ごまで和える。",
+        "name": "冷凍ブロッコリーのマヨしょうゆ和え",
+        "note": "レンジ解凍して水気を切り、マヨネーズとしょうゆ少々で和える。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんのケチャップバター炒め",
-        "note": "解凍したいんげんをバターで炒め、ケチャップと塩こしょうで味付け。",
+        "name": "冷凍いんげんの塩バター炒め",
+        "note": "凍ったままフライパンでバター炒めし、塩こしょうで味付け。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍ブロッコリーといんげんをレンジで解凍する",
-        "minutes": 3,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "卵液を作る（卵2個＋マヨ＋めんつゆ）",
+        "name": "冷凍ブロッコリーとしゅうまいを耐熱皿に出してレンジへ",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "フライパンで卵をそぼろ状に炒めて取り出す",
+        "name": "レンジ加熱の待ち時間",
+        "minutes": 4,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "ケチャップ照りだれを計って混ぜておく",
+        "minutes": 2,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "冷凍いんげんをフライパンでバター炒めし塩こしょうする",
         "minutes": 5,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "同じフライパンでいんげんをバター・ケチャップで炒める",
+        "name": "同じフライパンでしゅうまいにケチャップだれを絡める",
         "minutes": 4,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "ブロッコリーをしょうゆ・ごま油・ごまで和える",
-        "minutes": 2,
+        "name": "ブロッコリーの水気を切りマヨしょうゆで和える",
+        "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
@@ -251,21 +272,21 @@
         "needs_rice": false
       },
       {
-        "name": "おかずを弁当箱に詰める",
-        "minutes": 3,
+        "name": "おかずを弁当箱に詰めてごまをふる",
+        "minutes": 4,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "3日以内のからあげ・炒り卵とかぶらないよう、マヨ入りのふんわり卵そぼろにしました。在庫登録がないので常備の卵と冷凍野菜だけで完結します。",
+    "comment": "直近3日の卵・からあげ主菜を避け、しゅうまいをケチャップだれでアレンジしました。コンロ工程は炊飯待ち30分内に収まります。",
     "_usage": {
-      "input_tokens": 3543,
-      "output_tokens": 787
+      "input_tokens": 3570,
+      "output_tokens": 791
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-10-22 01:59 JST"
+  "generated_at": "2026-10-23 01:58 JST"
 }
