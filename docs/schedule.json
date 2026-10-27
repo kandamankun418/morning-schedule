@@ -1,11 +1,11 @@
 {
-  "date": "2026-10-28",
-  "date_label": "2026年10月28日（水）",
-  "leave_time": "06:02",
+  "date": "2026-10-29",
+  "date_label": "2026年10月29日（木）",
+  "leave_time": "06:03",
   "target_leave": "06:30",
   "latest_leave": "06:35",
-  "slack_minutes": 27.5,
-  "makespan_minutes": 62.5,
+  "slack_minutes": 26.5,
+  "makespan_minutes": 63.5,
   "bento_minutes": 29.0,
   "timeline": [
     {
@@ -55,10 +55,10 @@
     {
       "type": "task",
       "id": "bento_1",
-      "name": "冷凍しゅうまい・ブロッコリーを器に出してレンジにセット",
+      "name": "卵液を作る（卵3個＋砂糖・塩・マヨネーズ）",
       "start": "05:07",
-      "end": "05:09",
-      "seconds": 120,
+      "end": "05:10",
+      "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -77,25 +77,25 @@
     {
       "type": "task",
       "id": "bento_2",
-      "name": "レンジ加熱の待ち（しゅうまい・ブロッコリー）",
-      "start": "05:09",
+      "name": "冷凍ブロッコリーをレンジで加熱する",
+      "start": "05:10",
       "end": "05:13",
-      "seconds": 240,
+      "seconds": 180,
       "attended": false,
       "background": false,
       "kind": "bento"
     },
     {
       "type": "gap",
-      "seconds": 240
+      "seconds": 180
     },
     {
       "type": "task",
       "id": "bento_3",
-      "name": "めんつゆ・みりん・しょうゆでたれを合わせておく",
+      "name": "卵焼き器で卵焼きを巻き焼きにする",
       "start": "05:13",
-      "end": "05:15",
-      "seconds": 120,
+      "end": "05:20",
+      "seconds": 420,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -103,42 +103,9 @@
     {
       "type": "task",
       "id": "bento_4",
-      "name": "フライパンで冷凍いんげんを炒め、塩こしょう・ごまで味付け",
-      "start": "05:15",
-      "end": "05:20",
-      "seconds": 300,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_5",
-      "name": "同じフライパンでしゅうまいを軽く焼き、たれとバターを絡める",
+      "name": "卵焼きを取り出して粗熱を取る",
       "start": "05:20",
       "end": "05:25",
-      "seconds": 300,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_6",
-      "name": "ブロッコリーの水気を切り、しょうゆとかつおぶしで和える",
-      "start": "05:25",
-      "end": "05:28",
-      "seconds": 180,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_7",
-      "name": "おかずの粗熱を取る",
-      "start": "05:28",
-      "end": "05:33",
       "seconds": 300,
       "attended": false,
       "background": false,
@@ -146,7 +113,33 @@
     },
     {
       "type": "gap",
-      "seconds": 540
+      "seconds": 300
+    },
+    {
+      "type": "task",
+      "id": "bento_5",
+      "name": "ブロッコリーの水気を切り、めんつゆと白ごまで和える",
+      "start": "05:25",
+      "end": "05:27",
+      "seconds": 120,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_6",
+      "name": "冷凍いんげんをバターで炒め、しょうゆで味付けする",
+      "start": "05:27",
+      "end": "05:32",
+      "seconds": 300,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "gap",
+      "seconds": 300
     },
     {
       "type": "task",
@@ -183,11 +176,11 @@
     },
     {
       "type": "task",
-      "id": "bento_8",
-      "name": "おかずをお弁当箱に詰める",
+      "id": "bento_7",
+      "name": "卵焼きを切り、おかずを弁当箱に詰める",
       "start": "05:55",
-      "end": "05:58",
-      "seconds": 180,
+      "end": "05:59",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -196,8 +189,8 @@
       "type": "task",
       "id": "bento_pack",
       "name": "お弁当に詰める",
-      "start": "05:58",
-      "end": "06:02",
+      "start": "05:59",
+      "end": "06:03",
       "seconds": 240,
       "attended": true,
       "background": false,
@@ -205,88 +198,82 @@
     }
   ],
   "menu": {
-    "menu_name": "冷凍しゅうまいのめんつゆバターだれ弁当",
+    "menu_name": "ケチャップ風味のふんわり卵焼き弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
-        "note": "炊きあがったごはんをお弁当箱に詰め、白ごまをふる。",
+        "note": "炊きあがったごはんを弁当箱に詰め、白ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍しゅうまいのめんつゆバターだれ",
-        "note": "しゅうまいをレンジで加熱し、フライパンでめんつゆ・みりん・バターのたれを絡めて軽く焼きつける。",
+        "name": "ケチャップ風味のふんわり卵焼き",
+        "note": "卵3個に砂糖・塩・マヨネーズを混ぜて巻き焼きにし、仕上げにケチャップを少量添える。",
         "uses_stock": []
       },
       {
-        "name": "冷凍ブロッコリーのおかかしょうゆ和え",
-        "note": "レンジ解凍して水気を切り、しょうゆ少々とかつおぶしで和える。",
+        "name": "冷凍ブロッコリーのめんつゆごま和え",
+        "note": "レンジ解凍して水気を切り、めんつゆと白ごまで和える。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんの塩こしょうごま炒め",
-        "note": "凍ったままフライパンで炒め、塩こしょうとごまで仕上げる。",
+        "name": "冷凍いんげんのしょうゆバター炒め",
+        "note": "凍ったままフライパンでバター炒めし、しょうゆをひと回し。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍しゅうまい・ブロッコリーを器に出してレンジにセット",
+        "name": "卵液を作る（卵3個＋砂糖・塩・マヨネーズ）",
+        "minutes": 3,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "冷凍ブロッコリーをレンジで加熱する",
+        "minutes": 3,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "卵焼き器で卵焼きを巻き焼きにする",
+        "minutes": 7,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "卵焼きを取り出して粗熱を取る",
+        "minutes": 5,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "ブロッコリーの水気を切り、めんつゆと白ごまで和える",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "レンジ加熱の待ち（しゅうまい・ブロッコリー）",
+        "name": "冷凍いんげんをバターで炒め、しょうゆで味付けする",
+        "minutes": 5,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "卵焼きを切り、おかずを弁当箱に詰める",
         "minutes": 4,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "めんつゆ・みりん・しょうゆでたれを合わせておく",
-        "minutes": 2,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "フライパンで冷凍いんげんを炒め、塩こしょう・ごまで味付け",
-        "minutes": 5,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "同じフライパンでしゅうまいを軽く焼き、たれとバターを絡める",
-        "minutes": 5,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "ブロッコリーの水気を切り、しょうゆとかつおぶしで和える",
-        "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "おかずの粗熱を取る",
-        "minutes": 5,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "おかずをお弁当箱に詰める",
-        "minutes": 3,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "在庫登録がないので常備の冷凍食品と卵なしの構成にし、3日以内に出た餃子・からあげ・卵を避けてしゅうまいにしました。前夜にたれを合わせておくと朝が2分短縮できます。",
+    "comment": "主菜は3日以上あいた卵に戻し、ケチャップとマヨで前回の甘辛しょうゆとは違う味に。前夜に卵と冷凍野菜を出す位置だけ決めておくと朝が速いです。",
     "_usage": {
-      "input_tokens": 3603,
-      "output_tokens": 1175
+      "input_tokens": 3617,
+      "output_tokens": 935
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-10-27 03:33 JST"
+  "generated_at": "2026-10-28 02:49 JST"
 }
