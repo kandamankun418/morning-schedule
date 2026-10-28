@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-29",
-  "date_label": "2026年10月29日（木）",
+  "date": "2026-10-30",
+  "date_label": "2026年10月30日（金）",
   "leave_time": "06:03",
   "target_leave": "06:30",
   "latest_leave": "06:35",
@@ -55,10 +55,10 @@
     {
       "type": "task",
       "id": "bento_1",
-      "name": "卵液を作る（卵3個＋砂糖・塩・マヨネーズ）",
+      "name": "冷凍からあげをレンジ皿に並べる",
       "start": "05:07",
-      "end": "05:10",
-      "seconds": 180,
+      "end": "05:09",
+      "seconds": 120,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -77,9 +77,20 @@
     {
       "type": "task",
       "id": "bento_2",
-      "name": "冷凍ブロッコリーをレンジで加熱する",
-      "start": "05:10",
+      "name": "からあげをレンジ加熱（待ち）",
+      "start": "05:09",
       "end": "05:13",
+      "seconds": 240,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_3",
+      "name": "冷凍ブロッコリーをレンジ解凍（待ち）",
+      "start": "05:13",
+      "end": "05:16",
       "seconds": 180,
       "attended": false,
       "background": false,
@@ -87,41 +98,26 @@
     },
     {
       "type": "gap",
-      "seconds": 180
+      "seconds": 420
     },
     {
       "type": "task",
-      "id": "bento_3",
-      "name": "卵焼き器で卵焼きを巻き焼きにする",
-      "start": "05:13",
-      "end": "05:20",
-      "seconds": 420,
+      "id": "bento_4",
+      "name": "マヨこしょうだれを作ってからあげに絡める",
+      "start": "05:16",
+      "end": "05:19",
+      "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
     },
     {
       "type": "task",
-      "id": "bento_4",
-      "name": "卵焼きを取り出して粗熱を取る",
-      "start": "05:20",
-      "end": "05:25",
-      "seconds": 300,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "gap",
-      "seconds": 300
-    },
-    {
-      "type": "task",
       "id": "bento_5",
-      "name": "ブロッコリーの水気を切り、めんつゆと白ごまで和える",
-      "start": "05:25",
-      "end": "05:27",
-      "seconds": 120,
+      "name": "ブロッコリーの水気を切ってしょうゆ・ごま油・ごまで和える",
+      "start": "05:19",
+      "end": "05:22",
+      "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -129,17 +125,28 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "冷凍いんげんをバターで炒め、しょうゆで味付けする",
-      "start": "05:27",
-      "end": "05:32",
+      "name": "フライパンでいんげんをバター炒め、めんつゆをからめる",
+      "start": "05:22",
+      "end": "05:27",
       "seconds": 300,
       "attended": true,
       "background": false,
       "kind": "bento"
     },
     {
+      "type": "task",
+      "id": "bento_7",
+      "name": "おかずの粗熱を取る（待ち）",
+      "start": "05:27",
+      "end": "05:32",
+      "seconds": 300,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
       "type": "gap",
-      "seconds": 300
+      "seconds": 600
     },
     {
       "type": "task",
@@ -176,8 +183,8 @@
     },
     {
       "type": "task",
-      "id": "bento_7",
-      "name": "卵焼きを切り、おかずを弁当箱に詰める",
+      "id": "bento_8",
+      "name": "おかずを弁当箱に詰める",
       "start": "05:55",
       "end": "05:59",
       "seconds": 240,
@@ -198,7 +205,7 @@
     }
   ],
   "menu": {
-    "menu_name": "ケチャップ風味のふんわり卵焼き弁当",
+    "menu_name": "冷凍からあげのマヨこしょうだれ弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
@@ -206,74 +213,80 @@
         "uses_stock": []
       },
       {
-        "name": "ケチャップ風味のふんわり卵焼き",
-        "note": "卵3個に砂糖・塩・マヨネーズを混ぜて巻き焼きにし、仕上げにケチャップを少量添える。",
+        "name": "冷凍からあげのマヨこしょうだれ",
+        "note": "冷凍からあげをレンジ加熱し、マヨネーズ＋しょうゆ少々＋粗びきこしょうを絡める。",
         "uses_stock": []
       },
       {
-        "name": "冷凍ブロッコリーのめんつゆごま和え",
-        "note": "レンジ解凍して水気を切り、めんつゆと白ごまで和える。",
+        "name": "冷凍ブロッコリーの塩こんぶ風しょうゆ和え",
+        "note": "解凍したブロッコリーをしょうゆ・ごま油・白ごまで和える。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんのしょうゆバター炒め",
-        "note": "凍ったままフライパンでバター炒めし、しょうゆをひと回し。",
+        "name": "冷凍いんげんのめんつゆバター炒め",
+        "note": "いんげんをバターで炒め、めんつゆをからめて水分を飛ばす。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "卵液を作る（卵3個＋砂糖・塩・マヨネーズ）",
-        "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "冷凍ブロッコリーをレンジで加熱する",
-        "minutes": 3,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "卵焼き器で卵焼きを巻き焼きにする",
-        "minutes": 7,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "卵焼きを取り出して粗熱を取る",
-        "minutes": 5,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "ブロッコリーの水気を切り、めんつゆと白ごまで和える",
+        "name": "冷凍からあげをレンジ皿に並べる",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "冷凍いんげんをバターで炒め、しょうゆで味付けする",
+        "name": "からあげをレンジ加熱（待ち）",
+        "minutes": 4,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "冷凍ブロッコリーをレンジ解凍（待ち）",
+        "minutes": 3,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "マヨこしょうだれを作ってからあげに絡める",
+        "minutes": 3,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "ブロッコリーの水気を切ってしょうゆ・ごま油・ごまで和える",
+        "minutes": 3,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "フライパンでいんげんをバター炒め、めんつゆをからめる",
         "minutes": 5,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "卵焼きを切り、おかずを弁当箱に詰める",
+        "name": "おかずの粗熱を取る（待ち）",
+        "minutes": 5,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "おかずを弁当箱に詰める",
         "minutes": 4,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "主菜は3日以上あいた卵に戻し、ケチャップとマヨで前回の甘辛しょうゆとは違う味に。前夜に卵と冷凍野菜を出す位置だけ決めておくと朝が速いです。",
+    "comment": "在庫登録がないので常備の冷凍食品と卵まわりの調味料だけで完結する構成にしました。卵・しゅうまい・餃子は直近に出ているので、4日空いたからあげを別だれでリメイクしています。",
     "_usage": {
-      "input_tokens": 3617,
-      "output_tokens": 935
+      "input_tokens": 3604,
+      "output_tokens": 954
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-10-28 02:49 JST"
+  "generated_at": "2026-10-29 03:13 JST"
 }
