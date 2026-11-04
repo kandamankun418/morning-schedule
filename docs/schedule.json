@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-05",
-  "date_label": "2026年11月5日（木）",
+  "date": "2026-11-06",
+  "date_label": "2026年11月6日（金）",
   "leave_time": "06:03",
   "target_leave": "06:30",
   "latest_leave": "06:35",
@@ -18,6 +18,17 @@
       "attended": true,
       "background": false,
       "kind": "fixed"
+    },
+    {
+      "type": "task",
+      "id": "bento_1",
+      "name": "冷凍からあげをレンジ加熱する",
+      "start": "05:00",
+      "end": "05:04",
+      "seconds": 240,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
     },
     {
       "type": "task",
@@ -54,8 +65,19 @@
     },
     {
       "type": "task",
-      "id": "bento_1",
-      "name": "炊飯をセットする",
+      "id": "bento_2",
+      "name": "冷凍ブロッコリーをレンジ解凍する",
+      "start": "05:04",
+      "end": "05:07",
+      "seconds": 180,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_3",
+      "name": "南蛮風甘酢だれを混ぜておく（酢・砂糖・しょうゆ・みりん）",
       "start": "05:07",
       "end": "05:09",
       "seconds": 120,
@@ -76,36 +98,10 @@
     },
     {
       "type": "task",
-      "id": "bento_2",
-      "name": "冷凍ブロッコリーといんげんをレンジで解凍",
-      "start": "05:09",
-      "end": "05:13",
-      "seconds": 240,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "gap",
-      "seconds": 240
-    },
-    {
-      "type": "task",
-      "id": "bento_3",
-      "name": "卵液を作る（卵2個＋砂糖・しょうゆ・みりん）",
-      "start": "05:13",
-      "end": "05:16",
-      "seconds": 180,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
       "id": "bento_4",
-      "name": "フライパンで炒り卵そぼろを作る",
-      "start": "05:16",
-      "end": "05:21",
+      "name": "フライパンで冷凍いんげんを炒め、めんつゆとごまで味付け",
+      "start": "05:09",
+      "end": "05:14",
       "seconds": 300,
       "attended": true,
       "background": false,
@@ -114,9 +110,9 @@
     {
       "type": "task",
       "id": "bento_5",
-      "name": "いんげんをケチャップ炒めにする",
-      "start": "05:21",
-      "end": "05:25",
+      "name": "同じフライパンでからあげにたれを絡める",
+      "start": "05:14",
+      "end": "05:18",
       "seconds": 240,
       "attended": true,
       "background": false,
@@ -125,9 +121,9 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "ブロッコリーの水気を切って塩ごまマヨで和える",
-      "start": "05:25",
-      "end": "05:28",
+      "name": "ブロッコリーの水気を切ってマヨ・こしょうで和える",
+      "start": "05:18",
+      "end": "05:21",
       "seconds": 180,
       "attended": true,
       "background": false,
@@ -137,8 +133,8 @@
       "type": "task",
       "id": "bento_7",
       "name": "おかずの粗熱を取る",
-      "start": "05:28",
-      "end": "05:33",
+      "start": "05:21",
+      "end": "05:26",
       "seconds": 300,
       "attended": false,
       "background": false,
@@ -146,7 +142,7 @@
     },
     {
       "type": "gap",
-      "seconds": 540
+      "seconds": 960
     },
     {
       "type": "task",
@@ -184,7 +180,7 @@
     {
       "type": "task",
       "id": "bento_8",
-      "name": "ごはんの上に炒り卵をのせ、副菜を詰める",
+      "name": "おかずを詰めてからあげにマヨを細くかける",
       "start": "05:55",
       "end": "05:59",
       "seconds": 240,
@@ -205,7 +201,7 @@
     }
   ],
   "menu": {
-    "menu_name": "甘辛しょうゆの卵そぼろ風炒り卵弁当",
+    "menu_name": "鶏そぼろ風ではない！ 甘辛マヨの厚焼き卵弁当…ではなく、冷凍からあげの南蛮風だれ弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
@@ -213,54 +209,54 @@
         "uses_stock": []
       },
       {
-        "name": "甘辛しょうゆの炒り卵そぼろ",
-        "note": "卵2個に砂糖・しょうゆ・みりんを混ぜ、フライパンで菜箸4本で細かく炒る。",
+        "name": "冷凍からあげの南蛮風甘酢だれ",
+        "note": "冷凍からあげをレンジ加熱後、フライパンで酢・砂糖・しょうゆのたれを絡める。仕上げにマヨを細く。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんのケチャップ炒め",
-        "note": "解凍したいんげんを油で炒め、ケチャップと塩こしょうで味付け。",
+        "name": "冷凍いんげんのめんつゆごま炒め",
+        "note": "冷凍いんげんを油で炒め、めんつゆと白ごまで和える。",
         "uses_stock": []
       },
       {
-        "name": "冷凍ブロッコリーの塩ごまマヨ和え",
-        "note": "レンジ解凍して水気を切り、マヨ・塩・ごまで和える。",
+        "name": "冷凍ブロッコリーのこしょうマヨ和え",
+        "note": "レンジ解凍して水気を切り、マヨとこしょうで和える。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "炊飯をセットする",
-        "minutes": 2,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "冷凍ブロッコリーといんげんをレンジで解凍",
+        "name": "冷凍からあげをレンジ加熱する",
         "minutes": 4,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "卵液を作る（卵2個＋砂糖・しょうゆ・みりん）",
+        "name": "冷凍ブロッコリーをレンジ解凍する",
         "minutes": 3,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "南蛮風甘酢だれを混ぜておく（酢・砂糖・しょうゆ・みりん）",
+        "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "フライパンで炒り卵そぼろを作る",
+        "name": "フライパンで冷凍いんげんを炒め、めんつゆとごまで味付け",
         "minutes": 5,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "いんげんをケチャップ炒めにする",
+        "name": "同じフライパンでからあげにたれを絡める",
         "minutes": 4,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "ブロッコリーの水気を切って塩ごまマヨで和える",
+        "name": "ブロッコリーの水気を切ってマヨ・こしょうで和える",
         "minutes": 3,
         "attended": true,
         "needs_rice": false
@@ -272,21 +268,21 @@
         "needs_rice": false
       },
       {
-        "name": "ごはんの上に炒り卵をのせ、副菜を詰める",
+        "name": "おかずを詰めてからあげにマヨを細くかける",
         "minutes": 4,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "ここ数日は冷凍主菜が続いていたので、常備の卵で主菜を作り変化をつけました。前夜に卵液だけ混ぜて冷蔵しておくと朝が3分短縮できます。",
+    "comment": "卵が2日続いたので、3日空いた冷凍からあげを酸味のある南蛮風だれで気分を変えました。たれは前夜に混ぜておくと朝が3分短縮できます。",
     "_usage": {
-      "input_tokens": 3596,
-      "output_tokens": 781
+      "input_tokens": 3598,
+      "output_tokens": 838
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-11-04 04:20 JST"
+  "generated_at": "2026-11-05 04:37 JST"
 }
