@@ -1,12 +1,12 @@
 {
-  "date": "2026-11-08",
-  "date_label": "2026年11月8日（日）",
-  "leave_time": "06:03",
+  "date": "2026-11-09",
+  "date_label": "2026年11月9日（月）",
+  "leave_time": "06:02",
   "target_leave": "06:30",
   "latest_leave": "06:35",
-  "slack_minutes": 26.5,
-  "makespan_minutes": 63.5,
-  "bento_minutes": 28.0,
+  "slack_minutes": 27.5,
+  "makespan_minutes": 62.5,
+  "bento_minutes": 32.0,
   "timeline": [
     {
       "type": "task",
@@ -18,17 +18,6 @@
       "attended": true,
       "background": false,
       "kind": "fixed"
-    },
-    {
-      "type": "task",
-      "id": "bento_1",
-      "name": "冷凍ブロッコリーといんげんを耐熱皿に出してレンジ加熱",
-      "start": "05:00",
-      "end": "05:04",
-      "seconds": 240,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
     },
     {
       "type": "task",
@@ -65,8 +54,8 @@
     },
     {
       "type": "task",
-      "id": "bento_2",
-      "name": "卵2個を溶き、めんつゆ・砂糖・塩を混ぜる",
+      "id": "bento_1",
+      "name": "炊飯をセットする（早炊き）",
       "start": "05:07",
       "end": "05:09",
       "seconds": 120,
@@ -87,11 +76,26 @@
     },
     {
       "type": "task",
-      "id": "bento_3",
-      "name": "フライパンでオムレツを焼いて巻く",
+      "id": "bento_2",
+      "name": "冷凍肉だんごを耐熱皿に並べてレンジ加熱（待ち時間）",
       "start": "05:09",
+      "end": "05:13",
+      "seconds": 240,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "gap",
+      "seconds": 240
+    },
+    {
+      "type": "task",
+      "id": "bento_3",
+      "name": "甘辛ケチャップだれを計量して合わせる",
+      "start": "05:13",
       "end": "05:15",
-      "seconds": 360,
+      "seconds": 120,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -99,25 +103,25 @@
     {
       "type": "task",
       "id": "bento_4",
-      "name": "オムレツを取り出し粗熱を取る",
+      "name": "冷凍ブロッコリーをレンジ加熱（待ち時間）",
       "start": "05:15",
-      "end": "05:20",
-      "seconds": 300,
+      "end": "05:18",
+      "seconds": 180,
       "attended": false,
       "background": false,
       "kind": "bento"
     },
     {
       "type": "gap",
-      "seconds": 300
+      "seconds": 180
     },
     {
       "type": "task",
       "id": "bento_5",
-      "name": "いんげんを油で炒め、塩こしょう・ごまで味つけ",
-      "start": "05:20",
-      "end": "05:24",
-      "seconds": 240,
+      "name": "フライパンで肉だんごにたれを煮からめる",
+      "start": "05:18",
+      "end": "05:23",
+      "seconds": 300,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -125,17 +129,39 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "ブロッコリーの水気を切り、ケチャップマヨで和える",
-      "start": "05:24",
-      "end": "05:27",
+      "name": "ブロッコリーの水気を切ってこしょうしょうゆで和える",
+      "start": "05:23",
+      "end": "05:26",
       "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
     },
     {
+      "type": "task",
+      "id": "bento_7",
+      "name": "同じフライパンで冷凍いんげんをバター炒め、めんつゆで味つけ",
+      "start": "05:26",
+      "end": "05:31",
+      "seconds": 300,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_8",
+      "name": "おかずの粗熱を取る（待ち時間）",
+      "start": "05:31",
+      "end": "05:36",
+      "seconds": 300,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
       "type": "gap",
-      "seconds": 600
+      "seconds": 360
     },
     {
       "type": "task",
@@ -172,11 +198,11 @@
     },
     {
       "type": "task",
-      "id": "bento_7",
-      "name": "オムレツを切り分け、おかずを弁当箱に詰める",
+      "id": "bento_9",
+      "name": "おかずを弁当箱に詰める",
       "start": "05:55",
-      "end": "05:59",
-      "seconds": 240,
+      "end": "05:58",
+      "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -185,8 +211,8 @@
       "type": "task",
       "id": "bento_pack",
       "name": "お弁当に詰める",
-      "start": "05:59",
-      "end": "06:03",
+      "start": "05:58",
+      "end": "06:02",
       "seconds": 240,
       "attended": true,
       "background": false,
@@ -194,7 +220,7 @@
     }
   ],
   "menu": {
-    "menu_name": "めんつゆバターの卵とじ風オムレツ弁当",
+    "menu_name": "冷凍しゅうまい…ではなく、冷凍餃子でもない！ 甘辛ケチャップだれの焼きつくね風肉だんご弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
@@ -202,74 +228,86 @@
         "uses_stock": []
       },
       {
-        "name": "めんつゆバター風味のふんわりオムレツ",
-        "note": "卵2個にめんつゆ・砂糖少々を混ぜ、バター風味の油で半熟に巻いて焼く。",
+        "name": "冷凍肉だんごの甘辛ケチャップだれ",
+        "note": "冷凍肉だんご（なければ冷凍からあげ以外の冷凍惣菜）をレンジ解凍し、フライパンで醤油・みりん・砂糖・ケチャップのたれを煮からめる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍ブロッコリーのケチャップマヨ和え",
-        "note": "レンジ解凍し水気を切り、ケチャップとマヨを少量で和える。",
+        "name": "冷凍ブロッコリーのこしょうしょうゆ和え",
+        "note": "レンジ加熱して水気を切り、しょうゆ少々とこしょうで和える。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんの塩こしょうごま炒め",
-        "note": "解凍したいんげんを油で炒め、塩こしょうとごまで仕上げる。",
+        "name": "冷凍いんげんのバターめんつゆ炒め",
+        "note": "フライパンでバターと炒め、めんつゆを回しかける。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍ブロッコリーといんげんを耐熱皿に出してレンジ加熱",
-        "minutes": 4,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "卵2個を溶き、めんつゆ・砂糖・塩を混ぜる",
+        "name": "炊飯をセットする（早炊き）",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "フライパンでオムレツを焼いて巻く",
-        "minutes": 6,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "オムレツを取り出し粗熱を取る",
-        "minutes": 5,
+        "name": "冷凍肉だんごを耐熱皿に並べてレンジ加熱（待ち時間）",
+        "minutes": 4,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "いんげんを油で炒め、塩こしょう・ごまで味つけ",
-        "minutes": 4,
+        "name": "甘辛ケチャップだれを計量して合わせる",
+        "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "ブロッコリーの水気を切り、ケチャップマヨで和える",
+        "name": "冷凍ブロッコリーをレンジ加熱（待ち時間）",
+        "minutes": 3,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "フライパンで肉だんごにたれを煮からめる",
+        "minutes": 5,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "ブロッコリーの水気を切ってこしょうしょうゆで和える",
         "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "オムレツを切り分け、おかずを弁当箱に詰める",
-        "minutes": 4,
+        "name": "同じフライパンで冷凍いんげんをバター炒め、めんつゆで味つけ",
+        "minutes": 5,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "おかずの粗熱を取る（待ち時間）",
+        "minutes": 5,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "おかずを弁当箱に詰める",
+        "minutes": 3,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "直近3日が冷凍しゅうまい・からあげ・炒り卵だったので、巻くタイプの卵主菜にしました。前夜に卵液を作って冷蔵しておくと朝が3分短縮できます。",
+    "comment": "卵・からあげ・しゅうまい・餃子が続いていたので、肉だんご系の主菜で気分を変えました。前夜に甘辛ケチャップだれを合わせて冷蔵しておくと、朝は炒めるだけで2分短縮できます。",
     "_usage": {
-      "input_tokens": 3632,
-      "output_tokens": 768
+      "input_tokens": 3636,
+      "output_tokens": 934
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-11-07 04:10 JST"
+  "generated_at": "2026-11-08 02:39 JST"
 }
