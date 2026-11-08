@@ -1,12 +1,12 @@
 {
-  "date": "2026-11-09",
-  "date_label": "2026年11月9日（月）",
+  "date": "2026-11-10",
+  "date_label": "2026年11月10日（火）",
   "leave_time": "06:02",
   "target_leave": "06:30",
   "latest_leave": "06:35",
   "slack_minutes": 27.5,
   "makespan_minutes": 62.5,
-  "bento_minutes": 32.0,
+  "bento_minutes": 31.0,
   "timeline": [
     {
       "type": "task",
@@ -18,6 +18,17 @@
       "attended": true,
       "background": false,
       "kind": "fixed"
+    },
+    {
+      "type": "task",
+      "id": "bento_1",
+      "name": "冷凍ブロッコリーといんげんをレンジ解凍（加熱待ち）",
+      "start": "05:00",
+      "end": "05:03",
+      "seconds": 180,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
     },
     {
       "type": "task",
@@ -54,8 +65,8 @@
     },
     {
       "type": "task",
-      "id": "bento_1",
-      "name": "炊飯をセットする（早炊き）",
+      "id": "bento_2",
+      "name": "餃子のたれ（しょうゆ・みりん・砂糖）を小皿で合わせる",
       "start": "05:07",
       "end": "05:09",
       "seconds": 120,
@@ -76,51 +87,10 @@
     },
     {
       "type": "task",
-      "id": "bento_2",
-      "name": "冷凍肉だんごを耐熱皿に並べてレンジ加熱（待ち時間）",
-      "start": "05:09",
-      "end": "05:13",
-      "seconds": 240,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "gap",
-      "seconds": 240
-    },
-    {
-      "type": "task",
       "id": "bento_3",
-      "name": "甘辛ケチャップだれを計量して合わせる",
-      "start": "05:13",
-      "end": "05:15",
-      "seconds": 120,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_4",
-      "name": "冷凍ブロッコリーをレンジ加熱（待ち時間）",
-      "start": "05:15",
-      "end": "05:18",
-      "seconds": 180,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "gap",
-      "seconds": 180
-    },
-    {
-      "type": "task",
-      "id": "bento_5",
-      "name": "フライパンで肉だんごにたれを煮からめる",
-      "start": "05:18",
-      "end": "05:23",
+      "name": "フライパンを熱し冷凍餃子を並べ、水を入れてふたをして蒸し焼き",
+      "start": "05:09",
+      "end": "05:14",
       "seconds": 300,
       "attended": true,
       "background": false,
@@ -128,10 +98,32 @@
     },
     {
       "type": "task",
+      "id": "bento_4",
+      "name": "蒸し焼き中にブロッコリーの水気を切ってマヨこしょうで和える",
+      "start": "05:14",
+      "end": "05:17",
+      "seconds": 180,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_5",
+      "name": "餃子のふたを取り水分を飛ばし、焼き色をつける",
+      "start": "05:17",
+      "end": "05:21",
+      "seconds": 240,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
       "id": "bento_6",
-      "name": "ブロッコリーの水気を切ってこしょうしょうゆで和える",
-      "start": "05:23",
-      "end": "05:26",
+      "name": "たれとバターを加えて餃子に絡め、削りぶしをふって取り出す",
+      "start": "05:21",
+      "end": "05:24",
       "seconds": 180,
       "attended": true,
       "background": false,
@@ -140,10 +132,10 @@
     {
       "type": "task",
       "id": "bento_7",
-      "name": "同じフライパンで冷凍いんげんをバター炒め、めんつゆで味つけ",
-      "start": "05:26",
-      "end": "05:31",
-      "seconds": 300,
+      "name": "同じフライパンでいんげんを炒め、しょうゆ・砂糖・ごまで味付け",
+      "start": "05:24",
+      "end": "05:28",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -151,17 +143,17 @@
     {
       "type": "task",
       "id": "bento_8",
-      "name": "おかずの粗熱を取る（待ち時間）",
-      "start": "05:31",
-      "end": "05:36",
-      "seconds": 300,
+      "name": "おかずの粗熱を取る",
+      "start": "05:28",
+      "end": "05:32",
+      "seconds": 240,
       "attended": false,
       "background": false,
       "kind": "bento"
     },
     {
       "type": "gap",
-      "seconds": 360
+      "seconds": 540
     },
     {
       "type": "task",
@@ -220,7 +212,7 @@
     }
   ],
   "menu": {
-    "menu_name": "冷凍しゅうまい…ではなく、冷凍餃子でもない！ 甘辛ケチャップだれの焼きつくね風肉だんご弁当",
+    "menu_name": "冷凍餃子のおかかバターしょうゆだれ弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
@@ -228,67 +220,67 @@
         "uses_stock": []
       },
       {
-        "name": "冷凍肉だんごの甘辛ケチャップだれ",
-        "note": "冷凍肉だんご（なければ冷凍からあげ以外の冷凍惣菜）をレンジ解凍し、フライパンで醤油・みりん・砂糖・ケチャップのたれを煮からめる。",
+        "name": "冷凍餃子のおかかバターしょうゆだれ",
+        "note": "冷凍餃子をフライパンで焼き、しょうゆ・みりん・バターのたれを絡めて削りぶしをふる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍ブロッコリーのこしょうしょうゆ和え",
-        "note": "レンジ加熱して水気を切り、しょうゆ少々とこしょうで和える。",
+        "name": "冷凍ブロッコリーのマヨこしょう和え",
+        "note": "レンジ解凍して水気を切り、マヨネーズとこしょうで和える。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんのバターめんつゆ炒め",
-        "note": "フライパンでバターと炒め、めんつゆを回しかける。",
+        "name": "冷凍いんげんの甘辛ごま炒め",
+        "note": "解凍したいんげんを油で炒め、しょうゆ・砂糖・ごまで味付け。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "炊飯をセットする（早炊き）",
+        "name": "冷凍ブロッコリーといんげんをレンジ解凍（加熱待ち）",
+        "minutes": 3,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "餃子のたれ（しょうゆ・みりん・砂糖）を小皿で合わせる",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "冷凍肉だんごを耐熱皿に並べてレンジ加熱（待ち時間）",
+        "name": "フライパンを熱し冷凍餃子を並べ、水を入れてふたをして蒸し焼き",
+        "minutes": 5,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "蒸し焼き中にブロッコリーの水気を切ってマヨこしょうで和える",
+        "minutes": 3,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "餃子のふたを取り水分を飛ばし、焼き色をつける",
         "minutes": 4,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "甘辛ケチャップだれを計量して合わせる",
-        "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "冷凍ブロッコリーをレンジ加熱（待ち時間）",
-        "minutes": 3,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "フライパンで肉だんごにたれを煮からめる",
-        "minutes": 5,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "ブロッコリーの水気を切ってこしょうしょうゆで和える",
+        "name": "たれとバターを加えて餃子に絡め、削りぶしをふって取り出す",
         "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "同じフライパンで冷凍いんげんをバター炒め、めんつゆで味つけ",
-        "minutes": 5,
+        "name": "同じフライパンでいんげんを炒め、しょうゆ・砂糖・ごまで味付け",
+        "minutes": 4,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "おかずの粗熱を取る（待ち時間）",
-        "minutes": 5,
+        "name": "おかずの粗熱を取る",
+        "minutes": 4,
         "attended": false,
         "needs_rice": false
       },
@@ -300,14 +292,14 @@
       }
     ],
     "stock_consumed": [],
-    "comment": "卵・からあげ・しゅうまい・餃子が続いていたので、肉だんご系の主菜で気分を変えました。前夜に甘辛ケチャップだれを合わせて冷蔵しておくと、朝は炒めるだけで2分短縮できます。",
+    "comment": "直近は肉だんご・オムレツ・しゅうまいが続いたので、6日空いた冷凍餃子を味付け違いで。フライパン1つで主菜→副菜と続けて使えるので炊飯待ちに収まります。",
     "_usage": {
-      "input_tokens": 3636,
-      "output_tokens": 934
+      "input_tokens": 3672,
+      "output_tokens": 1156
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-11-08 02:39 JST"
+  "generated_at": "2026-11-09 02:49 JST"
 }
