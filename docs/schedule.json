@@ -1,12 +1,12 @@
 {
-  "date": "2026-11-10",
-  "date_label": "2026年11月10日（火）",
+  "date": "2026-11-11",
+  "date_label": "2026年11月11日（水）",
   "leave_time": "06:02",
   "target_leave": "06:30",
   "latest_leave": "06:35",
   "slack_minutes": 27.5,
   "makespan_minutes": 62.5,
-  "bento_minutes": 31.0,
+  "bento_minutes": 30.0,
   "timeline": [
     {
       "type": "task",
@@ -22,10 +22,10 @@
     {
       "type": "task",
       "id": "bento_1",
-      "name": "冷凍ブロッコリーといんげんをレンジ解凍（加熱待ち）",
+      "name": "冷凍ブロッコリーといんげんを耐熱皿に出してレンジ加熱",
       "start": "05:00",
-      "end": "05:03",
-      "seconds": 180,
+      "end": "05:04",
+      "seconds": 240,
       "attended": false,
       "background": false,
       "kind": "bento"
@@ -66,10 +66,10 @@
     {
       "type": "task",
       "id": "bento_2",
-      "name": "餃子のたれ（しょうゆ・みりん・砂糖）を小皿で合わせる",
+      "name": "卵2個を溶き、塩少々を混ぜる／ケチャップだれを合わせておく",
       "start": "05:07",
-      "end": "05:09",
-      "seconds": 120,
+      "end": "05:10",
+      "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -88,9 +88,9 @@
     {
       "type": "task",
       "id": "bento_3",
-      "name": "フライパンを熱し冷凍餃子を並べ、水を入れてふたをして蒸し焼き",
-      "start": "05:09",
-      "end": "05:14",
+      "name": "フライパンでオムレツを焼く",
+      "start": "05:10",
+      "end": "05:15",
       "seconds": 300,
       "attended": true,
       "background": false,
@@ -99,9 +99,9 @@
     {
       "type": "task",
       "id": "bento_4",
-      "name": "蒸し焼き中にブロッコリーの水気を切ってマヨこしょうで和える",
-      "start": "05:14",
-      "end": "05:17",
+      "name": "オムレツにケチャップしょうゆだれをからめ、取り出して冷ます",
+      "start": "05:15",
+      "end": "05:18",
       "seconds": 180,
       "attended": true,
       "background": false,
@@ -110,9 +110,9 @@
     {
       "type": "task",
       "id": "bento_5",
-      "name": "餃子のふたを取り水分を飛ばし、焼き色をつける",
-      "start": "05:17",
-      "end": "05:21",
+      "name": "同じフライパンでいんげんをバターこしょう炒め",
+      "start": "05:18",
+      "end": "05:22",
       "seconds": 240,
       "attended": true,
       "background": false,
@@ -121,9 +121,9 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "たれとバターを加えて餃子に絡め、削りぶしをふって取り出す",
-      "start": "05:21",
-      "end": "05:24",
+      "name": "ブロッコリーの水気を切り、めんつゆとおかかで和える",
+      "start": "05:22",
+      "end": "05:25",
       "seconds": 180,
       "attended": true,
       "background": false,
@@ -132,28 +132,17 @@
     {
       "type": "task",
       "id": "bento_7",
-      "name": "同じフライパンでいんげんを炒め、しょうゆ・砂糖・ごまで味付け",
-      "start": "05:24",
-      "end": "05:28",
-      "seconds": 240,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_8",
       "name": "おかずの粗熱を取る",
-      "start": "05:28",
-      "end": "05:32",
-      "seconds": 240,
+      "start": "05:25",
+      "end": "05:30",
+      "seconds": 300,
       "attended": false,
       "background": false,
       "kind": "bento"
     },
     {
       "type": "gap",
-      "seconds": 540
+      "seconds": 720
     },
     {
       "type": "task",
@@ -190,7 +179,7 @@
     },
     {
       "type": "task",
-      "id": "bento_9",
+      "id": "bento_8",
       "name": "おかずを弁当箱に詰める",
       "start": "05:55",
       "end": "05:58",
@@ -212,7 +201,7 @@
     }
   ],
   "menu": {
-    "menu_name": "冷凍餃子のおかかバターしょうゆだれ弁当",
+    "menu_name": "ケチャップしょうゆの巣ごもり風オムレツ弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
@@ -220,67 +209,61 @@
         "uses_stock": []
       },
       {
-        "name": "冷凍餃子のおかかバターしょうゆだれ",
-        "note": "冷凍餃子をフライパンで焼き、しょうゆ・みりん・バターのたれを絡めて削りぶしをふる。",
+        "name": "ふんわりオムレツ ケチャップしょうゆだれ",
+        "note": "卵2個を溶いてフライパンで半熟に巻き、ケチャップ＋しょうゆ＋みりんのたれをからめる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍ブロッコリーのマヨこしょう和え",
-        "note": "レンジ解凍して水気を切り、マヨネーズとこしょうで和える。",
+        "name": "冷凍いんげんのバターこしょう炒め",
+        "note": "レンジ解凍したいんげんをバターで炒め、塩こしょうで味つけ。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんの甘辛ごま炒め",
-        "note": "解凍したいんげんを油で炒め、しょうゆ・砂糖・ごまで味付け。",
+        "name": "冷凍ブロッコリーのめんつゆおかか和え",
+        "note": "レンジ加熱して水気を切り、めんつゆとかつお節で和える。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍ブロッコリーといんげんをレンジ解凍（加熱待ち）",
-        "minutes": 3,
+        "name": "冷凍ブロッコリーといんげんを耐熱皿に出してレンジ加熱",
+        "minutes": 4,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "餃子のたれ（しょうゆ・みりん・砂糖）を小皿で合わせる",
-        "minutes": 2,
+        "name": "卵2個を溶き、塩少々を混ぜる／ケチャップだれを合わせておく",
+        "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "フライパンを熱し冷凍餃子を並べ、水を入れてふたをして蒸し焼き",
+        "name": "フライパンでオムレツを焼く",
         "minutes": 5,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "蒸し焼き中にブロッコリーの水気を切ってマヨこしょうで和える",
+        "name": "オムレツにケチャップしょうゆだれをからめ、取り出して冷ます",
         "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "餃子のふたを取り水分を飛ばし、焼き色をつける",
+        "name": "同じフライパンでいんげんをバターこしょう炒め",
         "minutes": 4,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "たれとバターを加えて餃子に絡め、削りぶしをふって取り出す",
+        "name": "ブロッコリーの水気を切り、めんつゆとおかかで和える",
         "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "同じフライパンでいんげんを炒め、しょうゆ・砂糖・ごまで味付け",
-        "minutes": 4,
         "attended": true,
         "needs_rice": false
       },
       {
         "name": "おかずの粗熱を取る",
-        "minutes": 4,
+        "minutes": 5,
         "attended": false,
         "needs_rice": false
       },
@@ -292,14 +275,14 @@
       }
     ],
     "stock_consumed": [],
-    "comment": "直近は肉だんご・オムレツ・しゅうまいが続いたので、6日空いた冷凍餃子を味付け違いで。フライパン1つで主菜→副菜と続けて使えるので炊飯待ちに収まります。",
+    "comment": "3日以内に餃子・肉だんご・ブロッコリーマヨが続いたので、今日は卵メイン＋味付け違いの副菜に。手を動かす時間は約21分で炊飯待ちに収まります。",
     "_usage": {
       "input_tokens": 3672,
-      "output_tokens": 1156
+      "output_tokens": 815
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-11-09 02:49 JST"
+  "generated_at": "2026-11-10 07:10 JST"
 }
