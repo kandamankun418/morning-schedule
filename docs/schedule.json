@@ -1,12 +1,12 @@
 {
-  "date": "2026-11-11",
-  "date_label": "2026年11月11日（水）",
+  "date": "2026-11-12",
+  "date_label": "2026年11月12日（木）",
   "leave_time": "06:02",
   "target_leave": "06:30",
   "latest_leave": "06:35",
   "slack_minutes": 27.5,
   "makespan_minutes": 62.5,
-  "bento_minutes": 30.0,
+  "bento_minutes": 25.0,
   "timeline": [
     {
       "type": "task",
@@ -66,10 +66,10 @@
     {
       "type": "task",
       "id": "bento_2",
-      "name": "卵2個を溶き、塩少々を混ぜる／ケチャップだれを合わせておく",
+      "name": "卵2個を割り、マヨネーズ・塩こしょうを加えて溶く",
       "start": "05:07",
-      "end": "05:10",
-      "seconds": 180,
+      "end": "05:09",
+      "seconds": 120,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -88,10 +88,10 @@
     {
       "type": "task",
       "id": "bento_3",
-      "name": "フライパンでオムレツを焼く",
-      "start": "05:10",
-      "end": "05:15",
-      "seconds": 300,
+      "name": "フライパンでスクランブルエッグを作る",
+      "start": "05:09",
+      "end": "05:13",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -99,9 +99,9 @@
     {
       "type": "task",
       "id": "bento_4",
-      "name": "オムレツにケチャップしょうゆだれをからめ、取り出して冷ます",
-      "start": "05:15",
-      "end": "05:18",
+      "name": "ブロッコリーの水気を切り、塩・ごま油・白ごまで和える",
+      "start": "05:13",
+      "end": "05:16",
       "seconds": 180,
       "attended": true,
       "background": false,
@@ -110,9 +110,9 @@
     {
       "type": "task",
       "id": "bento_5",
-      "name": "同じフライパンでいんげんをバターこしょう炒め",
-      "start": "05:18",
-      "end": "05:22",
+      "name": "同じフライパンでいんげんを炒め、しょうゆとバターをからめる",
+      "start": "05:16",
+      "end": "05:20",
       "seconds": 240,
       "attended": true,
       "background": false,
@@ -121,20 +121,9 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "ブロッコリーの水気を切り、めんつゆとおかかで和える",
-      "start": "05:22",
+      "name": "おかずを皿に広げて粗熱を取る",
+      "start": "05:20",
       "end": "05:25",
-      "seconds": 180,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_7",
-      "name": "おかずの粗熱を取る",
-      "start": "05:25",
-      "end": "05:30",
       "seconds": 300,
       "attended": false,
       "background": false,
@@ -142,7 +131,7 @@
     },
     {
       "type": "gap",
-      "seconds": 720
+      "seconds": 1020
     },
     {
       "type": "task",
@@ -179,7 +168,7 @@
     },
     {
       "type": "task",
-      "id": "bento_8",
+      "id": "bento_7",
       "name": "おかずを弁当箱に詰める",
       "start": "05:55",
       "end": "05:58",
@@ -201,26 +190,26 @@
     }
   ],
   "menu": {
-    "menu_name": "ケチャップしょうゆの巣ごもり風オムレツ弁当",
+    "menu_name": "のり塩マヨの卵いんげん炒め弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
-        "note": "炊きあがったごはんを詰め、白ごまをふる。",
+        "note": "炊きあがりに白ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "ふんわりオムレツ ケチャップしょうゆだれ",
-        "note": "卵2個を溶いてフライパンで半熟に巻き、ケチャップ＋しょうゆ＋みりんのたれをからめる。",
+        "name": "ほろほろスクランブルエッグ のり塩マヨ風味",
+        "note": "卵2個にマヨネーズ・塩こしょうを混ぜ、フライパンで大きく混ぜながら半熟手前で火を止める。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんのバターこしょう炒め",
-        "note": "レンジ解凍したいんげんをバターで炒め、塩こしょうで味つけ。",
+        "name": "冷凍いんげんのしょうゆバター炒め",
+        "note": "レンジ解凍したいんげんを油で炒め、しょうゆとバターをからめる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍ブロッコリーのめんつゆおかか和え",
-        "note": "レンジ加熱して水気を切り、めんつゆとかつお節で和える。",
+        "name": "冷凍ブロッコリーの塩ごま和え",
+        "note": "レンジ加熱して水気を切り、塩・ごま油・白ごまで和える。",
         "uses_stock": []
       }
     ],
@@ -232,37 +221,31 @@
         "needs_rice": false
       },
       {
-        "name": "卵2個を溶き、塩少々を混ぜる／ケチャップだれを合わせておく",
-        "minutes": 3,
+        "name": "卵2個を割り、マヨネーズ・塩こしょうを加えて溶く",
+        "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "フライパンでオムレツを焼く",
-        "minutes": 5,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "オムレツにケチャップしょうゆだれをからめ、取り出して冷ます",
-        "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "同じフライパンでいんげんをバターこしょう炒め",
+        "name": "フライパンでスクランブルエッグを作る",
         "minutes": 4,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "ブロッコリーの水気を切り、めんつゆとおかかで和える",
+        "name": "ブロッコリーの水気を切り、塩・ごま油・白ごまで和える",
         "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "おかずの粗熱を取る",
+        "name": "同じフライパンでいんげんを炒め、しょうゆとバターをからめる",
+        "minutes": 4,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "おかずを皿に広げて粗熱を取る",
         "minutes": 5,
         "attended": false,
         "needs_rice": false
@@ -275,14 +258,14 @@
       }
     ],
     "stock_consumed": [],
-    "comment": "3日以内に餃子・肉だんご・ブロッコリーマヨが続いたので、今日は卵メイン＋味付け違いの副菜に。手を動かす時間は約21分で炊飯待ちに収まります。",
+    "comment": "在庫登録がないので常備の卵と冷凍野菜だけで完結する構成にしました。主菜は3日以内のオムレツ・餃子と重ならないよう、味つけを変えたスクランブルエッグにしています。",
     "_usage": {
-      "input_tokens": 3672,
-      "output_tokens": 815
+      "input_tokens": 3676,
+      "output_tokens": 766
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-11-10 07:10 JST"
+  "generated_at": "2026-11-11 04:32 JST"
 }
