@@ -1,12 +1,12 @@
 {
-  "date": "2026-11-12",
-  "date_label": "2026年11月12日（木）",
+  "date": "2026-11-13",
+  "date_label": "2026年11月13日（金）",
   "leave_time": "06:02",
   "target_leave": "06:30",
   "latest_leave": "06:35",
   "slack_minutes": 27.5,
   "makespan_minutes": 62.5,
-  "bento_minutes": 25.0,
+  "bento_minutes": 30.0,
   "timeline": [
     {
       "type": "task",
@@ -18,17 +18,6 @@
       "attended": true,
       "background": false,
       "kind": "fixed"
-    },
-    {
-      "type": "task",
-      "id": "bento_1",
-      "name": "冷凍ブロッコリーといんげんを耐熱皿に出してレンジ加熱",
-      "start": "05:00",
-      "end": "05:04",
-      "seconds": 240,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
     },
     {
       "type": "task",
@@ -65,8 +54,8 @@
     },
     {
       "type": "task",
-      "id": "bento_2",
-      "name": "卵2個を割り、マヨネーズ・塩こしょうを加えて溶く",
+      "id": "bento_1",
+      "name": "冷凍からあげと冷凍ブロッコリーを取り出し、それぞれ耐熱皿に並べる",
       "start": "05:07",
       "end": "05:09",
       "seconds": 120,
@@ -87,11 +76,26 @@
     },
     {
       "type": "task",
-      "id": "bento_3",
-      "name": "フライパンでスクランブルエッグを作る",
+      "id": "bento_2",
+      "name": "からあげをレンジで加熱（待ち時間）",
       "start": "05:09",
       "end": "05:13",
       "seconds": 240,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "gap",
+      "seconds": 240
+    },
+    {
+      "type": "task",
+      "id": "bento_3",
+      "name": "めんつゆ・みりん・砂糖・しょうゆを混ぜて照り焼きだれを作る",
+      "start": "05:13",
+      "end": "05:15",
+      "seconds": 120,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -99,21 +103,25 @@
     {
       "type": "task",
       "id": "bento_4",
-      "name": "ブロッコリーの水気を切り、塩・ごま油・白ごまで和える",
-      "start": "05:13",
-      "end": "05:16",
+      "name": "ブロッコリーをレンジで解凍加熱（待ち時間）",
+      "start": "05:15",
+      "end": "05:18",
       "seconds": 180,
-      "attended": true,
+      "attended": false,
       "background": false,
       "kind": "bento"
     },
     {
+      "type": "gap",
+      "seconds": 180
+    },
+    {
       "type": "task",
       "id": "bento_5",
-      "name": "同じフライパンでいんげんを炒め、しょうゆとバターをからめる",
-      "start": "05:16",
-      "end": "05:20",
-      "seconds": 240,
+      "name": "フライパンで冷凍いんげんを凍ったまま炒め、バター・塩こしょうで味付けして取り出す",
+      "start": "05:18",
+      "end": "05:23",
+      "seconds": 300,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -121,17 +129,39 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "おかずを皿に広げて粗熱を取る",
-      "start": "05:20",
-      "end": "05:25",
-      "seconds": 300,
+      "name": "同じフライパンでからあげとたれを絡めて照りを出す",
+      "start": "05:23",
+      "end": "05:27",
+      "seconds": 240,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_7",
+      "name": "ブロッコリーの水気を切り、めんつゆとマヨネーズで和える",
+      "start": "05:27",
+      "end": "05:30",
+      "seconds": 180,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_8",
+      "name": "おかずの粗熱を取る（放置）",
+      "start": "05:30",
+      "end": "05:34",
+      "seconds": 240,
       "attended": false,
       "background": false,
       "kind": "bento"
     },
     {
       "type": "gap",
-      "seconds": 1020
+      "seconds": 420
     },
     {
       "type": "task",
@@ -168,8 +198,8 @@
     },
     {
       "type": "task",
-      "id": "bento_7",
-      "name": "おかずを弁当箱に詰める",
+      "id": "bento_9",
+      "name": "おかずを弁当箱に詰め、ごはんにごまをふる",
       "start": "05:55",
       "end": "05:58",
       "seconds": 180,
@@ -190,82 +220,94 @@
     }
   ],
   "menu": {
-    "menu_name": "のり塩マヨの卵いんげん炒め弁当",
+    "menu_name": "冷凍からあげのめんつゆ照り焼きだれ弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
-        "note": "炊きあがりに白ごまをふる。",
+        "note": "炊きあがったごはんを弁当箱に詰め、白ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "ほろほろスクランブルエッグ のり塩マヨ風味",
-        "note": "卵2個にマヨネーズ・塩こしょうを混ぜ、フライパンで大きく混ぜながら半熟手前で火を止める。",
+        "name": "冷凍からあげのめんつゆ照り焼きだれ",
+        "note": "レンジで解凍加熱したからあげを、めんつゆ・みりん・砂糖のたれでフライパンに絡める。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんのしょうゆバター炒め",
-        "note": "レンジ解凍したいんげんを油で炒め、しょうゆとバターをからめる。",
+        "name": "冷凍いんげんの塩バター炒め",
+        "note": "凍ったままフライパンで炒め、バター・塩・こしょうで味付け。",
         "uses_stock": []
       },
       {
-        "name": "冷凍ブロッコリーの塩ごま和え",
-        "note": "レンジ加熱して水気を切り、塩・ごま油・白ごまで和える。",
+        "name": "冷凍ブロッコリーのめんつゆマヨ和え",
+        "note": "レンジ解凍して水気を切り、めんつゆ少々とマヨネーズで和える。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍ブロッコリーといんげんを耐熱皿に出してレンジ加熱",
-        "minutes": 4,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "卵2個を割り、マヨネーズ・塩こしょうを加えて溶く",
+        "name": "冷凍からあげと冷凍ブロッコリーを取り出し、それぞれ耐熱皿に並べる",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "フライパンでスクランブルエッグを作る",
+        "name": "からあげをレンジで加熱（待ち時間）",
+        "minutes": 4,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "めんつゆ・みりん・砂糖・しょうゆを混ぜて照り焼きだれを作る",
+        "minutes": 2,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "ブロッコリーをレンジで解凍加熱（待ち時間）",
+        "minutes": 3,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "フライパンで冷凍いんげんを凍ったまま炒め、バター・塩こしょうで味付けして取り出す",
+        "minutes": 5,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "同じフライパンでからあげとたれを絡めて照りを出す",
         "minutes": 4,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "ブロッコリーの水気を切り、塩・ごま油・白ごまで和える",
+        "name": "ブロッコリーの水気を切り、めんつゆとマヨネーズで和える",
         "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "同じフライパンでいんげんを炒め、しょうゆとバターをからめる",
+        "name": "おかずの粗熱を取る（放置）",
         "minutes": 4,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "おかずを皿に広げて粗熱を取る",
-        "minutes": 5,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "おかずを弁当箱に詰める",
+        "name": "おかずを弁当箱に詰め、ごはんにごまをふる",
         "minutes": 3,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "在庫登録がないので常備の卵と冷凍野菜だけで完結する構成にしました。主菜は3日以内のオムレツ・餃子と重ならないよう、味つけを変えたスクランブルエッグにしています。",
+    "comment": "卵メインが3日続いたので、6日ぶりの冷凍からあげを主菜にしました。たれは前夜に混ぜておくと朝が1工程ぶん軽くなります。",
     "_usage": {
-      "input_tokens": 3676,
-      "output_tokens": 766
+      "input_tokens": 3687,
+      "output_tokens": 1367
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-11-11 04:32 JST"
+  "generated_at": "2026-11-12 04:27 JST"
 }
