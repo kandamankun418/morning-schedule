@@ -1,12 +1,12 @@
 {
-  "date": "2026-11-15",
-  "date_label": "2026年11月15日（日）",
-  "leave_time": "06:02",
+  "date": "2026-11-16",
+  "date_label": "2026年11月16日（月）",
+  "leave_time": "06:03",
   "target_leave": "06:30",
   "latest_leave": "06:35",
-  "slack_minutes": 27.5,
-  "makespan_minutes": 62.5,
-  "bento_minutes": 34.0,
+  "slack_minutes": 26.5,
+  "makespan_minutes": 63.5,
+  "bento_minutes": 29.0,
   "timeline": [
     {
       "type": "task",
@@ -18,6 +18,17 @@
       "attended": true,
       "background": false,
       "kind": "fixed"
+    },
+    {
+      "type": "task",
+      "id": "bento_1",
+      "name": "冷凍ブロッコリーを耐熱皿に出してレンジ加熱",
+      "start": "05:00",
+      "end": "05:02",
+      "seconds": 120,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
     },
     {
       "type": "task",
@@ -54,11 +65,11 @@
     },
     {
       "type": "task",
-      "id": "bento_1",
-      "name": "米を研いで炊飯スタート",
+      "id": "bento_2",
+      "name": "卵2個を割って砂糖・しょうゆ・みりんを加え溶きほぐす",
       "start": "05:07",
-      "end": "05:11",
-      "seconds": 240,
+      "end": "05:09",
+      "seconds": 120,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -76,81 +87,22 @@
     },
     {
       "type": "task",
-      "id": "bento_2",
-      "name": "ごまマヨしょうゆだれを混ぜて用意する（しょうゆ・みりん・マヨ・すりごま）",
-      "start": "05:11",
-      "end": "05:13",
-      "seconds": 120,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
       "id": "bento_3",
-      "name": "冷凍ブロッコリーを耐熱皿に入れてレンジ加熱",
-      "start": "05:13",
-      "end": "05:16",
-      "seconds": 180,
-      "attended": false,
+      "name": "フライパンに油をひき卵をそぼろ状にいり上げる",
+      "start": "05:09",
+      "end": "05:14",
+      "seconds": 300,
+      "attended": true,
       "background": false,
       "kind": "bento"
     },
     {
       "type": "task",
       "id": "bento_4",
-      "name": "フライパンに冷凍餃子を並べ、水を入れて蓋をし蒸し焼き",
-      "start": "05:16",
-      "end": "05:22",
-      "seconds": 360,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "gap",
-      "seconds": 540
-    },
-    {
-      "type": "task",
-      "id": "bento_5",
-      "name": "ブロッコリーの水気を切り、塩・ごま油・白ごまで和える",
-      "start": "05:22",
-      "end": "05:25",
-      "seconds": 180,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_6",
-      "name": "餃子の蓋を取り水分を飛ばして焼き色をつけ、たれをからめる",
-      "start": "05:25",
-      "end": "05:29",
+      "name": "いり卵を皿に取り出して粗熱を取る",
+      "start": "05:14",
+      "end": "05:18",
       "seconds": 240,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_7",
-      "name": "同じフライパンで冷凍いんげんを炒め、しょうゆ・こしょうで味付け",
-      "start": "05:29",
-      "end": "05:33",
-      "seconds": 240,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_8",
-      "name": "おかずの粗熱を取る",
-      "start": "05:33",
-      "end": "05:38",
-      "seconds": 300,
       "attended": false,
       "background": false,
       "kind": "bento"
@@ -158,6 +110,43 @@
     {
       "type": "gap",
       "seconds": 240
+    },
+    {
+      "type": "task",
+      "id": "bento_5",
+      "name": "同じフライパンで冷凍いんげんを炒め、マヨ・こしょう・しょうゆで味つけ",
+      "start": "05:18",
+      "end": "05:23",
+      "seconds": 300,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_6",
+      "name": "ブロッコリーの水気を切り、めんつゆとすりごまで和える",
+      "start": "05:23",
+      "end": "05:26",
+      "seconds": 180,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
+      "id": "bento_7",
+      "name": "おかずの粗熱を取る",
+      "start": "05:26",
+      "end": "05:30",
+      "seconds": 240,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "gap",
+      "seconds": 660
     },
     {
       "type": "task",
@@ -194,11 +183,11 @@
     },
     {
       "type": "task",
-      "id": "bento_9",
-      "name": "おかずを弁当箱に詰める",
+      "id": "bento_8",
+      "name": "ごはんの上にいり卵をのせ、副菜2品を詰める",
       "start": "05:55",
-      "end": "05:58",
-      "seconds": 180,
+      "end": "05:59",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -207,8 +196,8 @@
       "type": "task",
       "id": "bento_pack",
       "name": "お弁当に詰める",
-      "start": "05:58",
-      "end": "06:02",
+      "start": "05:59",
+      "end": "06:03",
       "seconds": 240,
       "attended": true,
       "background": false,
@@ -216,94 +205,88 @@
     }
   ],
   "menu": {
-    "menu_name": "冷凍餃子のごまマヨしょうゆだれ弁当",
+    "menu_name": "甘辛そぼろ風いり卵弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
-        "note": "炊きあがったごはんを詰め、白ごまをふる。",
+        "note": "炊きあがったごはんを詰めて白ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍餃子のごまマヨしょうゆだれ",
-        "note": "冷凍餃子をフライパンで焼き、しょうゆ・みりん・マヨ・すりごまを合わせたたれをからめる。",
+        "name": "甘辛そぼろ風いり卵",
+        "note": "卵2個に砂糖・しょうゆ・みりんを混ぜ、油をひいたフライパンで菜箸4本で混ぜながらそぼろ状にいり上げる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんのこしょうしょうゆ炒め",
-        "note": "冷凍いんげんを油で炒め、しょうゆと粗びきこしょうで味付け。",
+        "name": "冷凍いんげんのこしょうマヨ炒め",
+        "note": "凍ったまま油で炒め、マヨネーズとこしょう、しょうゆ少々で味つけ。",
         "uses_stock": []
       },
       {
-        "name": "冷凍ブロッコリーの塩ごま和え",
-        "note": "レンジ加熱したブロッコリーを塩・ごま油・白ごまで和える。",
+        "name": "冷凍ブロッコリーのめんつゆごま和え",
+        "note": "レンジ解凍して水気を切り、めんつゆとすりごまで和える。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "米を研いで炊飯スタート",
-        "minutes": 4,
-        "attended": true,
+        "name": "冷凍ブロッコリーを耐熱皿に出してレンジ加熱",
+        "minutes": 2,
+        "attended": false,
         "needs_rice": false
       },
       {
-        "name": "ごまマヨしょうゆだれを混ぜて用意する（しょうゆ・みりん・マヨ・すりごま）",
+        "name": "卵2個を割って砂糖・しょうゆ・みりんを加え溶きほぐす",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "冷凍ブロッコリーを耐熱皿に入れてレンジ加熱",
-        "minutes": 3,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "フライパンに冷凍餃子を並べ、水を入れて蓋をし蒸し焼き",
-        "minutes": 6,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "ブロッコリーの水気を切り、塩・ごま油・白ごまで和える",
-        "minutes": 3,
+        "name": "フライパンに油をひき卵をそぼろ状にいり上げる",
+        "minutes": 5,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "餃子の蓋を取り水分を飛ばして焼き色をつけ、たれをからめる",
+        "name": "いり卵を皿に取り出して粗熱を取る",
         "minutes": 4,
+        "attended": false,
+        "needs_rice": false
+      },
+      {
+        "name": "同じフライパンで冷凍いんげんを炒め、マヨ・こしょう・しょうゆで味つけ",
+        "minutes": 5,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "同じフライパンで冷凍いんげんを炒め、しょうゆ・こしょうで味付け",
-        "minutes": 4,
+        "name": "ブロッコリーの水気を切り、めんつゆとすりごまで和える",
+        "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
       {
         "name": "おかずの粗熱を取る",
-        "minutes": 5,
+        "minutes": 4,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "おかずを弁当箱に詰める",
-        "minutes": 3,
+        "name": "ごはんの上にいり卵をのせ、副菜2品を詰める",
+        "minutes": 4,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "直近3日のしゅうまい・からあげ・卵とかぶらないよう冷凍餃子にし、前回のおかかバターとは変えてごまマヨしょうゆだれにしました。たれは前夜に混ぜておくと朝が2分短縮できます。",
+    "comment": "ここ数日は冷凍主菜と卵焼き系が続いていたので、同じ卵でも食感の違うそぼろ風いり卵に。手を動かすのは約21分、炊飯待ち30分に収まります。",
     "_usage": {
       "input_tokens": 3700,
-      "output_tokens": 1295
+      "output_tokens": 846
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-11-14 04:27 JST"
+  "generated_at": "2026-11-15 02:51 JST"
 }
