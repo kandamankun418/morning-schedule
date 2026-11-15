@@ -1,12 +1,12 @@
 {
-  "date": "2026-11-16",
-  "date_label": "2026年11月16日（月）",
+  "date": "2026-11-17",
+  "date_label": "2026年11月17日（火）",
   "leave_time": "06:03",
   "target_leave": "06:30",
   "latest_leave": "06:35",
   "slack_minutes": 26.5,
   "makespan_minutes": 63.5,
-  "bento_minutes": 29.0,
+  "bento_minutes": 30.0,
   "timeline": [
     {
       "type": "task",
@@ -22,10 +22,10 @@
     {
       "type": "task",
       "id": "bento_1",
-      "name": "冷凍ブロッコリーを耐熱皿に出してレンジ加熱",
+      "name": "冷凍ブロッコリーといんげんをレンジにかける",
       "start": "05:00",
-      "end": "05:02",
-      "seconds": 120,
+      "end": "05:04",
+      "seconds": 240,
       "attended": false,
       "background": false,
       "kind": "bento"
@@ -66,10 +66,10 @@
     {
       "type": "task",
       "id": "bento_2",
-      "name": "卵2個を割って砂糖・しょうゆ・みりんを加え溶きほぐす",
+      "name": "卵液を作る（卵3個＋マヨ・カレー粉・砂糖・塩）",
       "start": "05:07",
-      "end": "05:09",
-      "seconds": 120,
+      "end": "05:10",
+      "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -88,10 +88,10 @@
     {
       "type": "task",
       "id": "bento_3",
-      "name": "フライパンに油をひき卵をそぼろ状にいり上げる",
-      "start": "05:09",
-      "end": "05:14",
-      "seconds": 300,
+      "name": "厚焼き卵を焼く",
+      "start": "05:10",
+      "end": "05:17",
+      "seconds": 420,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -99,25 +99,25 @@
     {
       "type": "task",
       "id": "bento_4",
-      "name": "いり卵を皿に取り出して粗熱を取る",
-      "start": "05:14",
-      "end": "05:18",
-      "seconds": 240,
+      "name": "厚焼き卵を取り出して粗熱を取る",
+      "start": "05:17",
+      "end": "05:22",
+      "seconds": 300,
       "attended": false,
       "background": false,
       "kind": "bento"
     },
     {
       "type": "gap",
-      "seconds": 240
+      "seconds": 300
     },
     {
       "type": "task",
       "id": "bento_5",
-      "name": "同じフライパンで冷凍いんげんを炒め、マヨ・こしょう・しょうゆで味つけ",
-      "start": "05:18",
-      "end": "05:23",
-      "seconds": 300,
+      "name": "いんげんをケチャップしょうゆで炒める",
+      "start": "05:22",
+      "end": "05:26",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -125,28 +125,17 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "ブロッコリーの水気を切り、めんつゆとすりごまで和える",
-      "start": "05:23",
-      "end": "05:26",
+      "name": "ブロッコリーの水気を拭いてマヨめんつゆで和える",
+      "start": "05:26",
+      "end": "05:29",
       "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
     },
     {
-      "type": "task",
-      "id": "bento_7",
-      "name": "おかずの粗熱を取る",
-      "start": "05:26",
-      "end": "05:30",
-      "seconds": 240,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
-    },
-    {
       "type": "gap",
-      "seconds": 660
+      "seconds": 480
     },
     {
       "type": "task",
@@ -183,8 +172,8 @@
     },
     {
       "type": "task",
-      "id": "bento_8",
-      "name": "ごはんの上にいり卵をのせ、副菜2品を詰める",
+      "id": "bento_7",
+      "name": "厚焼き卵を切っておかずを詰める",
       "start": "05:55",
       "end": "05:59",
       "seconds": 240,
@@ -205,88 +194,82 @@
     }
   ],
   "menu": {
-    "menu_name": "甘辛そぼろ風いり卵弁当",
+    "menu_name": "カレーマヨ風味の厚焼き卵弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
-        "note": "炊きあがったごはんを詰めて白ごまをふる。",
+        "note": "炊きあがりを弁当箱に詰め、白ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "甘辛そぼろ風いり卵",
-        "note": "卵2個に砂糖・しょうゆ・みりんを混ぜ、油をひいたフライパンで菜箸4本で混ぜながらそぼろ状にいり上げる。",
+        "name": "カレーマヨ風味の厚焼き卵",
+        "note": "卵3個にマヨ小さじ1・カレー粉少々（なければこしょう）・砂糖少々・塩を混ぜ、フライパンで巻きながら焼く。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんのこしょうマヨ炒め",
-        "note": "凍ったまま油で炒め、マヨネーズとこしょう、しょうゆ少々で味つけ。",
+        "name": "冷凍いんげんのケチャップしょうゆ炒め",
+        "note": "レンジ解凍したいんげんを油で炒め、ケチャップとしょうゆ少々をからめる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍ブロッコリーのめんつゆごま和え",
-        "note": "レンジ解凍して水気を切り、めんつゆとすりごまで和える。",
+        "name": "冷凍ブロッコリーのマヨめんつゆ和え",
+        "note": "レンジ加熱して水気を拭き、マヨ＋めんつゆ少々で和える。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍ブロッコリーを耐熱皿に出してレンジ加熱",
-        "minutes": 2,
-        "attended": false,
-        "needs_rice": false
-      },
-      {
-        "name": "卵2個を割って砂糖・しょうゆ・みりんを加え溶きほぐす",
-        "minutes": 2,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "フライパンに油をひき卵をそぼろ状にいり上げる",
-        "minutes": 5,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "いり卵を皿に取り出して粗熱を取る",
+        "name": "冷凍ブロッコリーといんげんをレンジにかける",
         "minutes": 4,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "同じフライパンで冷凍いんげんを炒め、マヨ・こしょう・しょうゆで味つけ",
-        "minutes": 5,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "ブロッコリーの水気を切り、めんつゆとすりごまで和える",
+        "name": "卵液を作る（卵3個＋マヨ・カレー粉・砂糖・塩）",
         "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "おかずの粗熱を取る",
-        "minutes": 4,
+        "name": "厚焼き卵を焼く",
+        "minutes": 7,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "厚焼き卵を取り出して粗熱を取る",
+        "minutes": 5,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "ごはんの上にいり卵をのせ、副菜2品を詰める",
+        "name": "いんげんをケチャップしょうゆで炒める",
+        "minutes": 4,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "ブロッコリーの水気を拭いてマヨめんつゆで和える",
+        "minutes": 3,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "厚焼き卵を切っておかずを詰める",
         "minutes": 4,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "ここ数日は冷凍主菜と卵焼き系が続いていたので、同じ卵でも食感の違うそぼろ風いり卵に。手を動かすのは約21分、炊飯待ち30分に収まります。",
+    "comment": "在庫登録がないので常備の卵と冷凍野菜だけで完結する献立にしました。前夜に卵液を作って冷蔵しておくと朝が3分短縮できます。",
     "_usage": {
-      "input_tokens": 3700,
-      "output_tokens": 846
+      "input_tokens": 3653,
+      "output_tokens": 761
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-11-15 02:51 JST"
+  "generated_at": "2026-11-16 03:41 JST"
 }
