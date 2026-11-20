@@ -1,12 +1,12 @@
 {
-  "date": "2026-11-21",
-  "date_label": "2026年11月21日（土）",
-  "leave_time": "06:02",
+  "date": "2026-11-22",
+  "date_label": "2026年11月22日（日）",
+  "leave_time": "06:03",
   "target_leave": "06:30",
   "latest_leave": "06:35",
-  "slack_minutes": 27.5,
-  "makespan_minutes": 62.5,
-  "bento_minutes": 31.0,
+  "slack_minutes": 26.5,
+  "makespan_minutes": 63.5,
+  "bento_minutes": 25.0,
   "timeline": [
     {
       "type": "task",
@@ -22,7 +22,7 @@
     {
       "type": "task",
       "id": "bento_1",
-      "name": "冷凍ブロッコリーをレンジ加熱する",
+      "name": "冷凍ブロッコリーを耐熱皿に出してレンジ加熱",
       "start": "05:00",
       "end": "05:02",
       "seconds": 120,
@@ -66,7 +66,7 @@
     {
       "type": "task",
       "id": "bento_2",
-      "name": "餃子のたれ（しょうゆ・みりん・砂糖）を混ぜておく",
+      "name": "卵液を作る（卵2個＋マヨ・砂糖・しょうゆ）",
       "start": "05:07",
       "end": "05:09",
       "seconds": 120,
@@ -88,10 +88,10 @@
     {
       "type": "task",
       "id": "bento_3",
-      "name": "フライパンに油をひき、冷凍餃子を並べて水を入れフタをして蒸し焼き",
+      "name": "卵焼き器で厚焼き卵を焼く",
       "start": "05:09",
-      "end": "05:12",
-      "seconds": 180,
+      "end": "05:15",
+      "seconds": 360,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -99,25 +99,25 @@
     {
       "type": "task",
       "id": "bento_4",
-      "name": "餃子の蒸し焼きを待つ",
-      "start": "05:12",
-      "end": "05:17",
-      "seconds": 300,
+      "name": "厚焼き卵を取り出して粗熱を取る",
+      "start": "05:15",
+      "end": "05:19",
+      "seconds": 240,
       "attended": false,
       "background": false,
       "kind": "bento"
     },
     {
       "type": "gap",
-      "seconds": 300
+      "seconds": 240
     },
     {
       "type": "task",
       "id": "bento_5",
-      "name": "ブロッコリーの水気を切り、マヨネーズとこしょうで和える",
-      "start": "05:17",
-      "end": "05:20",
-      "seconds": 180,
+      "name": "冷凍いんげんをフライパンで炒め、こしょうしょうゆで味付け",
+      "start": "05:19",
+      "end": "05:24",
+      "seconds": 300,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -125,39 +125,17 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "フタを取り水分をとばして餃子に焼き色をつけ、たれを絡める",
-      "start": "05:20",
-      "end": "05:24",
-      "seconds": 240,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_7",
-      "name": "同じフライパンで冷凍いんげんを炒め、めんつゆとごまで味付け",
+      "name": "ブロッコリーの水気を切り、マヨとかつお節で和える",
       "start": "05:24",
-      "end": "05:28",
-      "seconds": 240,
+      "end": "05:26",
+      "seconds": 120,
       "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_8",
-      "name": "おかずの粗熱を取る",
-      "start": "05:28",
-      "end": "05:33",
-      "seconds": 300,
-      "attended": false,
       "background": false,
       "kind": "bento"
     },
     {
       "type": "gap",
-      "seconds": 540
+      "seconds": 660
     },
     {
       "type": "task",
@@ -194,11 +172,11 @@
     },
     {
       "type": "task",
-      "id": "bento_9",
-      "name": "おかずを弁当箱に詰める",
+      "id": "bento_7",
+      "name": "厚焼き卵を切り分け、おかずを弁当箱に詰める",
       "start": "05:55",
-      "end": "05:58",
-      "seconds": 180,
+      "end": "05:59",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -207,8 +185,8 @@
       "type": "task",
       "id": "bento_pack",
       "name": "お弁当に詰める",
-      "start": "05:58",
-      "end": "06:02",
+      "start": "05:59",
+      "end": "06:03",
       "seconds": 240,
       "attended": true,
       "background": false,
@@ -216,7 +194,7 @@
     }
   ],
   "menu": {
-    "menu_name": "冷凍餃子の甘辛しょうゆだれ弁当",
+    "menu_name": "ふんわりマヨ入り厚焼き卵弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
@@ -224,86 +202,74 @@
         "uses_stock": []
       },
       {
-        "name": "冷凍餃子の甘辛しょうゆだれ",
-        "note": "冷凍餃子をフライパンで焼き、しょうゆ・みりん・砂糖のたれを絡める。",
+        "name": "ふんわりマヨ入り厚焼き卵",
+        "note": "卵2個にマヨネーズ小さじ1、砂糖・しょうゆ少々を混ぜ、卵焼き器で巻き焼きにする。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんのめんつゆごま炒め",
-        "note": "凍ったままのいんげんを油で炒め、めんつゆと白ごまで味付け。",
+        "name": "冷凍いんげんのこしょうしょうゆ炒め",
+        "note": "凍ったまま油で炒め、しょうゆとこしょうで味付け。",
         "uses_stock": []
       },
       {
-        "name": "冷凍ブロッコリーのマヨこしょう和え",
-        "note": "レンジ解凍して水気を切り、マヨネーズとこしょうで和える。",
+        "name": "冷凍ブロッコリーのおかかマヨ和え",
+        "note": "レンジ解凍して水気を切り、マヨネーズとかつお節で和える。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍ブロッコリーをレンジ加熱する",
+        "name": "冷凍ブロッコリーを耐熱皿に出してレンジ加熱",
         "minutes": 2,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "餃子のたれ（しょうゆ・みりん・砂糖）を混ぜておく",
+        "name": "卵液を作る（卵2個＋マヨ・砂糖・しょうゆ）",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "フライパンに油をひき、冷凍餃子を並べて水を入れフタをして蒸し焼き",
-        "minutes": 3,
+        "name": "卵焼き器で厚焼き卵を焼く",
+        "minutes": 6,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "餃子の蒸し焼きを待つ",
-        "minutes": 5,
+        "name": "厚焼き卵を取り出して粗熱を取る",
+        "minutes": 4,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "ブロッコリーの水気を切り、マヨネーズとこしょうで和える",
-        "minutes": 3,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "フタを取り水分をとばして餃子に焼き色をつけ、たれを絡める",
-        "minutes": 4,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "同じフライパンで冷凍いんげんを炒め、めんつゆとごまで味付け",
-        "minutes": 4,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "おかずの粗熱を取る",
+        "name": "冷凍いんげんをフライパンで炒め、こしょうしょうゆで味付け",
         "minutes": 5,
-        "attended": false,
+        "attended": true,
         "needs_rice": false
       },
       {
-        "name": "おかずを弁当箱に詰める",
-        "minutes": 3,
+        "name": "ブロッコリーの水気を切り、マヨとかつお節で和える",
+        "minutes": 2,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "厚焼き卵を切り分け、おかずを弁当箱に詰める",
+        "minutes": 4,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "卵・からあげ・しゅうまいが続いたので、久しぶりの餃子を主菜にしました。在庫登録がないので、冷凍餃子と冷凍野菜の残量だけ前夜に確認しておくと安心です。",
+    "comment": "在庫登録がないので常備の卵と冷凍野菜だけで完結する構成にしました。卵液は前夜に混ぜて冷蔵しておくと朝が2分短縮できます。",
     "_usage": {
-      "input_tokens": 3594,
-      "output_tokens": 985
+      "input_tokens": 3589,
+      "output_tokens": 931
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-11-20 05:20 JST"
+  "generated_at": "2026-11-21 04:51 JST"
 }
