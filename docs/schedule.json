@@ -1,12 +1,12 @@
 {
-  "date": "2026-11-27",
-  "date_label": "2026年11月27日（金）",
+  "date": "2026-11-28",
+  "date_label": "2026年11月28日（土）",
   "leave_time": "06:02",
   "target_leave": "06:30",
   "latest_leave": "06:35",
   "slack_minutes": 27.5,
   "makespan_minutes": 62.5,
-  "bento_minutes": 28.0,
+  "bento_minutes": 27.0,
   "timeline": [
     {
       "type": "task",
@@ -18,17 +18,6 @@
       "attended": true,
       "background": false,
       "kind": "fixed"
-    },
-    {
-      "type": "task",
-      "id": "bento_1",
-      "name": "冷凍ブロッコリーといんげんをレンジ加熱する",
-      "start": "05:00",
-      "end": "05:03",
-      "seconds": 180,
-      "attended": false,
-      "background": false,
-      "kind": "bento"
     },
     {
       "type": "task",
@@ -65,11 +54,11 @@
     },
     {
       "type": "task",
-      "id": "bento_2",
-      "name": "卵を割りほぐし砂糖・塩を混ぜる",
+      "id": "bento_1",
+      "name": "冷凍からあげと冷凍ブロッコリーをレンジにセットして加熱開始",
       "start": "05:07",
-      "end": "05:09",
-      "seconds": 120,
+      "end": "05:08",
+      "seconds": 60,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -87,11 +76,26 @@
     },
     {
       "type": "task",
+      "id": "bento_2",
+      "name": "レンジ加熱の待ち時間",
+      "start": "05:08",
+      "end": "05:12",
+      "seconds": 240,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "gap",
+      "seconds": 240
+    },
+    {
+      "type": "task",
       "id": "bento_3",
-      "name": "フライパンで鶏ひき肉を炒め、調味料を加えて煮からめる",
-      "start": "05:09",
-      "end": "05:15",
-      "seconds": 360,
+      "name": "ケチャップ・マヨ・しょうゆを混ぜてだれを作る",
+      "start": "05:12",
+      "end": "05:14",
+      "seconds": 120,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -99,20 +103,9 @@
     {
       "type": "task",
       "id": "bento_4",
-      "name": "そぼろを取り出し、同じフライパンで炒り卵を作る",
-      "start": "05:15",
-      "end": "05:19",
-      "seconds": 240,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
-    },
-    {
-      "type": "task",
-      "id": "bento_5",
-      "name": "いんげんを油で炒めて塩こしょうする",
-      "start": "05:19",
-      "end": "05:22",
+      "name": "ブロッコリーの水気を切ってめんつゆ・すりごまで和える",
+      "start": "05:14",
+      "end": "05:17",
       "seconds": 180,
       "attended": true,
       "background": false,
@@ -120,11 +113,22 @@
     },
     {
       "type": "task",
+      "id": "bento_5",
+      "name": "フライパンで冷凍いんげんを炒め、塩こしょうで味つけ",
+      "start": "05:17",
+      "end": "05:22",
+      "seconds": 300,
+      "attended": true,
+      "background": false,
+      "kind": "bento"
+    },
+    {
+      "type": "task",
       "id": "bento_6",
-      "name": "ブロッコリーの水気を切っておかかしょうゆで和える",
+      "name": "同じフライパンでからあげにだれをからめる",
       "start": "05:22",
-      "end": "05:24",
-      "seconds": 120,
+      "end": "05:26",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -133,8 +137,8 @@
       "type": "task",
       "id": "bento_7",
       "name": "おかずの粗熱を取る",
-      "start": "05:24",
-      "end": "05:29",
+      "start": "05:26",
+      "end": "05:31",
       "seconds": 300,
       "attended": false,
       "background": false,
@@ -142,7 +146,7 @@
     },
     {
       "type": "gap",
-      "seconds": 780
+      "seconds": 660
     },
     {
       "type": "task",
@@ -180,7 +184,7 @@
     {
       "type": "task",
       "id": "bento_8",
-      "name": "ごはんの上にそぼろと炒り卵を二色に詰め、副菜を添える",
+      "name": "おかずを弁当箱に詰める",
       "start": "05:55",
       "end": "05:58",
       "seconds": 180,
@@ -201,68 +205,63 @@
     }
   ],
   "menu": {
-    "menu_name": "鶏そぼろと炒り卵の二色弁当",
+    "menu_name": "冷凍からあげのケチャップマヨだれ弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
-        "note": "炊きあがったごはんを詰め、白ごまをふる。",
+        "note": "炊きあがったごはんを弁当箱に詰め、白ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "鶏そぼろ（しょうゆ・みりん）",
-        "note": "ひき肉を酒・しょうゆ・みりん・砂糖でパラパラに炒り煮にする。",
+        "name": "冷凍からあげのケチャップマヨだれ",
+        "note": "冷凍からあげをレンジ加熱し、ケチャップ・マヨネーズ・少量のしょうゆを混ぜただれをフライパンでからめる。",
         "uses_stock": []
       },
       {
-        "name": "炒り卵",
-        "note": "卵に砂糖と塩を加え、菜箸でかき混ぜながら細かく炒る。",
+        "name": "冷凍いんげんのこしょう塩炒め",
+        "note": "冷凍いんげんを油で炒め、塩こしょうで味つけ。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんの塩こしょう炒め",
-        "note": "冷凍いんげんをレンジ解凍し、油で炒めて塩こしょう。",
-        "uses_stock": []
-      },
-      {
-        "name": "冷凍ブロッコリーのおかかしょうゆ和え",
-        "note": "レンジ加熱後に水気を切り、かつおぶしとしょうゆで和える。",
+        "name": "冷凍ブロッコリーのめんつゆごま和え",
+        "note": "レンジ解凍して水気を切り、めんつゆとすりごまで和える。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍ブロッコリーといんげんをレンジ加熱する",
-        "minutes": 3,
+        "name": "冷凍からあげと冷凍ブロッコリーをレンジにセットして加熱開始",
+        "minutes": 1,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "レンジ加熱の待ち時間",
+        "minutes": 4,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "卵を割りほぐし砂糖・塩を混ぜる",
+        "name": "ケチャップ・マヨ・しょうゆを混ぜてだれを作る",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "フライパンで鶏ひき肉を炒め、調味料を加えて煮からめる",
-        "minutes": 6,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "そぼろを取り出し、同じフライパンで炒り卵を作る",
-        "minutes": 4,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "いんげんを油で炒めて塩こしょうする",
+        "name": "ブロッコリーの水気を切ってめんつゆ・すりごまで和える",
         "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "ブロッコリーの水気を切っておかかしょうゆで和える",
-        "minutes": 2,
+        "name": "フライパンで冷凍いんげんを炒め、塩こしょうで味つけ",
+        "minutes": 5,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "同じフライパンでからあげにだれをからめる",
+        "minutes": 4,
         "attended": true,
         "needs_rice": false
       },
@@ -273,21 +272,21 @@
         "needs_rice": false
       },
       {
-        "name": "ごはんの上にそぼろと炒り卵を二色に詰め、副菜を添える",
+        "name": "おかずを弁当箱に詰める",
         "minutes": 3,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "卵焼きと冷凍主菜が続いていたので、そぼろで食感を変えました。鶏そぼろは前日に多めに作っておくと朝は詰めるだけで済みます。",
+    "comment": "在庫登録がないので常備の冷凍食品と調味料だけで完結する構成にしました。だれは前夜に混ぜておくと朝が2分短縮できます。",
     "_usage": {
-      "input_tokens": 3591,
-      "output_tokens": 851
+      "input_tokens": 3596,
+      "output_tokens": 1017
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-11-26 06:28 JST"
+  "generated_at": "2026-11-27 06:15 JST"
 }
