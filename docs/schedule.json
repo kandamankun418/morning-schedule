@@ -1,12 +1,12 @@
 {
-  "date": "2026-11-28",
-  "date_label": "2026年11月28日（土）",
-  "leave_time": "06:02",
+  "date": "2026-11-29",
+  "date_label": "2026年11月29日（日）",
+  "leave_time": "06:03",
   "target_leave": "06:30",
   "latest_leave": "06:35",
-  "slack_minutes": 27.5,
-  "makespan_minutes": 62.5,
-  "bento_minutes": 27.0,
+  "slack_minutes": 26.5,
+  "makespan_minutes": 63.5,
+  "bento_minutes": 29.0,
   "timeline": [
     {
       "type": "task",
@@ -18,6 +18,17 @@
       "attended": true,
       "background": false,
       "kind": "fixed"
+    },
+    {
+      "type": "task",
+      "id": "bento_1",
+      "name": "冷凍しゅうまいを耐熱皿に並べてレンジ加熱",
+      "start": "05:00",
+      "end": "05:03",
+      "seconds": 180,
+      "attended": false,
+      "background": false,
+      "kind": "bento"
     },
     {
       "type": "task",
@@ -54,11 +65,11 @@
     },
     {
       "type": "task",
-      "id": "bento_1",
-      "name": "冷凍からあげと冷凍ブロッコリーをレンジにセットして加熱開始",
+      "id": "bento_2",
+      "name": "たれ（しょうゆ・みりん・マヨ）を小皿で混ぜておく",
       "start": "05:07",
-      "end": "05:08",
-      "seconds": 60,
+      "end": "05:09",
+      "seconds": 120,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -76,37 +87,26 @@
     },
     {
       "type": "task",
-      "id": "bento_2",
-      "name": "レンジ加熱の待ち時間",
-      "start": "05:08",
+      "id": "bento_3",
+      "name": "冷凍ブロッコリーをレンジ加熱",
+      "start": "05:09",
       "end": "05:12",
-      "seconds": 240,
+      "seconds": 180,
       "attended": false,
       "background": false,
       "kind": "bento"
     },
     {
       "type": "gap",
-      "seconds": 240
-    },
-    {
-      "type": "task",
-      "id": "bento_3",
-      "name": "ケチャップ・マヨ・しょうゆを混ぜてだれを作る",
-      "start": "05:12",
-      "end": "05:14",
-      "seconds": 120,
-      "attended": true,
-      "background": false,
-      "kind": "bento"
+      "seconds": 180
     },
     {
       "type": "task",
       "id": "bento_4",
-      "name": "ブロッコリーの水気を切ってめんつゆ・すりごまで和える",
-      "start": "05:14",
+      "name": "フライパンでしゅうまいに軽く焼き目をつけ、たれを絡める",
+      "start": "05:12",
       "end": "05:17",
-      "seconds": 180,
+      "seconds": 300,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -114,7 +114,7 @@
     {
       "type": "task",
       "id": "bento_5",
-      "name": "フライパンで冷凍いんげんを炒め、塩こしょうで味つけ",
+      "name": "同じフライパンで冷凍いんげんを炒め、塩こしょう・ごまで味付け",
       "start": "05:17",
       "end": "05:22",
       "seconds": 300,
@@ -125,10 +125,10 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "同じフライパンでからあげにだれをからめる",
+      "name": "ブロッコリーの水気を切り、めんつゆとマヨで和える",
       "start": "05:22",
-      "end": "05:26",
-      "seconds": 240,
+      "end": "05:24",
+      "seconds": 120,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -137,8 +137,8 @@
       "type": "task",
       "id": "bento_7",
       "name": "おかずの粗熱を取る",
-      "start": "05:26",
-      "end": "05:31",
+      "start": "05:24",
+      "end": "05:29",
       "seconds": 300,
       "attended": false,
       "background": false,
@@ -146,7 +146,7 @@
     },
     {
       "type": "gap",
-      "seconds": 660
+      "seconds": 780
     },
     {
       "type": "task",
@@ -184,10 +184,10 @@
     {
       "type": "task",
       "id": "bento_8",
-      "name": "おかずを弁当箱に詰める",
+      "name": "おかずを弁当箱に詰め、ごはんにごまをふる",
       "start": "05:55",
-      "end": "05:58",
-      "seconds": 180,
+      "end": "05:59",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -196,8 +196,8 @@
       "type": "task",
       "id": "bento_pack",
       "name": "お弁当に詰める",
-      "start": "05:58",
-      "end": "06:02",
+      "start": "05:59",
+      "end": "06:03",
       "seconds": 240,
       "attended": true,
       "background": false,
@@ -205,63 +205,63 @@
     }
   ],
   "menu": {
-    "menu_name": "冷凍からあげのケチャップマヨだれ弁当",
+    "menu_name": "冷凍しゅうまいのマヨしょうゆだれ弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
-        "note": "炊きあがったごはんを弁当箱に詰め、白ごまをふる。",
+        "note": "炊きたてごはんを詰めて白ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍からあげのケチャップマヨだれ",
-        "note": "冷凍からあげをレンジ加熱し、ケチャップ・マヨネーズ・少量のしょうゆを混ぜただれをフライパンでからめる。",
+        "name": "冷凍しゅうまいのマヨしょうゆだれ",
+        "note": "レンジで解凍したしゅうまいをフライパンで軽く焼き、しょうゆ・みりん・マヨネーズのたれを絡める。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんのこしょう塩炒め",
-        "note": "冷凍いんげんを油で炒め、塩こしょうで味つけ。",
+        "name": "冷凍いんげんのごま塩炒め",
+        "note": "凍ったまま油で炒め、塩こしょうと白ごまで味付け。",
         "uses_stock": []
       },
       {
-        "name": "冷凍ブロッコリーのめんつゆごま和え",
-        "note": "レンジ解凍して水気を切り、めんつゆとすりごまで和える。",
+        "name": "冷凍ブロッコリーのめんつゆマヨ和え",
+        "note": "レンジ加熱して水気を切り、めんつゆとマヨで和える。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍からあげと冷凍ブロッコリーをレンジにセットして加熱開始",
-        "minutes": 1,
-        "attended": true,
-        "needs_rice": false
-      },
-      {
-        "name": "レンジ加熱の待ち時間",
-        "minutes": 4,
+        "name": "冷凍しゅうまいを耐熱皿に並べてレンジ加熱",
+        "minutes": 3,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "ケチャップ・マヨ・しょうゆを混ぜてだれを作る",
+        "name": "たれ（しょうゆ・みりん・マヨ）を小皿で混ぜておく",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "ブロッコリーの水気を切ってめんつゆ・すりごまで和える",
+        "name": "冷凍ブロッコリーをレンジ加熱",
         "minutes": 3,
-        "attended": true,
+        "attended": false,
         "needs_rice": false
       },
       {
-        "name": "フライパンで冷凍いんげんを炒め、塩こしょうで味つけ",
+        "name": "フライパンでしゅうまいに軽く焼き目をつけ、たれを絡める",
         "minutes": 5,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "同じフライパンでからあげにだれをからめる",
-        "minutes": 4,
+        "name": "同じフライパンで冷凍いんげんを炒め、塩こしょう・ごまで味付け",
+        "minutes": 5,
+        "attended": true,
+        "needs_rice": false
+      },
+      {
+        "name": "ブロッコリーの水気を切り、めんつゆとマヨで和える",
+        "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
@@ -272,21 +272,21 @@
         "needs_rice": false
       },
       {
-        "name": "おかずを弁当箱に詰める",
-        "minutes": 3,
+        "name": "おかずを弁当箱に詰め、ごはんにごまをふる",
+        "minutes": 4,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "在庫登録がないので常備の冷凍食品と調味料だけで完結する構成にしました。だれは前夜に混ぜておくと朝が2分短縮できます。",
+    "comment": "在庫登録がないので常備の冷凍食品だけで組みました。前夜にたれを合わせておくと朝が2分短縮できます。",
     "_usage": {
       "input_tokens": 3596,
-      "output_tokens": 1017
+      "output_tokens": 1120
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-11-27 06:15 JST"
+  "generated_at": "2026-11-28 05:57 JST"
 }
