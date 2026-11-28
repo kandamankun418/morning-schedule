@@ -1,12 +1,12 @@
 {
-  "date": "2026-11-29",
-  "date_label": "2026年11月29日（日）",
-  "leave_time": "06:03",
+  "date": "2026-11-30",
+  "date_label": "2026年11月30日（月）",
+  "leave_time": "06:02",
   "target_leave": "06:30",
   "latest_leave": "06:35",
-  "slack_minutes": 26.5,
-  "makespan_minutes": 63.5,
-  "bento_minutes": 29.0,
+  "slack_minutes": 27.5,
+  "makespan_minutes": 62.5,
+  "bento_minutes": 30.0,
   "timeline": [
     {
       "type": "task",
@@ -22,7 +22,7 @@
     {
       "type": "task",
       "id": "bento_1",
-      "name": "冷凍しゅうまいを耐熱皿に並べてレンジ加熱",
+      "name": "冷凍ブロッコリーを耐熱皿に出してレンジ加熱",
       "start": "05:00",
       "end": "05:03",
       "seconds": 180,
@@ -66,7 +66,7 @@
     {
       "type": "task",
       "id": "bento_2",
-      "name": "たれ（しょうゆ・みりん・マヨ）を小皿で混ぜておく",
+      "name": "たれを合わせる（しょうゆ・みりん・マヨネーズ）",
       "start": "05:07",
       "end": "05:09",
       "seconds": 120,
@@ -88,25 +88,25 @@
     {
       "type": "task",
       "id": "bento_3",
-      "name": "冷凍ブロッコリーをレンジ加熱",
+      "name": "フライパンに油をひき冷凍餃子を並べ、水を入れて蓋をして蒸し焼き",
       "start": "05:09",
-      "end": "05:12",
-      "seconds": 180,
+      "end": "05:15",
+      "seconds": 360,
       "attended": false,
       "background": false,
       "kind": "bento"
     },
     {
       "type": "gap",
-      "seconds": 180
+      "seconds": 360
     },
     {
       "type": "task",
       "id": "bento_4",
-      "name": "フライパンでしゅうまいに軽く焼き目をつけ、たれを絡める",
-      "start": "05:12",
-      "end": "05:17",
-      "seconds": 300,
+      "name": "ブロッコリーの水気を切り、マヨ・かつおぶしで和える",
+      "start": "05:15",
+      "end": "05:18",
+      "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -114,10 +114,10 @@
     {
       "type": "task",
       "id": "bento_5",
-      "name": "同じフライパンで冷凍いんげんを炒め、塩こしょう・ごまで味付け",
-      "start": "05:17",
+      "name": "餃子の蓋を取り水分を飛ばして焼き色をつけ、たれを絡める",
+      "start": "05:18",
       "end": "05:22",
-      "seconds": 300,
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -125,10 +125,10 @@
     {
       "type": "task",
       "id": "bento_6",
-      "name": "ブロッコリーの水気を切り、めんつゆとマヨで和える",
+      "name": "同じフライパンで冷凍いんげんを炒め、塩こしょうで味つけ",
       "start": "05:22",
-      "end": "05:24",
-      "seconds": 120,
+      "end": "05:26",
+      "seconds": 240,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -137,8 +137,8 @@
       "type": "task",
       "id": "bento_7",
       "name": "おかずの粗熱を取る",
-      "start": "05:24",
-      "end": "05:29",
+      "start": "05:26",
+      "end": "05:31",
       "seconds": 300,
       "attended": false,
       "background": false,
@@ -146,7 +146,7 @@
     },
     {
       "type": "gap",
-      "seconds": 780
+      "seconds": 660
     },
     {
       "type": "task",
@@ -184,10 +184,10 @@
     {
       "type": "task",
       "id": "bento_8",
-      "name": "おかずを弁当箱に詰め、ごはんにごまをふる",
+      "name": "おかずを弁当箱に詰める",
       "start": "05:55",
-      "end": "05:59",
-      "seconds": 240,
+      "end": "05:58",
+      "seconds": 180,
       "attended": true,
       "background": false,
       "kind": "bento"
@@ -196,8 +196,8 @@
       "type": "task",
       "id": "bento_pack",
       "name": "お弁当に詰める",
-      "start": "05:59",
-      "end": "06:03",
+      "start": "05:58",
+      "end": "06:02",
       "seconds": 240,
       "attended": true,
       "background": false,
@@ -205,63 +205,63 @@
     }
   ],
   "menu": {
-    "menu_name": "冷凍しゅうまいのマヨしょうゆだれ弁当",
+    "menu_name": "冷凍餃子のマヨしょうゆ焼き弁当",
     "items": [
       {
         "name": "ごはん（ごま少々）",
-        "note": "炊きたてごはんを詰めて白ごまをふる。",
+        "note": "炊きあがったごはんを弁当箱に詰め、白ごまをふる。",
         "uses_stock": []
       },
       {
-        "name": "冷凍しゅうまいのマヨしょうゆだれ",
-        "note": "レンジで解凍したしゅうまいをフライパンで軽く焼き、しょうゆ・みりん・マヨネーズのたれを絡める。",
+        "name": "冷凍餃子のマヨしょうゆ焼き",
+        "note": "フライパンで冷凍餃子を焼き、しょうゆ・みりん・マヨネーズを混ぜたたれを絡める。",
         "uses_stock": []
       },
       {
-        "name": "冷凍いんげんのごま塩炒め",
-        "note": "凍ったまま油で炒め、塩こしょうと白ごまで味付け。",
+        "name": "冷凍いんげんのこしょう塩炒め",
+        "note": "凍ったままのいんげんを油で炒め、塩・こしょうで味つけ。",
         "uses_stock": []
       },
       {
-        "name": "冷凍ブロッコリーのめんつゆマヨ和え",
-        "note": "レンジ加熱して水気を切り、めんつゆとマヨで和える。",
+        "name": "冷凍ブロッコリーのおかかマヨ和え",
+        "note": "レンジ解凍して水気を切り、マヨネーズとかつおぶしで和える。",
         "uses_stock": []
       }
     ],
     "steps": [
       {
-        "name": "冷凍しゅうまいを耐熱皿に並べてレンジ加熱",
+        "name": "冷凍ブロッコリーを耐熱皿に出してレンジ加熱",
         "minutes": 3,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "たれ（しょうゆ・みりん・マヨ）を小皿で混ぜておく",
+        "name": "たれを合わせる（しょうゆ・みりん・マヨネーズ）",
         "minutes": 2,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "冷凍ブロッコリーをレンジ加熱",
-        "minutes": 3,
+        "name": "フライパンに油をひき冷凍餃子を並べ、水を入れて蓋をして蒸し焼き",
+        "minutes": 6,
         "attended": false,
         "needs_rice": false
       },
       {
-        "name": "フライパンでしゅうまいに軽く焼き目をつけ、たれを絡める",
-        "minutes": 5,
+        "name": "ブロッコリーの水気を切り、マヨ・かつおぶしで和える",
+        "minutes": 3,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "同じフライパンで冷凍いんげんを炒め、塩こしょう・ごまで味付け",
-        "minutes": 5,
+        "name": "餃子の蓋を取り水分を飛ばして焼き色をつけ、たれを絡める",
+        "minutes": 4,
         "attended": true,
         "needs_rice": false
       },
       {
-        "name": "ブロッコリーの水気を切り、めんつゆとマヨで和える",
-        "minutes": 2,
+        "name": "同じフライパンで冷凍いんげんを炒め、塩こしょうで味つけ",
+        "minutes": 4,
         "attended": true,
         "needs_rice": false
       },
@@ -272,21 +272,21 @@
         "needs_rice": false
       },
       {
-        "name": "おかずを弁当箱に詰め、ごはんにごまをふる",
-        "minutes": 4,
+        "name": "おかずを弁当箱に詰める",
+        "minutes": 3,
         "attended": true,
         "needs_rice": true
       }
     ],
     "stock_consumed": [],
-    "comment": "在庫登録がないので常備の冷凍食品だけで組みました。前夜にたれを合わせておくと朝が2分短縮できます。",
+    "comment": "在庫登録がないので常備の冷凍食品だけで完結させました。餃子を焼いたフライパンでいんげんも炒めると洗い物が減ります。",
     "_usage": {
-      "input_tokens": 3596,
-      "output_tokens": 1120
+      "input_tokens": 3608,
+      "output_tokens": 1223
     }
   },
   "stock": [],
   "stock_edit_url": "https://github.com/kandamankun418/morning-schedule/edit/main/data/stock.json",
   "warnings": [],
-  "generated_at": "2026-11-28 05:57 JST"
+  "generated_at": "2026-11-29 04:48 JST"
 }
